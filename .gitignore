@@ -1,0 +1,11 @@
+# Xcode
+xcuserdata/
+
+# Mac OS X
+.DS_Store
+
+# Diffs
+*.orig
+
+# Builds
+DerivedData/
