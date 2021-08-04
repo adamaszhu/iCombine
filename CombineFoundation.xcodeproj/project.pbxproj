@@ -22,6 +22,7 @@
 		28BAE54226BB49F600ACBC30 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE54126BB49F600ACBC30 /* Subscriber.swift */; };
 		28BAE54426BB4A4F00ACBC30 /* Subscribers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE54326BB4A4F00ACBC30 /* Subscribers.swift */; };
 		28BAE54726BB4B2600ACBC30 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE54626BB4B2600ACBC30 /* Subject.swift */; };
+		28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE54826BB4BE800ACBC30 /* Publisher.swift */; };
 		2A426292A696173119AD356F /* libPods-CombineFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D2902CE1B1FB8A1E413461 /* libPods-CombineFoundation.a */; };
 		4E4E282FA0F5F85C03F75E98 /* libPods-CombineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90812504967F56971E7F11B6 /* libPods-CombineTests.a */; };
 		F9B4415733F8D21116A16BAD /* libPods-CombineFoundationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4932EFC59DB0406C53BCADC0 /* libPods-CombineFoundationTests.a */; };
@@ -64,6 +65,7 @@
 		28BAE54126BB49F600ACBC30 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		28BAE54326BB4A4F00ACBC30 /* Subscribers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscribers.swift; sourceTree = "<group>"; };
 		28BAE54626BB4B2600ACBC30 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		28BAE54826BB4BE800ACBC30 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		4932EFC59DB0406C53BCADC0 /* libPods-CombineFoundationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineFoundationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0EA0A16CB412F3691E1E7 /* Pods-CombineFoundationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFoundationTests.debug.xcconfig"; path = "Target Support Files/Pods-CombineFoundationTests/Pods-CombineFoundationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6CAE69D026E1BE33BD4F5D2C /* Pods-CombineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTests.release.xcconfig"; path = "Target Support Files/Pods-CombineTests/Pods-CombineTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				28BAE53E26BB49C400ACBC30 /* Publishers.swift */,
+				28BAE54826BB4BE800ACBC30 /* Publisher.swift */,
 			);
 			path = Publishers;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				28BAE54726BB4B2600ACBC30 /* Subject.swift in Sources */,
 				28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */,
 				28BAE54426BB4A4F00ACBC30 /* Subscribers.swift in Sources */,
+				28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */,
 				28BAE54226BB49F600ACBC30 /* Subscriber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
