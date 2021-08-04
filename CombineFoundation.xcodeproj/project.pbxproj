@@ -14,6 +14,10 @@
 		2850ECEB26BAC21A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
 		2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ECF226BAC6EC005DCC4F /* Cancellable.swift */; };
 		28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */; };
+		28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */; };
+		28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53726BB464700ACBC30 /* Scheduler.swift */; };
+		28BAE53A26BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53926BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift */; };
+		28BAE53C26BB46F100ACBC30 /* ImmediateScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53B26BB46F100ACBC30 /* ImmediateScheduler.swift */; };
 		2A426292A696173119AD356F /* libPods-CombineFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D2902CE1B1FB8A1E413461 /* libPods-CombineFoundation.a */; };
 		4E4E282FA0F5F85C03F75E98 /* libPods-CombineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90812504967F56971E7F11B6 /* libPods-CombineTests.a */; };
 		F9B4415733F8D21116A16BAD /* libPods-CombineFoundationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4932EFC59DB0406C53BCADC0 /* libPods-CombineFoundationTests.a */; };
@@ -48,6 +52,10 @@
 		2850ECEA26BAC21A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2850ECF226BAC6EC005DCC4F /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellable.swift; sourceTree = "<group>"; };
+		28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		28BAE53726BB464700ACBC30 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		28BAE53926BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerTimeIntervalConvertible.swift; sourceTree = "<group>"; };
+		28BAE53B26BB46F100ACBC30 /* ImmediateScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImmediateScheduler.swift; path = ../../../../../Pictures/ImmediateScheduler.swift; sourceTree = "<group>"; };
 		4932EFC59DB0406C53BCADC0 /* libPods-CombineFoundationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineFoundationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0EA0A16CB412F3691E1E7 /* Pods-CombineFoundationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFoundationTests.debug.xcconfig"; path = "Target Support Files/Pods-CombineFoundationTests/Pods-CombineFoundationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6CAE69D026E1BE33BD4F5D2C /* Pods-CombineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTests.release.xcconfig"; path = "Target Support Files/Pods-CombineTests/Pods-CombineTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +132,7 @@
 		2850ECCA26BAC17A005DCC4F /* CombineFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				28BAE53426BB448C00ACBC30 /* Scheduler */,
 				2850ECF126BAC6C8005DCC4F /* Cancellable */,
 				2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */,
 				2850ECCC26BAC17A005DCC4F /* Info.plist */,
@@ -156,6 +165,17 @@
 				28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */,
 			);
 			path = Cancellable;
+			sourceTree = "<group>";
+		};
+		28BAE53426BB448C00ACBC30 /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */,
+				28BAE53726BB464700ACBC30 /* Scheduler.swift */,
+				28BAE53926BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift */,
+				28BAE53B26BB46F100ACBC30 /* ImmediateScheduler.swift */,
+			);
+			path = Scheduler;
 			sourceTree = "<group>";
 		};
 		FF83E063DF789C9895B51A73 /* Pods */ = {
@@ -382,7 +402,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */,
+				28BAE53C26BB46F100ACBC30 /* ImmediateScheduler.swift in Sources */,
+				28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */,
+				28BAE53A26BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift in Sources */,
 				28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */,
+				28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +696,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG COMBINE";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -696,6 +721,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = COMBINE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
