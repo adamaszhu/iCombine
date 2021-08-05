@@ -15,7 +15,7 @@ extension Publishers {
 
     /// A publisher that delivers elements to its downstream subscriber on a specific scheduler.
     // TODO: at the moment, all of the Context are DispatchQueue but they are suposed to conform to Scheduler protocol
-    // and CombineRx.Scheduler needs to be converted to Combine.Scheduler somehow
+    // and CombineFoundation.Scheduler needs to be converted to Combine.Scheduler somehow
     public struct ReceiveOn<Upstream, Context> : Publisher where Upstream : Publisher, Context : DispatchQueue {
 
         public let observable: Any

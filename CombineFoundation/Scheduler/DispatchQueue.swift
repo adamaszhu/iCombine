@@ -316,7 +316,7 @@ extension DispatchQueue : Scheduler {
     // public var now: DispatchQueue.SchedulerTimeType { get }
     
     /// Performs the action at the next possible opportunity.
-    // public func schedule(options: CombineRx.DispatchQueue.SchedulerOptions?, _ action: @escaping () -> Void)
+    // public func schedule(options: CombineFoundation.DispatchQueue.SchedulerOptions?, _ action: @escaping () -> Void)
     
     /// Performs the action at some time after the specified date.
     // public func schedule(after date: DispatchQueue.SchedulerTimeType, tolerance: DispatchQueue.SchedulerTimeType.Stride, options: DispatchQueue.SchedulerOptions?, _ action: @escaping () -> Void)
