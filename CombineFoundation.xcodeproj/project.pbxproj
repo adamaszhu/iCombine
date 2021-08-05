@@ -32,6 +32,9 @@
 		89A33EBD26BC16C200D72674 /* Publisher+Testable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EBB26BC16A100D72674 /* Publisher+Testable.swift */; };
 		89A33EBF26BC16DB00D72674 /* PublisherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EBE26BC16DB00D72674 /* PublisherResult.swift */; };
 		89A33EC026BC16DD00D72674 /* PublisherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EBE26BC16DB00D72674 /* PublisherResult.swift */; };
+		89A33EC226BC1F6700D72674 /* Fail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC126BC1F6700D72674 /* Fail.swift */; };
+		89A33EC426BC1F9100D72674 /* FailSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC326BC1F9100D72674 /* FailSpec.swift */; };
+		89A33EC726BC1FDC00D72674 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC626BC1FDC00D72674 /* TestError.swift */; };
 		F9B4415733F8D21116A16BAD /* libPods-CombineFoundationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4932EFC59DB0406C53BCADC0 /* libPods-CombineFoundationTests.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +86,9 @@
 		89A33EB826BC163300D72674 /* JustSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustSpec.swift; sourceTree = "<group>"; };
 		89A33EBB26BC16A100D72674 /* Publisher+Testable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Testable.swift"; sourceTree = "<group>"; };
 		89A33EBE26BC16DB00D72674 /* PublisherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherResult.swift; sourceTree = "<group>"; };
+		89A33EC126BC1F6700D72674 /* Fail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fail.swift; sourceTree = "<group>"; };
+		89A33EC326BC1F9100D72674 /* FailSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailSpec.swift; sourceTree = "<group>"; };
+		89A33EC626BC1FDC00D72674 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		90812504967F56971E7F11B6 /* libPods-CombineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23C7D3BFAFD858CA4B71657 /* Pods-CombineFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFoundation.debug.xcconfig"; path = "Target Support Files/Pods-CombineFoundation/Pods-CombineFoundation.debug.xcconfig"; sourceTree = "<group>"; };
 		B38C595A112B4E1198F49205 /* Pods-CombineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTests.debug.xcconfig"; path = "Target Support Files/Pods-CombineTests/Pods-CombineTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 		2850ECD526BAC17A005DCC4F /* CombineFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				89A33EC526BC1FCE00D72674 /* Mocker */,
 				89A33EBA26BC169300D72674 /* Utilities */,
 				89A33EB626BC161800D72674 /* Publishers */,
 				2850ECD626BAC17A005DCC4F /* CombineFoundationTests.swift */,
@@ -237,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				89A33EB426BC15F500D72674 /* Just.swift */,
+				89A33EC126BC1F6700D72674 /* Fail.swift */,
 			);
 			path = Creator;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				89A33EB826BC163300D72674 /* JustSpec.swift */,
+				89A33EC326BC1F9100D72674 /* FailSpec.swift */,
 			);
 			path = Creator;
 			sourceTree = "<group>";
@@ -264,6 +273,14 @@
 				89A33EBE26BC16DB00D72674 /* PublisherResult.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		89A33EC526BC1FCE00D72674 /* Mocker */ = {
+			isa = PBXGroup;
+			children = (
+				89A33EC626BC1FDC00D72674 /* TestError.swift */,
+			);
+			path = Mocker;
 			sourceTree = "<group>";
 		};
 		FF83E063DF789C9895B51A73 /* Pods */ = {
@@ -490,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */,
+				89A33EC226BC1F6700D72674 /* Fail.swift in Sources */,
 				28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */,
 				89A33EB226BC153C00D72674 /* Sink.swift in Sources */,
 				28BAE53A26BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift in Sources */,
@@ -509,10 +527,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A33EC726BC1FDC00D72674 /* TestError.swift in Sources */,
 				89A33EBC26BC16A100D72674 /* Publisher+Testable.swift in Sources */,
 				89A33EBF26BC16DB00D72674 /* PublisherResult.swift in Sources */,
 				89A33EB926BC163300D72674 /* JustSpec.swift in Sources */,
 				2850ECD726BAC17A005DCC4F /* CombineFoundationTests.swift in Sources */,
+				89A33EC426BC1F9100D72674 /* FailSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
