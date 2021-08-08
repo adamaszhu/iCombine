@@ -26,6 +26,8 @@
 		4E4E282FA0F5F85C03F75E98 /* libPods-CombineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90812504967F56971E7F11B6 /* libPods-CombineTests.a */; };
 		8913F57026C00BC30069427E /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F56F26C00BC30069427E /* Sequence.swift */; };
 		8913F57226C00BEE0069427E /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57126C00BEE0069427E /* SequenceSpec.swift */; };
+		8913F57826C00EDB0069427E /* CurrentValueSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57726C00EDB0069427E /* CurrentValueSubject.swift */; };
+		8913F57B26C00F150069427E /* CurrentValueSubjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */; };
 		89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EAF26BC150300D72674 /* ReceiveOn.swift */; };
 		89A33EB226BC153C00D72674 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB126BC153C00D72674 /* Sink.swift */; };
 		89A33EB526BC15F500D72674 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB426BC15F500D72674 /* Just.swift */; };
@@ -84,6 +86,8 @@
 		72D2902CE1B1FB8A1E413461 /* libPods-CombineFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineFoundation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8913F56F26C00BC30069427E /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		8913F57126C00BEE0069427E /* SequenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSpec.swift; sourceTree = "<group>"; };
+		8913F57726C00EDB0069427E /* CurrentValueSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueSubject.swift; sourceTree = "<group>"; };
+		8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueSubjectSpec.swift; sourceTree = "<group>"; };
 		89A33EAF26BC150300D72674 /* ReceiveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveOn.swift; sourceTree = "<group>"; };
 		89A33EB126BC153C00D72674 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		89A33EB426BC15F500D72674 /* Just.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 		2850ECD526BAC17A005DCC4F /* CombineFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				8913F57926C00F0B0069427E /* Subjects */,
 				89A33EC526BC1FCE00D72674 /* Mocker */,
 				89A33EBA26BC169300D72674 /* Utilities */,
 				89A33EB626BC161800D72674 /* Publishers */,
@@ -240,6 +245,15 @@
 			isa = PBXGroup;
 			children = (
 				28BAE54626BB4B2600ACBC30 /* Subject.swift */,
+				8913F57726C00EDB0069427E /* CurrentValueSubject.swift */,
+			);
+			path = Subjects;
+			sourceTree = "<group>";
+		};
+		8913F57926C00F0B0069427E /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */,
 			);
 			path = Subjects;
 			sourceTree = "<group>";
@@ -515,6 +529,7 @@
 				2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */,
 				89A33EC226BC1F6700D72674 /* Fail.swift in Sources */,
 				28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */,
+				8913F57826C00EDB0069427E /* CurrentValueSubject.swift in Sources */,
 				89A33EB226BC153C00D72674 /* Sink.swift in Sources */,
 				28BAE53A26BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift in Sources */,
 				28BAE53F26BB49C400ACBC30 /* Publishers.swift in Sources */,
@@ -534,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8913F57B26C00F150069427E /* CurrentValueSubjectSpec.swift in Sources */,
 				89A33EC726BC1FDC00D72674 /* TestError.swift in Sources */,
 				89A33EBC26BC16A100D72674 /* Publisher+Testable.swift in Sources */,
 				89A33EBF26BC16DB00D72674 /* PublisherResult.swift in Sources */,
