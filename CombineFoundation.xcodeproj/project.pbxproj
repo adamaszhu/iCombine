@@ -30,6 +30,8 @@
 		8913F57626C00E6C0069427E /* CombineLatestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57526C00E6C0069427E /* CombineLatestSpec.swift */; };
 		8913F57826C00EDB0069427E /* CurrentValueSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57726C00EDB0069427E /* CurrentValueSubject.swift */; };
 		8913F57B26C00F150069427E /* CurrentValueSubjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */; };
+		8913F57D26C016940069427E /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57C26C016940069427E /* Empty.swift */; };
+		8913F57F26C016BF0069427E /* EmptySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57E26C016BF0069427E /* EmptySpec.swift */; };
 		89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EAF26BC150300D72674 /* ReceiveOn.swift */; };
 		89A33EB226BC153C00D72674 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB126BC153C00D72674 /* Sink.swift */; };
 		89A33EB526BC15F500D72674 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB426BC15F500D72674 /* Just.swift */; };
@@ -92,6 +94,8 @@
 		8913F57526C00E6C0069427E /* CombineLatestSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatestSpec.swift; sourceTree = "<group>"; };
 		8913F57726C00EDB0069427E /* CurrentValueSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueSubject.swift; sourceTree = "<group>"; };
 		8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueSubjectSpec.swift; sourceTree = "<group>"; };
+		8913F57C26C016940069427E /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		8913F57E26C016BF0069427E /* EmptySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySpec.swift; sourceTree = "<group>"; };
 		89A33EAF26BC150300D72674 /* ReceiveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveOn.swift; sourceTree = "<group>"; };
 		89A33EB126BC153C00D72674 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		89A33EB426BC15F500D72674 /* Just.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 				89A33EC126BC1F6700D72674 /* Fail.swift */,
 				8913F56F26C00BC30069427E /* Sequence.swift */,
 				8913F57326C00E400069427E /* CombineLatest.swift */,
+				8913F57C26C016940069427E /* Empty.swift */,
 			);
 			path = Creator;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				89A33EC326BC1F9100D72674 /* FailSpec.swift */,
 				8913F57126C00BEE0069427E /* SequenceSpec.swift */,
 				8913F57526C00E6C0069427E /* CombineLatestSpec.swift */,
+				8913F57E26C016BF0069427E /* EmptySpec.swift */,
 			);
 			path = Creator;
 			sourceTree = "<group>";
@@ -537,6 +543,7 @@
 				28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */,
 				8913F57826C00EDB0069427E /* CurrentValueSubject.swift in Sources */,
 				89A33EB226BC153C00D72674 /* Sink.swift in Sources */,
+				8913F57D26C016940069427E /* Empty.swift in Sources */,
 				28BAE53A26BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift in Sources */,
 				28BAE53F26BB49C400ACBC30 /* Publishers.swift in Sources */,
 				28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */,
@@ -564,6 +571,7 @@
 				8913F57226C00BEE0069427E /* SequenceSpec.swift in Sources */,
 				2850ECD726BAC17A005DCC4F /* CombineFoundationTests.swift in Sources */,
 				89A33EC426BC1F9100D72674 /* FailSpec.swift in Sources */,
+				8913F57F26C016BF0069427E /* EmptySpec.swift in Sources */,
 				8913F57626C00E6C0069427E /* CombineLatestSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
