@@ -40,6 +40,9 @@
 		89280CF426C3FB30002E7629 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57126C00BEE0069427E /* SequenceSpec.swift */; };
 		89280CF526C3FB33002E7629 /* CurrentValueSubjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */; };
 		89280CF626C3FB64002E7629 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC626BC1FDC00D72674 /* TestError.swift */; };
+		89280CF926C3FDB9002E7629 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280CF826C3FDB9002E7629 /* Filter.swift */; };
+		89280CFC26C3FDF9002E7629 /* FilterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280CFB26C3FDF9002E7629 /* FilterSpec.swift */; };
+		89280CFD26C3FDF9002E7629 /* FilterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280CFB26C3FDF9002E7629 /* FilterSpec.swift */; };
 		89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EAF26BC150300D72674 /* ReceiveOn.swift */; };
 		89A33EB226BC153C00D72674 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB126BC153C00D72674 /* Sink.swift */; };
 		89A33EB526BC15F500D72674 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB426BC15F500D72674 /* Just.swift */; };
@@ -104,6 +107,8 @@
 		8913F57E26C016BF0069427E /* EmptySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySpec.swift; sourceTree = "<group>"; };
 		89280CEB26C3FAF4002E7629 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		89280CED26C3FAFC002E7629 /* NetworkSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
+		89280CF826C3FDB9002E7629 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		89280CFB26C3FDF9002E7629 /* FilterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSpec.swift; sourceTree = "<group>"; };
 		89A33EAF26BC150300D72674 /* ReceiveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveOn.swift; sourceTree = "<group>"; };
 		89A33EB126BC153C00D72674 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		89A33EB426BC15F500D72674 /* Just.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
@@ -238,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				89A33EB326BC15F500D72674 /* Creator */,
+				89280CF726C3FDA7002E7629 /* Filter */,
 				28BAE54826BB4BE800ACBC30 /* Publisher.swift */,
 				28BAE53E26BB49C400ACBC30 /* Publishers.swift */,
 				89A33EAF26BC150300D72674 /* ReceiveOn.swift */,
@@ -272,6 +278,22 @@
 			path = Subjects;
 			sourceTree = "<group>";
 		};
+		89280CF726C3FDA7002E7629 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				89280CF826C3FDB9002E7629 /* Filter.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		89280CFA26C3FDE3002E7629 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				89280CFB26C3FDF9002E7629 /* FilterSpec.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		89A33EB326BC15F500D72674 /* Creator */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				89A33EB726BC162100D72674 /* Creator */,
+				89280CFA26C3FDE3002E7629 /* Filter */,
 			);
 			path = Publishers;
 			sourceTree = "<group>";
@@ -553,6 +576,7 @@
 				28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */,
 				8913F57D26C016940069427E /* Empty.swift in Sources */,
 				89A33EC226BC1F6700D72674 /* Fail.swift in Sources */,
+				89280CF926C3FDB9002E7629 /* Filter.swift in Sources */,
 				89A33EB526BC15F500D72674 /* Just.swift in Sources */,
 				89280CEC26C3FAF4002E7629 /* Network.swift in Sources */,
 				28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */,
@@ -576,6 +600,7 @@
 				8913F57B26C00F150069427E /* CurrentValueSubjectSpec.swift in Sources */,
 				8913F57F26C016BF0069427E /* EmptySpec.swift in Sources */,
 				89A33EC426BC1F9100D72674 /* FailSpec.swift in Sources */,
+				89280CFC26C3FDF9002E7629 /* FilterSpec.swift in Sources */,
 				89A33EB926BC163300D72674 /* JustSpec.swift in Sources */,
 				89280CEE26C3FAFC002E7629 /* NetworkSpec.swift in Sources */,
 				89A33EBC26BC16A100D72674 /* Publisher+Testable.swift in Sources */,
@@ -593,6 +618,7 @@
 				89280CF526C3FB33002E7629 /* CurrentValueSubjectSpec.swift in Sources */,
 				89280CF026C3FB20002E7629 /* EmptySpec.swift in Sources */,
 				89280CF126C3FB22002E7629 /* FailSpec.swift in Sources */,
+				89280CFD26C3FDF9002E7629 /* FilterSpec.swift in Sources */,
 				89280CF226C3FB25002E7629 /* JustSpec.swift in Sources */,
 				89280CF326C3FB27002E7629 /* NetworkSpec.swift in Sources */,
 				89A33EBD26BC16C200D72674 /* Publisher+Testable.swift in Sources */,
