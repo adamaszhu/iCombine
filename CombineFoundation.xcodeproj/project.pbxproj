@@ -50,6 +50,9 @@
 		89280D0826C3FFB5002E7629 /* Demand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0726C3FFB5002E7629 /* Demand.swift */; };
 		89280D0A26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0926C3FFDE002E7629 /* FlatMapSpec.swift */; };
 		89280D0B26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0926C3FFDE002E7629 /* FlatMapSpec.swift */; };
+		89280D0F26C400B4002E7629 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0E26C400B4002E7629 /* Merge.swift */; };
+		89280D1126C400DA002E7629 /* MergeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D1026C400DA002E7629 /* MergeSpec.swift */; };
+		89280D1226C40105002E7629 /* MergeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D1026C400DA002E7629 /* MergeSpec.swift */; };
 		89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EAF26BC150300D72674 /* ReceiveOn.swift */; };
 		89A33EB226BC153C00D72674 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB126BC153C00D72674 /* Sink.swift */; };
 		89A33EB526BC15F500D72674 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB426BC15F500D72674 /* Just.swift */; };
@@ -121,6 +124,8 @@
 		89280D0526C3FF80002E7629 /* FlatMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMap.swift; sourceTree = "<group>"; };
 		89280D0726C3FFB5002E7629 /* Demand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demand.swift; sourceTree = "<group>"; };
 		89280D0926C3FFDE002E7629 /* FlatMapSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapSpec.swift; sourceTree = "<group>"; };
+		89280D0E26C400B4002E7629 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
+		89280D1026C400DA002E7629 /* MergeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSpec.swift; sourceTree = "<group>"; };
 		89A33EAF26BC150300D72674 /* ReceiveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveOn.swift; sourceTree = "<group>"; };
 		89A33EB126BC153C00D72674 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		89A33EB426BC15F500D72674 /* Just.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
@@ -257,6 +262,7 @@
 				89A33EB326BC15F500D72674 /* Creator */,
 				89280CF726C3FDA7002E7629 /* Filter */,
 				89280CFE26C3FECA002E7629 /* Modify */,
+				89280D0C26C40095002E7629 /* Relationship */,
 				28BAE54826BB4BE800ACBC30 /* Publisher.swift */,
 				28BAE53E26BB49C400ACBC30 /* Publishers.swift */,
 				89A33EAF26BC150300D72674 /* ReceiveOn.swift */,
@@ -326,6 +332,22 @@
 			path = Modify;
 			sourceTree = "<group>";
 		};
+		89280D0C26C40095002E7629 /* Relationship */ = {
+			isa = PBXGroup;
+			children = (
+				89280D0E26C400B4002E7629 /* Merge.swift */,
+			);
+			path = Relationship;
+			sourceTree = "<group>";
+		};
+		89280D0D26C4009C002E7629 /* Relationship */ = {
+			isa = PBXGroup;
+			children = (
+				89280D1026C400DA002E7629 /* MergeSpec.swift */,
+			);
+			path = Relationship;
+			sourceTree = "<group>";
+		};
 		89A33EB326BC15F500D72674 /* Creator */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +367,7 @@
 				89A33EB726BC162100D72674 /* Creator */,
 				89280CFA26C3FDE3002E7629 /* Filter */,
 				89280D0126C3FF01002E7629 /* Modify */,
+				89280D0D26C4009C002E7629 /* Relationship */,
 			);
 			path = Publishers;
 			sourceTree = "<group>";
@@ -614,6 +637,7 @@
 				89280D0626C3FF80002E7629 /* FlatMap.swift in Sources */,
 				89A33EB526BC15F500D72674 /* Just.swift in Sources */,
 				89280D0026C3FEDE002E7629 /* Map.swift in Sources */,
+				89280D0F26C400B4002E7629 /* Merge.swift in Sources */,
 				89280CEC26C3FAF4002E7629 /* Network.swift in Sources */,
 				28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */,
 				28BAE53F26BB49C400ACBC30 /* Publishers.swift in Sources */,
@@ -640,6 +664,7 @@
 				89280D0A26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */,
 				89A33EB926BC163300D72674 /* JustSpec.swift in Sources */,
 				89280D0326C3FF0E002E7629 /* MapSpec.swift in Sources */,
+				89280D1126C400DA002E7629 /* MergeSpec.swift in Sources */,
 				89280CEE26C3FAFC002E7629 /* NetworkSpec.swift in Sources */,
 				89A33EBC26BC16A100D72674 /* Publisher+Testable.swift in Sources */,
 				89A33EBF26BC16DB00D72674 /* PublisherResult.swift in Sources */,
@@ -660,6 +685,7 @@
 				89280D0B26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */,
 				89280CF226C3FB25002E7629 /* JustSpec.swift in Sources */,
 				89280D0426C3FF0E002E7629 /* MapSpec.swift in Sources */,
+				89280D1226C40105002E7629 /* MergeSpec.swift in Sources */,
 				89280CF326C3FB27002E7629 /* NetworkSpec.swift in Sources */,
 				89A33EBD26BC16C200D72674 /* Publisher+Testable.swift in Sources */,
 				89A33EC026BC16DD00D72674 /* PublisherResult.swift in Sources */,
