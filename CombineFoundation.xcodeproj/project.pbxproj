@@ -46,6 +46,10 @@
 		89280D0026C3FEDE002E7629 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280CFF26C3FEDE002E7629 /* Map.swift */; };
 		89280D0326C3FF0E002E7629 /* MapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0226C3FF0E002E7629 /* MapSpec.swift */; };
 		89280D0426C3FF0E002E7629 /* MapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0226C3FF0E002E7629 /* MapSpec.swift */; };
+		89280D0626C3FF80002E7629 /* FlatMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0526C3FF80002E7629 /* FlatMap.swift */; };
+		89280D0826C3FFB5002E7629 /* Demand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0726C3FFB5002E7629 /* Demand.swift */; };
+		89280D0A26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0926C3FFDE002E7629 /* FlatMapSpec.swift */; };
+		89280D0B26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280D0926C3FFDE002E7629 /* FlatMapSpec.swift */; };
 		89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EAF26BC150300D72674 /* ReceiveOn.swift */; };
 		89A33EB226BC153C00D72674 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB126BC153C00D72674 /* Sink.swift */; };
 		89A33EB526BC15F500D72674 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB426BC15F500D72674 /* Just.swift */; };
@@ -114,6 +118,9 @@
 		89280CFB26C3FDF9002E7629 /* FilterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSpec.swift; sourceTree = "<group>"; };
 		89280CFF26C3FEDE002E7629 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		89280D0226C3FF0E002E7629 /* MapSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSpec.swift; sourceTree = "<group>"; };
+		89280D0526C3FF80002E7629 /* FlatMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMap.swift; sourceTree = "<group>"; };
+		89280D0726C3FFB5002E7629 /* Demand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demand.swift; sourceTree = "<group>"; };
+		89280D0926C3FFDE002E7629 /* FlatMapSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapSpec.swift; sourceTree = "<group>"; };
 		89A33EAF26BC150300D72674 /* ReceiveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveOn.swift; sourceTree = "<group>"; };
 		89A33EB126BC153C00D72674 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		89A33EB426BC15F500D72674 /* Just.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
@@ -260,6 +267,7 @@
 		28BAE54026BB49E000ACBC30 /* Subscribers */ = {
 			isa = PBXGroup;
 			children = (
+				89280D0726C3FFB5002E7629 /* Demand.swift */,
 				89A33EB126BC153C00D72674 /* Sink.swift */,
 				28BAE54126BB49F600ACBC30 /* Subscriber.swift */,
 				28BAE54326BB4A4F00ACBC30 /* Subscribers.swift */,
@@ -303,6 +311,7 @@
 		89280CFE26C3FECA002E7629 /* Modify */ = {
 			isa = PBXGroup;
 			children = (
+				89280D0526C3FF80002E7629 /* FlatMap.swift */,
 				89280CFF26C3FEDE002E7629 /* Map.swift */,
 			);
 			path = Modify;
@@ -311,6 +320,7 @@
 		89280D0126C3FF01002E7629 /* Modify */ = {
 			isa = PBXGroup;
 			children = (
+				89280D0926C3FFDE002E7629 /* FlatMapSpec.swift */,
 				89280D0226C3FF0E002E7629 /* MapSpec.swift */,
 			);
 			path = Modify;
@@ -596,10 +606,12 @@
 				2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */,
 				8913F57426C00E400069427E /* CombineLatest.swift in Sources */,
 				8913F57826C00EDB0069427E /* CurrentValueSubject.swift in Sources */,
+				89280D0826C3FFB5002E7629 /* Demand.swift in Sources */,
 				28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */,
 				8913F57D26C016940069427E /* Empty.swift in Sources */,
 				89A33EC226BC1F6700D72674 /* Fail.swift in Sources */,
 				89280CF926C3FDB9002E7629 /* Filter.swift in Sources */,
+				89280D0626C3FF80002E7629 /* FlatMap.swift in Sources */,
 				89A33EB526BC15F500D72674 /* Just.swift in Sources */,
 				89280D0026C3FEDE002E7629 /* Map.swift in Sources */,
 				89280CEC26C3FAF4002E7629 /* Network.swift in Sources */,
@@ -625,6 +637,7 @@
 				8913F57F26C016BF0069427E /* EmptySpec.swift in Sources */,
 				89A33EC426BC1F9100D72674 /* FailSpec.swift in Sources */,
 				89280CFC26C3FDF9002E7629 /* FilterSpec.swift in Sources */,
+				89280D0A26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */,
 				89A33EB926BC163300D72674 /* JustSpec.swift in Sources */,
 				89280D0326C3FF0E002E7629 /* MapSpec.swift in Sources */,
 				89280CEE26C3FAFC002E7629 /* NetworkSpec.swift in Sources */,
@@ -644,6 +657,7 @@
 				89280CF026C3FB20002E7629 /* EmptySpec.swift in Sources */,
 				89280CF126C3FB22002E7629 /* FailSpec.swift in Sources */,
 				89280CFD26C3FDF9002E7629 /* FilterSpec.swift in Sources */,
+				89280D0B26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */,
 				89280CF226C3FB25002E7629 /* JustSpec.swift in Sources */,
 				89280D0426C3FF0E002E7629 /* MapSpec.swift in Sources */,
 				89280CF326C3FB27002E7629 /* NetworkSpec.swift in Sources */,
