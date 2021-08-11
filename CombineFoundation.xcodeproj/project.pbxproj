@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2850ECD226BAC17A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
-		2850ECD726BAC17A005DCC4F /* CombineFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ECD626BAC17A005DCC4F /* CombineFoundationTests.swift */; };
 		2850ECD926BAC17A005DCC4F /* CombineFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2850ECE926BAC21A005DCC4F /* CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ECE826BAC21A005DCC4F /* CombineTests.swift */; };
 		2850ECEB26BAC21A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
 		2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ECF226BAC6EC005DCC4F /* Cancellable.swift */; };
 		28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */; };
@@ -32,6 +30,16 @@
 		8913F57B26C00F150069427E /* CurrentValueSubjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */; };
 		8913F57D26C016940069427E /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57C26C016940069427E /* Empty.swift */; };
 		8913F57F26C016BF0069427E /* EmptySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57E26C016BF0069427E /* EmptySpec.swift */; };
+		89280CEC26C3FAF4002E7629 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280CEB26C3FAF4002E7629 /* Network.swift */; };
+		89280CEE26C3FAFC002E7629 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280CED26C3FAFC002E7629 /* NetworkSpec.swift */; };
+		89280CEF26C3FB1D002E7629 /* CombineLatestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57526C00E6C0069427E /* CombineLatestSpec.swift */; };
+		89280CF026C3FB20002E7629 /* EmptySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57E26C016BF0069427E /* EmptySpec.swift */; };
+		89280CF126C3FB22002E7629 /* FailSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC326BC1F9100D72674 /* FailSpec.swift */; };
+		89280CF226C3FB25002E7629 /* JustSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB826BC163300D72674 /* JustSpec.swift */; };
+		89280CF326C3FB27002E7629 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89280CED26C3FAFC002E7629 /* NetworkSpec.swift */; };
+		89280CF426C3FB30002E7629 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57126C00BEE0069427E /* SequenceSpec.swift */; };
+		89280CF526C3FB33002E7629 /* CurrentValueSubjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */; };
+		89280CF626C3FB64002E7629 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC626BC1FDC00D72674 /* TestError.swift */; };
 		89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EAF26BC150300D72674 /* ReceiveOn.swift */; };
 		89A33EB226BC153C00D72674 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB126BC153C00D72674 /* Sink.swift */; };
 		89A33EB526BC15F500D72674 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EB426BC15F500D72674 /* Just.swift */; };
@@ -68,10 +76,8 @@
 		2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineFoundation.h; sourceTree = "<group>"; };
 		2850ECCC26BAC17A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2850ECD126BAC17A005DCC4F /* CombineFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2850ECD626BAC17A005DCC4F /* CombineFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFoundationTests.swift; sourceTree = "<group>"; };
 		2850ECD826BAC17A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2850ECE626BAC21A005DCC4F /* CombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2850ECE826BAC21A005DCC4F /* CombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTests.swift; sourceTree = "<group>"; };
 		2850ECEA26BAC21A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2850ECF226BAC6EC005DCC4F /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellable.swift; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 		8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueSubjectSpec.swift; sourceTree = "<group>"; };
 		8913F57C26C016940069427E /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		8913F57E26C016BF0069427E /* EmptySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySpec.swift; sourceTree = "<group>"; };
+		89280CEB26C3FAF4002E7629 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		89280CED26C3FAFC002E7629 /* NetworkSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
 		89A33EAF26BC150300D72674 /* ReceiveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveOn.swift; sourceTree = "<group>"; };
 		89A33EB126BC153C00D72674 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		89A33EB426BC15F500D72674 /* Just.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
@@ -194,7 +202,6 @@
 				89A33EB626BC161800D72674 /* Publishers */,
 				8913F57926C00F0B0069427E /* Subjects */,
 				89A33EBA26BC169300D72674 /* Utilities */,
-				2850ECD626BAC17A005DCC4F /* CombineFoundationTests.swift */,
 				2850ECD826BAC17A005DCC4F /* Info.plist */,
 			);
 			path = CombineFoundationTests;
@@ -203,7 +210,6 @@
 		2850ECE726BAC21A005DCC4F /* CombineTests */ = {
 			isa = PBXGroup;
 			children = (
-				2850ECE826BAC21A005DCC4F /* CombineTests.swift */,
 				2850ECEA26BAC21A005DCC4F /* Info.plist */,
 			);
 			path = CombineTests;
@@ -273,6 +279,7 @@
 				8913F57C26C016940069427E /* Empty.swift */,
 				89A33EC126BC1F6700D72674 /* Fail.swift */,
 				89A33EB426BC15F500D72674 /* Just.swift */,
+				89280CEB26C3FAF4002E7629 /* Network.swift */,
 				8913F56F26C00BC30069427E /* Sequence.swift */,
 			);
 			path = Creator;
@@ -293,6 +300,7 @@
 				8913F57E26C016BF0069427E /* EmptySpec.swift */,
 				89A33EC326BC1F9100D72674 /* FailSpec.swift */,
 				89A33EB826BC163300D72674 /* JustSpec.swift */,
+				89280CED26C3FAFC002E7629 /* NetworkSpec.swift */,
 				8913F57126C00BEE0069427E /* SequenceSpec.swift */,
 			);
 			path = Creator;
@@ -546,6 +554,7 @@
 				8913F57D26C016940069427E /* Empty.swift in Sources */,
 				89A33EC226BC1F6700D72674 /* Fail.swift in Sources */,
 				89A33EB526BC15F500D72674 /* Just.swift in Sources */,
+				89280CEC26C3FAF4002E7629 /* Network.swift in Sources */,
 				28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */,
 				28BAE53F26BB49C400ACBC30 /* Publishers.swift in Sources */,
 				89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */,
@@ -563,12 +572,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2850ECD726BAC17A005DCC4F /* CombineFoundationTests.swift in Sources */,
 				8913F57626C00E6C0069427E /* CombineLatestSpec.swift in Sources */,
 				8913F57B26C00F150069427E /* CurrentValueSubjectSpec.swift in Sources */,
 				8913F57F26C016BF0069427E /* EmptySpec.swift in Sources */,
 				89A33EC426BC1F9100D72674 /* FailSpec.swift in Sources */,
 				89A33EB926BC163300D72674 /* JustSpec.swift in Sources */,
+				89280CEE26C3FAFC002E7629 /* NetworkSpec.swift in Sources */,
 				89A33EBC26BC16A100D72674 /* Publisher+Testable.swift in Sources */,
 				89A33EBF26BC16DB00D72674 /* PublisherResult.swift in Sources */,
 				8913F57226C00BEE0069427E /* SequenceSpec.swift in Sources */,
@@ -580,9 +589,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2850ECE926BAC21A005DCC4F /* CombineTests.swift in Sources */,
+				89280CEF26C3FB1D002E7629 /* CombineLatestSpec.swift in Sources */,
+				89280CF526C3FB33002E7629 /* CurrentValueSubjectSpec.swift in Sources */,
+				89280CF026C3FB20002E7629 /* EmptySpec.swift in Sources */,
+				89280CF126C3FB22002E7629 /* FailSpec.swift in Sources */,
+				89280CF226C3FB25002E7629 /* JustSpec.swift in Sources */,
+				89280CF326C3FB27002E7629 /* NetworkSpec.swift in Sources */,
 				89A33EBD26BC16C200D72674 /* Publisher+Testable.swift in Sources */,
 				89A33EC026BC16DD00D72674 /* PublisherResult.swift in Sources */,
+				89280CF426C3FB30002E7629 /* SequenceSpec.swift in Sources */,
+				89280CF626C3FB64002E7629 /* TestError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +863,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CombineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -872,6 +889,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CombineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
