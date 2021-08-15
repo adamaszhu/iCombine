@@ -16,6 +16,11 @@
 		28393C6626C9330D006245A0 /* RemoveDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C6526C9330D006245A0 /* RemoveDuplicates.swift */; };
 		28393C6826C93324006245A0 /* ReplaceEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C6726C93324006245A0 /* ReplaceEmpty.swift */; };
 		28393C6A26C93335006245A0 /* ReplaceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C6926C93335006245A0 /* ReplaceError.swift */; };
+		28393C6C26C935D9006245A0 /* AnyPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C6B26C935D9006245A0 /* AnyPublisher.swift */; };
+		28393C6E26C93624006245A0 /* HandleEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C6D26C93624006245A0 /* HandleEvents.swift */; };
+		28393C7026C9363F006245A0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C6F26C9363F006245A0 /* Print.swift */; };
+		28393C7226C93680006245A0 /* Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7126C93680006245A0 /* Retry.swift */; };
+		28393C7526C936E3006245A0 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7426C936E3006245A0 /* Subscription.swift */; };
 		2850ECD226BAC17A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
 		2850ECD926BAC17A005DCC4F /* CombineFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2850ECEB26BAC21A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
@@ -103,6 +108,11 @@
 		28393C6526C9330D006245A0 /* RemoveDuplicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicates.swift; sourceTree = "<group>"; };
 		28393C6726C93324006245A0 /* ReplaceEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceEmpty.swift; sourceTree = "<group>"; };
 		28393C6926C93335006245A0 /* ReplaceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceError.swift; sourceTree = "<group>"; };
+		28393C6B26C935D9006245A0 /* AnyPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPublisher.swift; sourceTree = "<group>"; };
+		28393C6D26C93624006245A0 /* HandleEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleEvents.swift; sourceTree = "<group>"; };
+		28393C6F26C9363F006245A0 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		28393C7126C93680006245A0 /* Retry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retry.swift; sourceTree = "<group>"; };
+		28393C7426C936E3006245A0 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineFoundation.h; sourceTree = "<group>"; };
 		2850ECCC26BAC17A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,6 +209,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		28393C7326C936C4006245A0 /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				28393C7426C936E3006245A0 /* Subscription.swift */,
+			);
+			path = Subscriptions;
+			sourceTree = "<group>";
+		};
 		2850ECBE26BAC17A005DCC4F = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +247,7 @@
 				28BAE53426BB448C00ACBC30 /* Scheduler */,
 				28BAE54526BB4AFF00ACBC30 /* Subjects */,
 				28BAE54026BB49E000ACBC30 /* Subscribers */,
+				28393C7326C936C4006245A0 /* Subscriptions */,
 				2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */,
 				2850ECCC26BAC17A005DCC4F /* Info.plist */,
 			);
@@ -281,9 +300,13 @@
 				89280CF726C3FDA7002E7629 /* Filter */,
 				89280CFE26C3FECA002E7629 /* Modify */,
 				89280D0C26C40095002E7629 /* Relationship */,
+				28393C6B26C935D9006245A0 /* AnyPublisher.swift */,
+				28393C6D26C93624006245A0 /* HandleEvents.swift */,
+				28393C6F26C9363F006245A0 /* Print.swift */,
 				28BAE54826BB4BE800ACBC30 /* Publisher.swift */,
 				28BAE53E26BB49C400ACBC30 /* Publishers.swift */,
 				89A33EAF26BC150300D72674 /* ReceiveOn.swift */,
+				28393C7126C93680006245A0 /* Retry.swift */,
 			);
 			path = Publishers;
 			sourceTree = "<group>";
@@ -653,6 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */,
+				28393C6C26C935D9006245A0 /* AnyPublisher.swift in Sources */,
 				2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */,
 				28393C6026C932A7006245A0 /* Catch.swift in Sources */,
 				28393C6226C932CB006245A0 /* Coding.swift in Sources */,
@@ -666,25 +690,29 @@
 				89280CF926C3FDB9002E7629 /* Filter.swift in Sources */,
 				28393C5C26C93230006245A0 /* First.swift in Sources */,
 				89280D0626C3FF80002E7629 /* FlatMap.swift in Sources */,
+				28393C6E26C93624006245A0 /* HandleEvents.swift in Sources */,
 				89A33EB526BC15F500D72674 /* Just.swift in Sources */,
+				28393C5E26C93247006245A0 /* Last.swift in Sources */,
 				89280D0026C3FEDE002E7629 /* Map.swift in Sources */,
 				28393C6426C932F5006245A0 /* MapError.swift in Sources */,
 				89280D0F26C400B4002E7629 /* Merge.swift in Sources */,
 				89280CEC26C3FAF4002E7629 /* Network.swift in Sources */,
+				28393C7026C9363F006245A0 /* Print.swift in Sources */,
 				28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */,
 				28BAE53F26BB49C400ACBC30 /* Publishers.swift in Sources */,
 				89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */,
 				28393C6626C9330D006245A0 /* RemoveDuplicates.swift in Sources */,
 				28393C6826C93324006245A0 /* ReplaceEmpty.swift in Sources */,
 				28393C6A26C93335006245A0 /* ReplaceError.swift in Sources */,
+				28393C7226C93680006245A0 /* Retry.swift in Sources */,
 				28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */,
 				28BAE53A26BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift in Sources */,
 				8913F57026C00BC30069427E /* Sequence.swift in Sources */,
 				89A33EB226BC153C00D72674 /* Sink.swift in Sources */,
 				28BAE54726BB4B2600ACBC30 /* Subject.swift in Sources */,
 				28BAE54226BB49F600ACBC30 /* Subscriber.swift in Sources */,
-				28393C5E26C93247006245A0 /* Last.swift in Sources */,
 				28BAE54426BB4A4F00ACBC30 /* Subscribers.swift in Sources */,
+				28393C7526C936E3006245A0 /* Subscription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
