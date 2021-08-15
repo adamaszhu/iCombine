@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28393C5A26C9321A006245A0 /* Drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C5926C9321A006245A0 /* Drop.swift */; };
+		28393C5C26C93230006245A0 /* First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C5B26C93230006245A0 /* First.swift */; };
+		28393C5E26C93247006245A0 /* Last.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C5D26C93247006245A0 /* Last.swift */; };
 		2850ECD226BAC17A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
 		2850ECD926BAC17A005DCC4F /* CombineFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2850ECEB26BAC21A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
@@ -85,6 +88,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28393C5926C9321A006245A0 /* Drop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drop.swift; sourceTree = "<group>"; };
+		28393C5B26C93230006245A0 /* First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First.swift; sourceTree = "<group>"; };
+		28393C5D26C93247006245A0 /* Last.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last.swift; sourceTree = "<group>"; };
 		2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineFoundation.h; sourceTree = "<group>"; };
 		2850ECCC26BAC17A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -301,7 +307,10 @@
 		89280CF726C3FDA7002E7629 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				28393C5926C9321A006245A0 /* Drop.swift */,
 				89280CF826C3FDB9002E7629 /* Filter.swift */,
+				28393C5B26C93230006245A0 /* First.swift */,
+				28393C5D26C93247006245A0 /* Last.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -631,9 +640,11 @@
 				8913F57826C00EDB0069427E /* CurrentValueSubject.swift in Sources */,
 				89280D0826C3FFB5002E7629 /* Demand.swift in Sources */,
 				28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */,
+				28393C5A26C9321A006245A0 /* Drop.swift in Sources */,
 				8913F57D26C016940069427E /* Empty.swift in Sources */,
 				89A33EC226BC1F6700D72674 /* Fail.swift in Sources */,
 				89280CF926C3FDB9002E7629 /* Filter.swift in Sources */,
+				28393C5C26C93230006245A0 /* First.swift in Sources */,
 				89280D0626C3FF80002E7629 /* FlatMap.swift in Sources */,
 				89A33EB526BC15F500D72674 /* Just.swift in Sources */,
 				89280D0026C3FEDE002E7629 /* Map.swift in Sources */,
@@ -648,6 +659,7 @@
 				89A33EB226BC153C00D72674 /* Sink.swift in Sources */,
 				28BAE54726BB4B2600ACBC30 /* Subject.swift in Sources */,
 				28BAE54226BB49F600ACBC30 /* Subscriber.swift in Sources */,
+				28393C5E26C93247006245A0 /* Last.swift in Sources */,
 				28BAE54426BB4A4F00ACBC30 /* Subscribers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
