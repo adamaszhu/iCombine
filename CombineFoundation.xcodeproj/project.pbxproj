@@ -22,6 +22,7 @@
 		28393C7226C93680006245A0 /* Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7126C93680006245A0 /* Retry.swift */; };
 		28393C7526C936E3006245A0 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7426C936E3006245A0 /* Subscription.swift */; };
 		28393C7726C93782006245A0 /* AnySubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7626C93782006245A0 /* AnySubscriber.swift */; };
+		28393C7B26C93943006245A0 /* PassthroughSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7A26C93943006245A0 /* PassthroughSubject.swift */; };
 		2850ECD226BAC17A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
 		2850ECD926BAC17A005DCC4F /* CombineFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2850ECEB26BAC21A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
@@ -115,6 +116,7 @@
 		28393C7126C93680006245A0 /* Retry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retry.swift; sourceTree = "<group>"; };
 		28393C7426C936E3006245A0 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		28393C7626C93782006245A0 /* AnySubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySubscriber.swift; sourceTree = "<group>"; };
+		28393C7A26C93943006245A0 /* PassthroughSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughSubject.swift; sourceTree = "<group>"; };
 		2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineFoundation.h; sourceTree = "<group>"; };
 		2850ECCC26BAC17A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				8913F57726C00EDB0069427E /* CurrentValueSubject.swift */,
+				28393C7A26C93943006245A0 /* PassthroughSubject.swift */,
 				28BAE54626BB4B2600ACBC30 /* Subject.swift */,
 			);
 			path = Subjects;
@@ -705,6 +708,7 @@
 				28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */,
 				28BAE53F26BB49C400ACBC30 /* Publishers.swift in Sources */,
 				89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */,
+				28393C7B26C93943006245A0 /* PassthroughSubject.swift in Sources */,
 				28393C6626C9330D006245A0 /* RemoveDuplicates.swift in Sources */,
 				28393C6826C93324006245A0 /* ReplaceEmpty.swift in Sources */,
 				28393C6A26C93335006245A0 /* ReplaceError.swift in Sources */,
