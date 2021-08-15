@@ -21,6 +21,7 @@
 		28393C7026C9363F006245A0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C6F26C9363F006245A0 /* Print.swift */; };
 		28393C7226C93680006245A0 /* Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7126C93680006245A0 /* Retry.swift */; };
 		28393C7526C936E3006245A0 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7426C936E3006245A0 /* Subscription.swift */; };
+		28393C7726C93782006245A0 /* AnySubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28393C7626C93782006245A0 /* AnySubscriber.swift */; };
 		2850ECD226BAC17A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
 		2850ECD926BAC17A005DCC4F /* CombineFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2850ECEB26BAC21A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
@@ -113,6 +114,7 @@
 		28393C6F26C9363F006245A0 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 		28393C7126C93680006245A0 /* Retry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retry.swift; sourceTree = "<group>"; };
 		28393C7426C936E3006245A0 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		28393C7626C93782006245A0 /* AnySubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySubscriber.swift; sourceTree = "<group>"; };
 		2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineFoundation.h; sourceTree = "<group>"; };
 		2850ECCC26BAC17A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 		28BAE54026BB49E000ACBC30 /* Subscribers */ = {
 			isa = PBXGroup;
 			children = (
+				28393C7626C93782006245A0 /* AnySubscriber.swift */,
 				89280D0726C3FFB5002E7629 /* Demand.swift */,
 				89A33EB126BC153C00D72674 /* Sink.swift */,
 				28BAE54126BB49F600ACBC30 /* Subscriber.swift */,
@@ -677,6 +680,7 @@
 			files = (
 				28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */,
 				28393C6C26C935D9006245A0 /* AnyPublisher.swift in Sources */,
+				28393C7726C93782006245A0 /* AnySubscriber.swift in Sources */,
 				2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */,
 				28393C6026C932A7006245A0 /* Catch.swift in Sources */,
 				28393C6226C932CB006245A0 /* Coding.swift in Sources */,
