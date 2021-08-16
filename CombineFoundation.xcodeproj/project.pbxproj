@@ -29,6 +29,14 @@
 		2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ECF226BAC6EC005DCC4F /* Cancellable.swift */; };
 		285F147226CA8DD700AD6FCD /* ImmediateScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147126CA8DD700AD6FCD /* ImmediateScheduler.swift */; };
 		285F147526CA8E2600AD6FCD /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147426CA8E2600AD6FCD /* Combine.swift */; };
+		285F147726CA8F0300AD6FCD /* DropSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147626CA8F0300AD6FCD /* DropSpec.swift */; };
+		285F147926CA8F1900AD6FCD /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147826CA8F1900AD6FCD /* FirstSpec.swift */; };
+		285F147B26CA8F3600AD6FCD /* LastSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147A26CA8F3600AD6FCD /* LastSpec.swift */; };
+		285F147D26CA8F5100AD6FCD /* CatchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147C26CA8F5100AD6FCD /* CatchSpec.swift */; };
+		285F147F26CA8F6A00AD6FCD /* RemoveDuplicatesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147E26CA8F6A00AD6FCD /* RemoveDuplicatesSpec.swift */; };
+		285F148126CA8F8000AD6FCD /* ReplaceEmptySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F148026CA8F8000AD6FCD /* ReplaceEmptySpec.swift */; };
+		285F148326CA8F9300AD6FCD /* ReplaceErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F148226CA8F9300AD6FCD /* ReplaceErrorSpec.swift */; };
+		285F148526CA8FAD00AD6FCD /* AnyPublisherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F148426CA8FAD00AD6FCD /* AnyPublisherSpec.swift */; };
 		28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */; };
 		28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */; };
 		28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53726BB464700ACBC30 /* Scheduler.swift */; };
@@ -129,6 +137,14 @@
 		2850ECF226BAC6EC005DCC4F /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		285F147126CA8DD700AD6FCD /* ImmediateScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmediateScheduler.swift; sourceTree = "<group>"; };
 		285F147426CA8E2600AD6FCD /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
+		285F147626CA8F0300AD6FCD /* DropSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropSpec.swift; sourceTree = "<group>"; };
+		285F147826CA8F1900AD6FCD /* FirstSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
+		285F147A26CA8F3600AD6FCD /* LastSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSpec.swift; sourceTree = "<group>"; };
+		285F147C26CA8F5100AD6FCD /* CatchSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchSpec.swift; sourceTree = "<group>"; };
+		285F147E26CA8F6A00AD6FCD /* RemoveDuplicatesSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesSpec.swift; sourceTree = "<group>"; };
+		285F148026CA8F8000AD6FCD /* ReplaceEmptySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceEmptySpec.swift; sourceTree = "<group>"; };
+		285F148226CA8F9300AD6FCD /* ReplaceErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceErrorSpec.swift; sourceTree = "<group>"; };
+		285F148426CA8FAD00AD6FCD /* AnyPublisherSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPublisherSpec.swift; sourceTree = "<group>"; };
 		28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellable.swift; sourceTree = "<group>"; };
 		28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		28BAE53726BB464700ACBC30 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
@@ -373,7 +389,10 @@
 		89280CFA26C3FDE3002E7629 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				285F147626CA8F0300AD6FCD /* DropSpec.swift */,
 				89280CFB26C3FDF9002E7629 /* FilterSpec.swift */,
+				285F147826CA8F1900AD6FCD /* FirstSpec.swift */,
+				285F147A26CA8F3600AD6FCD /* LastSpec.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -396,8 +415,12 @@
 		89280D0126C3FF01002E7629 /* Modify */ = {
 			isa = PBXGroup;
 			children = (
+				285F147C26CA8F5100AD6FCD /* CatchSpec.swift */,
 				89280D0926C3FFDE002E7629 /* FlatMapSpec.swift */,
 				89280D0226C3FF0E002E7629 /* MapSpec.swift */,
+				285F147E26CA8F6A00AD6FCD /* RemoveDuplicatesSpec.swift */,
+				285F148026CA8F8000AD6FCD /* ReplaceEmptySpec.swift */,
+				285F148226CA8F9300AD6FCD /* ReplaceErrorSpec.swift */,
 			);
 			path = Modify;
 			sourceTree = "<group>";
@@ -438,6 +461,7 @@
 				89280CFA26C3FDE3002E7629 /* Filter */,
 				89280D0126C3FF01002E7629 /* Modify */,
 				89280D0D26C4009C002E7629 /* Relationship */,
+				285F148426CA8FAD00AD6FCD /* AnyPublisherSpec.swift */,
 			);
 			path = Publishers;
 			sourceTree = "<group>";
@@ -744,18 +768,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285F148526CA8FAD00AD6FCD /* AnyPublisherSpec.swift in Sources */,
+				285F147D26CA8F5100AD6FCD /* CatchSpec.swift in Sources */,
 				8913F57626C00E6C0069427E /* CombineLatestSpec.swift in Sources */,
 				8913F57B26C00F150069427E /* CurrentValueSubjectSpec.swift in Sources */,
+				285F147726CA8F0300AD6FCD /* DropSpec.swift in Sources */,
 				8913F57F26C016BF0069427E /* EmptySpec.swift in Sources */,
 				89A33EC426BC1F9100D72674 /* FailSpec.swift in Sources */,
 				89280CFC26C3FDF9002E7629 /* FilterSpec.swift in Sources */,
+				285F147926CA8F1900AD6FCD /* FirstSpec.swift in Sources */,
 				89280D0A26C3FFDE002E7629 /* FlatMapSpec.swift in Sources */,
 				89A33EB926BC163300D72674 /* JustSpec.swift in Sources */,
+				285F147B26CA8F3600AD6FCD /* LastSpec.swift in Sources */,
 				89280D0326C3FF0E002E7629 /* MapSpec.swift in Sources */,
 				89280D1126C400DA002E7629 /* MergeSpec.swift in Sources */,
 				89280CEE26C3FAFC002E7629 /* NetworkSpec.swift in Sources */,
 				89A33EBC26BC16A100D72674 /* Publisher+Testable.swift in Sources */,
 				89A33EBF26BC16DB00D72674 /* PublisherResult.swift in Sources */,
+				285F147F26CA8F6A00AD6FCD /* RemoveDuplicatesSpec.swift in Sources */,
+				285F148126CA8F8000AD6FCD /* ReplaceEmptySpec.swift in Sources */,
+				285F148326CA8F9300AD6FCD /* ReplaceErrorSpec.swift in Sources */,
 				8913F57226C00BEE0069427E /* SequenceSpec.swift in Sources */,
 				89A33EC726BC1FDC00D72674 /* TestError.swift in Sources */,
 			);
