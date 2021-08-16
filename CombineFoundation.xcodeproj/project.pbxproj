@@ -27,6 +27,8 @@
 		2850ECD926BAC17A005DCC4F /* CombineFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2850ECEB26BAC21A005DCC4F /* CombineFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */; };
 		2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ECF226BAC6EC005DCC4F /* Cancellable.swift */; };
+		285F147226CA8DD700AD6FCD /* ImmediateScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147126CA8DD700AD6FCD /* ImmediateScheduler.swift */; };
+		285F147526CA8E2600AD6FCD /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F147426CA8E2600AD6FCD /* Combine.swift */; };
 		28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */; };
 		28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */; };
 		28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53726BB464700ACBC30 /* Scheduler.swift */; };
@@ -125,6 +127,8 @@
 		2850ECE626BAC21A005DCC4F /* CombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2850ECEA26BAC21A005DCC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2850ECF226BAC6EC005DCC4F /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		285F147126CA8DD700AD6FCD /* ImmediateScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmediateScheduler.swift; sourceTree = "<group>"; };
+		285F147426CA8E2600AD6FCD /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
 		28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellable.swift; sourceTree = "<group>"; };
 		28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		28BAE53726BB464700ACBC30 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 				28BAE54526BB4AFF00ACBC30 /* Subjects */,
 				28BAE54026BB49E000ACBC30 /* Subscribers */,
 				28393C7326C936C4006245A0 /* Subscriptions */,
+				285F147326CA8E0200AD6FCD /* Todo */,
 				2850ECCB26BAC17A005DCC4F /* CombineFoundation.h */,
 				2850ECCC26BAC17A005DCC4F /* Info.plist */,
 			);
@@ -287,10 +292,19 @@
 			path = Cancellable;
 			sourceTree = "<group>";
 		};
+		285F147326CA8E0200AD6FCD /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				285F147426CA8E2600AD6FCD /* Combine.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
 		28BAE53426BB448C00ACBC30 /* Scheduler */ = {
 			isa = PBXGroup;
 			children = (
 				28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */,
+				285F147126CA8DD700AD6FCD /* ImmediateScheduler.swift */,
 				28BAE53726BB464700ACBC30 /* Scheduler.swift */,
 				28BAE53926BB46B400ACBC30 /* SchedulerTimeIntervalConvertible.swift */,
 			);
@@ -687,6 +701,7 @@
 				2850ECF326BAC6EC005DCC4F /* Cancellable.swift in Sources */,
 				28393C6026C932A7006245A0 /* Catch.swift in Sources */,
 				28393C6226C932CB006245A0 /* Coding.swift in Sources */,
+				285F147526CA8E2600AD6FCD /* Combine.swift in Sources */,
 				8913F57426C00E400069427E /* CombineLatest.swift in Sources */,
 				8913F57826C00EDB0069427E /* CurrentValueSubject.swift in Sources */,
 				89280D0826C3FFB5002E7629 /* Demand.swift in Sources */,
@@ -698,17 +713,18 @@
 				28393C5C26C93230006245A0 /* First.swift in Sources */,
 				89280D0626C3FF80002E7629 /* FlatMap.swift in Sources */,
 				28393C6E26C93624006245A0 /* HandleEvents.swift in Sources */,
+				285F147226CA8DD700AD6FCD /* ImmediateScheduler.swift in Sources */,
 				89A33EB526BC15F500D72674 /* Just.swift in Sources */,
 				28393C5E26C93247006245A0 /* Last.swift in Sources */,
 				89280D0026C3FEDE002E7629 /* Map.swift in Sources */,
 				28393C6426C932F5006245A0 /* MapError.swift in Sources */,
 				89280D0F26C400B4002E7629 /* Merge.swift in Sources */,
 				89280CEC26C3FAF4002E7629 /* Network.swift in Sources */,
+				28393C7B26C93943006245A0 /* PassthroughSubject.swift in Sources */,
 				28393C7026C9363F006245A0 /* Print.swift in Sources */,
 				28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */,
 				28BAE53F26BB49C400ACBC30 /* Publishers.swift in Sources */,
 				89A33EB026BC150300D72674 /* ReceiveOn.swift in Sources */,
-				28393C7B26C93943006245A0 /* PassthroughSubject.swift in Sources */,
 				28393C6626C9330D006245A0 /* RemoveDuplicates.swift in Sources */,
 				28393C6826C93324006245A0 /* ReplaceEmpty.swift in Sources */,
 				28393C6A26C93335006245A0 /* ReplaceError.swift in Sources */,
