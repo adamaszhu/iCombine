@@ -37,6 +37,8 @@
 		285F148126CA8F8000AD6FCD /* ReplaceEmptySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F148026CA8F8000AD6FCD /* ReplaceEmptySpec.swift */; };
 		285F148326CA8F9300AD6FCD /* ReplaceErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F148226CA8F9300AD6FCD /* ReplaceErrorSpec.swift */; };
 		285F148526CA8FAD00AD6FCD /* AnyPublisherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F148426CA8FAD00AD6FCD /* AnyPublisherSpec.swift */; };
+		285F148726CA94B000AD6FCD /* PassthroughSubjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F148626CA94B000AD6FCD /* PassthroughSubjectSpec.swift */; };
+		285F148A26CA94E100AD6FCD /* AnySubscriberSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F148926CA94E100AD6FCD /* AnySubscriberSpec.swift */; };
 		28BAE53326BB43DA00ACBC30 /* AnyCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */; };
 		28BAE53626BB44A800ACBC30 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */; };
 		28BAE53826BB464700ACBC30 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE53726BB464700ACBC30 /* Scheduler.swift */; };
@@ -145,6 +147,8 @@
 		285F148026CA8F8000AD6FCD /* ReplaceEmptySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceEmptySpec.swift; sourceTree = "<group>"; };
 		285F148226CA8F9300AD6FCD /* ReplaceErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceErrorSpec.swift; sourceTree = "<group>"; };
 		285F148426CA8FAD00AD6FCD /* AnyPublisherSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPublisherSpec.swift; sourceTree = "<group>"; };
+		285F148626CA94B000AD6FCD /* PassthroughSubjectSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughSubjectSpec.swift; sourceTree = "<group>"; };
+		285F148926CA94E100AD6FCD /* AnySubscriberSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySubscriberSpec.swift; sourceTree = "<group>"; };
 		28BAE53226BB43DA00ACBC30 /* AnyCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellable.swift; sourceTree = "<group>"; };
 		28BAE53526BB44A800ACBC30 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		28BAE53726BB464700ACBC30 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 				89A33EC526BC1FCE00D72674 /* Mocker */,
 				89A33EB626BC161800D72674 /* Publishers */,
 				8913F57926C00F0B0069427E /* Subjects */,
+				285F148826CA94C000AD6FCD /* Subscribers */,
 				89A33EBA26BC169300D72674 /* Utilities */,
 				2850ECD826BAC17A005DCC4F /* Info.plist */,
 			);
@@ -314,6 +319,14 @@
 				285F147426CA8E2600AD6FCD /* Combine.swift */,
 			);
 			path = Todo;
+			sourceTree = "<group>";
+		};
+		285F148826CA94C000AD6FCD /* Subscribers */ = {
+			isa = PBXGroup;
+			children = (
+				285F148926CA94E100AD6FCD /* AnySubscriberSpec.swift */,
+			);
+			path = Subscribers;
 			sourceTree = "<group>";
 		};
 		28BAE53426BB448C00ACBC30 /* Scheduler */ = {
@@ -371,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				8913F57A26C00F150069427E /* CurrentValueSubjectSpec.swift */,
+				285F148626CA94B000AD6FCD /* PassthroughSubjectSpec.swift */,
 			);
 			path = Subjects;
 			sourceTree = "<group>";
@@ -769,6 +783,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				285F148526CA8FAD00AD6FCD /* AnyPublisherSpec.swift in Sources */,
+				285F148A26CA94E100AD6FCD /* AnySubscriberSpec.swift in Sources */,
 				285F147D26CA8F5100AD6FCD /* CatchSpec.swift in Sources */,
 				8913F57626C00E6C0069427E /* CombineLatestSpec.swift in Sources */,
 				8913F57B26C00F150069427E /* CurrentValueSubjectSpec.swift in Sources */,
@@ -783,6 +798,7 @@
 				89280D0326C3FF0E002E7629 /* MapSpec.swift in Sources */,
 				89280D1126C400DA002E7629 /* MergeSpec.swift in Sources */,
 				89280CEE26C3FAFC002E7629 /* NetworkSpec.swift in Sources */,
+				285F148726CA94B000AD6FCD /* PassthroughSubjectSpec.swift in Sources */,
 				89A33EBC26BC16A100D72674 /* Publisher+Testable.swift in Sources */,
 				89A33EBF26BC16DB00D72674 /* PublisherResult.swift in Sources */,
 				285F147F26CA8F6A00AD6FCD /* RemoveDuplicatesSpec.swift in Sources */,
