@@ -30,7 +30,7 @@ extension Publishers {
 
         public init(upstream: Upstream, scheduler: Context, options: Context.CombineSchedulerOptions?) {
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                     let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.ReceiveOn(upstream: publisher, scheduler: scheduler, options: nil)
                                 .eraseToAnyPublisher()

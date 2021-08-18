@@ -27,7 +27,7 @@ extension URLSession {
 
         public init(request: URLRequest, session: URLSession) {
             #if canImport(Combine)
-            if #available(iOS 13, *) {
+            if #available(iOS 14, *) {
                 observable = URLSession.DataTaskPublisher(request: request, session: session)
                     .map { (data: $0.data, response: $0.response as URLResponse) }
                     .eraseToAnyPublisher()

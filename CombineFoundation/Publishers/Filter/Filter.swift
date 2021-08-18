@@ -28,7 +28,7 @@ extension Publishers {
 
         public init(upstream: Upstream, isIncluded: @escaping (Upstream.Output) -> Bool) {
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.Filter(upstream: publisher, isIncluded: isIncluded)
                     .eraseToAnyPublisher()
@@ -58,7 +58,7 @@ extension Publishers {
 
         public init(upstream: Upstream, isIncluded: @escaping (Upstream.Output) throws -> Bool) {
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.TryFilter(upstream: publisher, isIncluded: isIncluded)
                     .eraseToAnyPublisher()

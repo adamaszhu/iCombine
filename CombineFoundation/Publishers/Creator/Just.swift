@@ -30,7 +30,7 @@ public struct Just<Output> : Publisher {
     /// - Parameter output: The one element that the publisher emits.
     public init(_ output: Output) {
         #if canImport(Combine)
-        if #available(iOS 13, *) {
+        if #available(iOS 14, *) {
             observable = Combine.Just<Output>(output)
                 .eraseToAnyPublisher()
             return
@@ -94,7 +94,7 @@ extension Just {
 
     public func map<T>(_ transform: @escaping (Output) -> T) -> Just<T> {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let publisher = observable as? Combine.AnyPublisher<Output, Failure>{
             let publisher = publisher.map(transform).eraseToAnyPublisher()
             return Just<T>(observable: publisher)

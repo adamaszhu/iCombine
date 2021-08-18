@@ -21,7 +21,7 @@ public struct Fail<Output, Failure> : Publisher where Failure : Error {
     /// - Parameter error: The failure to send when terminating the publisher.
     public init(error: Failure) {
         #if canImport(Combine)
-        if #available(iOS 13, *) {
+        if #available(iOS 14, *) {
             observable = Combine.Fail<Output, Failure>(error: error)
                 .eraseToAnyPublisher()
             return
@@ -38,7 +38,7 @@ public struct Fail<Output, Failure> : Publisher where Failure : Error {
     ///   - failure: The failure to send when terminating the publisher.
     public init(outputType: Output.Type, failure: Failure) {
         #if canImport(Combine)
-        if #available(iOS 13, *) {
+        if #available(iOS 14, *) {
             observable = Combine.Fail<Output, Failure>(outputType: outputType, failure: failure)
                 .eraseToAnyPublisher()
             return
