@@ -24,12 +24,22 @@ final class CurrentValueSubjectSpec: QuickSpec {
                     let result = subject.test()
                     subject.value = 1
                     subject.value = 2
+                    expect(result.outputs.count).toEventually(equal(3))
                     expect(result.outputs.last).toEventually(equal(2))
                 }
                 it("returns the settled value") {
                     let subject = CurrentValueSubject<Int?, Never>(nil)
                     subject.value = 1
                     expect(subject.value) == 1
+                }
+            }
+            context("with legacy values") {
+                it("pulishes the new value") {
+                    let subject = CurrentValueSubject<Int, Never>(0)
+                    subject.value = 1
+                    let result = subject.test()
+                    expect(result.outputs.count).toEventually(equal(1))
+                    expect(result.outputs.last).toEventually(equal(1))
                 }
             }
         }
