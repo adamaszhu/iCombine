@@ -27,7 +27,7 @@ extension Subscribers {
         case failure(Failure)
 
         #if canImport(Combine)
-        @available(iOS 13.0, *)
+        @available(iOS 14, *)
         init(combineCompletion: Combine.Subscribers.Completion<Failure>) {
             switch combineCompletion {
             case .finished:
@@ -39,7 +39,7 @@ extension Subscribers {
         #endif
 
         #if canImport(Combine)
-        @available(iOS 13.0, *)
+        @available(iOS 14, *)
         var combineCompletion: Combine.Subscribers.Completion<Failure> {
             switch self {
             case .finished:
