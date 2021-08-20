@@ -11,7 +11,7 @@ import RxSwift
 /// A publisher that exposes a method for outside callers to publish elements.
 ///
 /// A subject is a publisher that you can use to ”inject” values into a stream, by calling its `send()` method. This can be useful for adapting existing imperative code to the Combine model.
-public protocol Subject : AnyObject, Publisher, Subscriber {
+public protocol Subject : AnyObject, Publisher {
     
     /// Sends a value to the subscriber.
     ///

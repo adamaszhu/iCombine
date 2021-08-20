@@ -32,7 +32,7 @@ extension Subscribers {
         ///   - receiveValue: The closure to execute on receipt of a value.
         public init(receiveCompletion: @escaping ((Subscribers.Completion<Failure>) -> Void), receiveValue: @escaping ((Input) -> Void)) {
             #if canImport(Combine)
-            if #available(iOS 13, *) {
+            if #available(iOS 14, *) {
                 let observer = Combine.Subscribers.Sink<Input, Failure>(receiveCompletion: { (completion) in
                     switch completion {
                     case .finished:
@@ -76,7 +76,7 @@ extension Subscribers {
         /// Cancel the activity.
         final public func cancel() {
             #if canImport(Combine)
-            if #available(iOS 13, *), let cancellable = disposable as? Combine.Cancellable {
+            if #available(iOS 14, *), let cancellable = disposable as? Combine.Cancellable {
                 cancellable.cancel()
                 return
             }

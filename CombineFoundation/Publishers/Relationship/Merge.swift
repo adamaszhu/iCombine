@@ -33,7 +33,7 @@ extension Publishers {
             self.a = a
             self.b = b
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let aPublisher = a.observable as? Combine.AnyPublisher<A.Output, A.Failure>,
                 let bPublisher = b.observable as? Combine.AnyPublisher<B.Output, B.Failure> {
                     observable = Combine.Publishers.Merge(aPublisher, bPublisher)
@@ -125,7 +125,7 @@ extension Publishers {
             self.b = b
             self.c = c
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let aPublisher = a.observable as? Combine.AnyPublisher<A.Output, A.Failure>,
                 let bPublisher = b.observable as? Combine.AnyPublisher<B.Output, B.Failure>,
                 let cPublisher = c.observable as? Combine.AnyPublisher<C.Output, C.Failure> {
@@ -211,7 +211,7 @@ extension Publishers {
             self.c = c
             self.d = d
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let aPublisher = a.observable as? Combine.AnyPublisher<A.Output, A.Failure>,
                 let bPublisher = b.observable as? Combine.AnyPublisher<B.Output, B.Failure>,
                 let cPublisher = c.observable as? Combine.AnyPublisher<C.Output, C.Failure>,
@@ -292,7 +292,7 @@ extension Publishers {
             self.d = d
             self.e = e
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let aPublisher = a.observable as? Combine.AnyPublisher<A.Output, A.Failure>,
                 let bPublisher = b.observable as? Combine.AnyPublisher<B.Output, B.Failure>,
                 let cPublisher = c.observable as? Combine.AnyPublisher<C.Output, C.Failure>,
@@ -369,7 +369,7 @@ extension Publishers {
             self.e = e
             self.f = f
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let aPublisher = a.observable as? Combine.AnyPublisher<A.Output, A.Failure>,
                 let bPublisher = b.observable as? Combine.AnyPublisher<B.Output, B.Failure>,
                 let cPublisher = c.observable as? Combine.AnyPublisher<C.Output, C.Failure>,
@@ -446,7 +446,7 @@ extension Publishers {
             self.f = f
             self.g = g
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let aPublisher = a.observable as? Combine.AnyPublisher<A.Output, A.Failure>,
                 let bPublisher = b.observable as? Combine.AnyPublisher<B.Output, B.Failure>,
                 let cPublisher = c.observable as? Combine.AnyPublisher<C.Output, C.Failure>,
@@ -524,7 +524,7 @@ extension Publishers {
             self.g = g
             self.h = h
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let aPublisher = a.observable as? Combine.AnyPublisher<A.Output, A.Failure>,
                 let bPublisher = b.observable as? Combine.AnyPublisher<B.Output, B.Failure>,
                 let cPublisher = c.observable as? Combine.AnyPublisher<C.Output, C.Failure>,
@@ -577,7 +577,7 @@ extension Publishers {
         public init(_ upstream: Upstream...) {
             self.publishers = upstream
             #if canImport(Combine)
-            if #available(iOS 13, *) {
+            if #available(iOS 14, *) {
                 let mergedPublishers: [Combine.AnyPublisher<Upstream.Output, Upstream.Failure>] = upstream.map {
                     if let upstreamObservable = $0.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                         return upstreamObservable
@@ -604,7 +604,7 @@ extension Publishers {
             where Upstream == S.Element, S : Swift.Sequence {
                 self.publishers = Array(upstream)
                 #if canImport(Combine)
-                if #available(iOS 13, *) {
+                if #available(iOS 14, *) {
                     let mergedPublishers: [Combine.AnyPublisher<Upstream.Output, Upstream.Failure>] = upstream.map {
                         if let upstreamObservable = $0.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                             return upstreamObservable

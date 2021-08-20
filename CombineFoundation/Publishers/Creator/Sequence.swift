@@ -28,7 +28,7 @@ extension Publishers {
         /// - Parameter sequence: The sequence of elements to publish.
         public init(sequence: Elements) {
             #if canImport(Combine)
-            if #available(iOS 13, *) {
+            if #available(iOS 14, *) {
                 observable = Combine.Publishers.Sequence<Elements, Failure>(sequence: sequence)
                     .eraseToAnyPublisher()
                 return
@@ -63,7 +63,7 @@ extension Publishers.Sequence {
 
     public func filter(_ isIncluded: @escaping (Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Publishers.Sequence<[Publishers.Sequence<Elements, Failure>.Output], Failure> {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let publisher = observable as? Combine.AnyPublisher<Output, Failure>{
             let publisher = publisher.filter(isIncluded)
                 .eraseToAnyPublisher()
@@ -82,7 +82,7 @@ extension Publishers.Sequence {
 
     public func map<T>(_ transform: @escaping (Elements.Element) -> T) -> Publishers.Sequence<[T], Failure> {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let publisher = observable as? Combine.AnyPublisher<Output, Failure>{
             let publisher = publisher.map(transform)
                 .eraseToAnyPublisher()
@@ -116,7 +116,7 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
 
     public func prepend(_ elements: Publishers.Sequence<Elements, Failure>.Output...) -> Publishers.Sequence<Elements, Failure> {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let publisher = observable as? Combine.AnyPublisher<Output, Failure>{
 
             let publisher = publisher.prepend(elements)
@@ -137,7 +137,7 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
 
     public func prepend<S>(_ elements: S) -> Publishers.Sequence<Elements, Failure> where S : Sequence, Elements.Element == S.Element {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let publisher = observable as? Combine.AnyPublisher<Output, Failure>{
             let publisher = publisher.prepend(elements)
                 .eraseToAnyPublisher()
@@ -155,7 +155,7 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
 
     public func prepend(_ publisher: Publishers.Sequence<Elements, Failure>) -> Publishers.Sequence<Elements, Failure> {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let internalPublisher = observable as? Combine.AnyPublisher<Output, Failure>,
             let toAppendPublisher = publisher.observable as? Combine.AnyPublisher<Output, Failure> {
             let appendedPublisher = internalPublisher.prepend(toAppendPublisher)
@@ -173,7 +173,7 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
 
     public func append(_ elements: Publishers.Sequence<Elements, Failure>.Output...) -> Publishers.Sequence<Elements, Failure> {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let publisher = observable as? Combine.AnyPublisher<Output, Failure>{
 
             let publisher = publisher.append(elements)
@@ -194,7 +194,7 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
 
     public func append<S>(_ elements: S) -> Publishers.Sequence<Elements, Failure> where S : Sequence, Elements.Element == S.Element {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let publisher = observable as? Combine.AnyPublisher<Output, Failure>{
             let publisher = publisher.append(elements)
                 .eraseToAnyPublisher()
@@ -212,7 +212,7 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
 
     public func append(_ publisher: Publishers.Sequence<Elements, Failure>) -> Publishers.Sequence<Elements, Failure> {
         #if canImport(Combine)
-        if #available(iOS 13, *),
+        if #available(iOS 14, *),
             let internalPublisher = observable as? Combine.AnyPublisher<Output, Failure>,
             let toAppendPublisher = publisher.observable as? Combine.AnyPublisher<Output, Failure> {
             let appendedPublisher = internalPublisher.append(toAppendPublisher)

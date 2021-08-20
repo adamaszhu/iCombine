@@ -23,7 +23,7 @@ public struct Empty<Output, Failure> : Publisher where Failure : Error {
     /// - Parameter completeImmediately: A Boolean value that indicates whether the publisher should immediately finish.
     public init(completeImmediately: Bool = true) {
         #if canImport(Combine)
-        if #available(iOS 13, *) {
+        if #available(iOS 14, *) {
             observable = Combine.Empty<Output, Failure>(completeImmediately: completeImmediately)
                 .eraseToAnyPublisher()
             return
@@ -43,7 +43,7 @@ public struct Empty<Output, Failure> : Publisher where Failure : Error {
     ///   - failureType: The failure type exposed by this publisher.
     public init(completeImmediately: Bool = true, outputType: Output.Type, failureType: Failure.Type) {
         #if canImport(Combine)
-        if #available(iOS 13, *) {
+        if #available(iOS 14, *) {
             observable = Combine.Empty<Output, Failure>(completeImmediately: completeImmediately,
                                                         outputType: outputType,
                                                         failureType: failureType)

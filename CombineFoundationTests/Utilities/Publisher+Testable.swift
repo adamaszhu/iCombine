@@ -33,7 +33,7 @@ extension CombineFoundation.Publisher {
 
 import Combine
 
-@available(iOS 13.0, *)
+@available(iOS 13, *)
 extension Combine.Publisher {
 
     /// Sink a publisher and record any result in `PublisherResult`

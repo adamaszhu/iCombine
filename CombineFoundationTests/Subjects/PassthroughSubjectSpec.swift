@@ -45,15 +45,5 @@ final class PassthroughSubjectSpec: QuickSpec {
                 }
             }
         }
-        describe("called as a subscriber") {
-            context("with new value") {
-                it("forwards the new value") {
-                    let subject = PassthroughSubject<Int, Never>()
-                    let result = subject.test()
-                    let _ = Just<Int>(1).subscribe(subject)
-                    expect(result.outputs.last).toEventually(equal(1))
-                }
-            }
-        }
     }
 }

@@ -34,7 +34,7 @@ extension Publishers {
             self.a = a
             self.b = b
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let publisherA = a.observable as? Combine.AnyPublisher<A.Output, Failure>,
                 let publisherB = b.observable as? Combine.AnyPublisher<B.Output, Failure> {
                     self.observable = Combine.Publishers.CombineLatest(publisherA, publisherB)
@@ -59,7 +59,7 @@ extension Publishers {
         public func receive<S>(subscriber: S)
             where S : Subscriber, B.Failure == S.Failure, S.Input == (A.Output, B.Output) {
                 #if canImport(Combine)
-                if #available(iOS 13, *),
+                if #available(iOS 14, *),
                     let publisher = self.observable as? Combine.AnyPublisher<Output, Failure>,
                     let combineSubcriber = subscriber.observer as? Combine.AnySubscriber<S.Input, Failure> {
                         publisher.receive(subscriber: combineSubcriber)
@@ -101,7 +101,7 @@ extension Publishers {
             self.b = b
             self.c = c
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let publisherA = a.observable as? Combine.AnyPublisher<A.Output, Failure>,
                 let publisherB = b.observable as? Combine.AnyPublisher<B.Output, Failure>,
                 let publisherC = c.observable as? Combine.AnyPublisher<C.Output, Failure> {
@@ -128,7 +128,7 @@ extension Publishers {
         public func receive<S>(subscriber: S)
             where S : Subscriber, C.Failure == S.Failure, S.Input == (A.Output, B.Output, C.Output) {
                 #if canImport(Combine)
-                if #available(iOS 13, *),
+                if #available(iOS 14, *),
                     let publisher = self.observable as? Combine.AnyPublisher<Output, Failure>,
                     let combineSubcriber = subscriber.observer as? Combine.AnySubscriber<S.Input, Failure> {
                         publisher.receive(subscriber: combineSubcriber)
@@ -173,7 +173,7 @@ extension Publishers {
             self.c = c
             self.d = d
             #if canImport(Combine)
-            if #available(iOS 13, *),
+            if #available(iOS 14, *),
                 let publisherA = a.observable as? Combine.AnyPublisher<A.Output, Failure>,
                 let publisherB = b.observable as? Combine.AnyPublisher<B.Output, Failure>,
                 let publisherC = c.observable as? Combine.AnyPublisher<C.Output, Failure>,
@@ -203,7 +203,7 @@ extension Publishers {
             where S : Subscriber, D.Failure == S.Failure,
             S.Input == (A.Output, B.Output, C.Output, D.Output) {
                 #if canImport(Combine)
-                if #available(iOS 13, *),
+                if #available(iOS 14, *),
                     let publisher = self.observable as? Combine.AnyPublisher<Output, Failure>,
                     let combineSubcriber = subscriber.observer as? Combine.AnySubscriber<S.Input, Failure> {
                         publisher.receive(subscriber: combineSubcriber)
