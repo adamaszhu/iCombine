@@ -1,0 +1,1377 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Cancellable/AnyCancellable.swift",
+      "line": 20,
+      "symbol": "AnyCancellable.disposable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Cancellable/AnyCancellable.swift",
+      "line": 27,
+      "symbol": "AnyCancellable.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Cancellable/Cancellable.swift",
+      "line": 16,
+      "symbol": "Cancellable.disposable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/AnyPublisher.swift",
+      "line": 16,
+      "symbol": "AnyPublisher.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 19,
+      "symbol": "Publishers.CombineLatest.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 29,
+      "symbol": "Publishers.CombineLatest.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 31,
+      "symbol": "Publishers.CombineLatest.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 33,
+      "symbol": "Publishers.CombineLatest.init(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 83,
+      "symbol": "Publishers.CombineLatest3.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 93,
+      "symbol": "Publishers.CombineLatest3.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 95,
+      "symbol": "Publishers.CombineLatest3.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 97,
+      "symbol": "Publishers.CombineLatest3.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 99,
+      "symbol": "Publishers.CombineLatest3.init(_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 152,
+      "symbol": "Publishers.CombineLatest4.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 162,
+      "symbol": "Publishers.CombineLatest4.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 164,
+      "symbol": "Publishers.CombineLatest4.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 166,
+      "symbol": "Publishers.CombineLatest4.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 168,
+      "symbol": "Publishers.CombineLatest4.d",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/CombineLatest.swift",
+      "line": 170,
+      "symbol": "Publishers.CombineLatest4.init(_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Empty.swift",
+      "line": 19,
+      "symbol": "Empty.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Fail.swift",
+      "line": 17,
+      "symbol": "Fail.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Just.swift",
+      "line": 21,
+      "symbol": "Just.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Just.swift",
+      "line": 79,
+      "symbol": "Just.first()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Just.swift",
+      "line": 85,
+      "symbol": "Just.last()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Just.swift",
+      "line": 95,
+      "symbol": "Just.map(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Just.swift",
+      "line": 148,
+      "symbol": "Just.removeDuplicates()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Network.swift",
+      "line": 16,
+      "symbol": "URLSession.CombineDataTaskPublisher",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Network.swift",
+      "line": 18,
+      "symbol": "URLSession.CombineDataTaskPublisher.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Network.swift",
+      "line": 28,
+      "symbol": "URLSession.CombineDataTaskPublisher.init(request:session:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 21,
+      "symbol": "Publishers.Sequence.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 64,
+      "symbol": "Publishers.Sequence.filter(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 83,
+      "symbol": "Publishers.Sequence.map(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 117,
+      "symbol": "Publishers.Sequence.prepend(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 138,
+      "symbol": "Publishers.Sequence.prepend(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 156,
+      "symbol": "Publishers.Sequence.prepend(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 174,
+      "symbol": "Publishers.Sequence.append(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 195,
+      "symbol": "Publishers.Sequence.append(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 213,
+      "symbol": "Publishers.Sequence.append(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Creator/Sequence.swift",
+      "line": 241,
+      "symbol": "Sequence.publisher",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Drop.swift",
+      "line": 19,
+      "symbol": "Publishers.Drop.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Drop.swift",
+      "line": 29,
+      "symbol": "Publishers.Drop.init(upstream:count:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Drop.swift",
+      "line": 49,
+      "symbol": "Publishers.DropUntilOutput.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Drop.swift",
+      "line": 87,
+      "symbol": "Publishers.DropWhile.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Drop.swift",
+      "line": 97,
+      "symbol": "Publishers.DropWhile.init(upstream:predicate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Drop.swift",
+      "line": 117,
+      "symbol": "Publishers.TryDropWhile.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Drop.swift",
+      "line": 127,
+      "symbol": "Publishers.TryDropWhile.init(upstream:predicate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Filter.swift",
+      "line": 19,
+      "symbol": "Publishers.Filter.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Filter.swift",
+      "line": 29,
+      "symbol": "Publishers.Filter.init(upstream:isIncluded:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Filter.swift",
+      "line": 49,
+      "symbol": "Publishers.TryFilter.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Filter.swift",
+      "line": 59,
+      "symbol": "Publishers.TryFilter.init(upstream:isIncluded:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/First.swift",
+      "line": 19,
+      "symbol": "Publishers.First.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/First.swift",
+      "line": 29,
+      "symbol": "Publishers.First.init(upstream:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/First.swift",
+      "line": 49,
+      "symbol": "Publishers.FirstWhere.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/First.swift",
+      "line": 59,
+      "symbol": "Publishers.FirstWhere.init(upstream:predicate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/First.swift",
+      "line": 79,
+      "symbol": "Publishers.TryFirstWhere.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/First.swift",
+      "line": 89,
+      "symbol": "Publishers.TryFirstWhere.init(upstream:predicate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Last.swift",
+      "line": 19,
+      "symbol": "Publishers.LastWhere.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Last.swift",
+      "line": 29,
+      "symbol": "Publishers.LastWhere.init(upstream:predicate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Last.swift",
+      "line": 49,
+      "symbol": "Publishers.TryLastWhere.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Last.swift",
+      "line": 59,
+      "symbol": "Publishers.TryLastWhere.init(upstream:predicate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Last.swift",
+      "line": 79,
+      "symbol": "Publishers.Last.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Filter/Last.swift",
+      "line": 89,
+      "symbol": "Publishers.Last.init(upstream:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/HandleEvents.swift",
+      "line": 19,
+      "symbol": "Publishers.HandleEvents.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/HandleEvents.swift",
+      "line": 29,
+      "symbol": "Publishers.HandleEvents.init(upstream:receiveSubscription:receiveOutput:receiveCompletion:receiveCancel:receiveRequest:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Catch.swift",
+      "line": 19,
+      "symbol": "Publishers.Catch.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Catch.swift",
+      "line": 65,
+      "symbol": "Publishers.TryCatch.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Catch.swift",
+      "line": 75,
+      "symbol": "Publishers.TryCatch.init(upstream:handler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 14,
+      "symbol": "CodingError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 15,
+      "symbol": "CodingError.decoding",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 16,
+      "symbol": "CodingError.encoding",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 19,
+      "symbol": "TopLevelDecoder",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 21,
+      "symbol": "TopLevelDecoder.Input",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 23,
+      "symbol": "TopLevelDecoder.decode(_:from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 26,
+      "symbol": "TopLevelEncoder",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 28,
+      "symbol": "TopLevelEncoder.Output",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 30,
+      "symbol": "TopLevelEncoder.encode(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 38,
+      "symbol": "Publishers.Decode",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 40,
+      "symbol": "Publishers.Decode.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Coding.swift",
+      "line": 47,
+      "symbol": "Publishers.Decode.init(upstream:decoder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/FlatMap.swift",
+      "line": 16,
+      "symbol": "Publishers.FlatMap",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/FlatMap.swift",
+      "line": 18,
+      "symbol": "Publishers.FlatMap.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/FlatMap.swift",
+      "line": 28,
+      "symbol": "Publishers.FlatMap.init(upstream:maxPublishers:transform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Map.swift",
+      "line": 19,
+      "symbol": "Publishers.Map.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Map.swift",
+      "line": 26,
+      "symbol": "Publishers.Map.init(upstream:transform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Map.swift",
+      "line": 51,
+      "symbol": "Publishers.TryMap.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Map.swift",
+      "line": 58,
+      "symbol": "Publishers.TryMap.init(upstream:transform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Map.swift",
+      "line": 103,
+      "symbol": "Publishers.Map.map(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Map.swift",
+      "line": 118,
+      "symbol": "Publishers.Map.tryMap(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Map.swift",
+      "line": 136,
+      "symbol": "Publishers.TryMap.map(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/Map.swift",
+      "line": 151,
+      "symbol": "Publishers.TryMap.tryMap(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/MapError.swift",
+      "line": 19,
+      "symbol": "Publishers.MapError.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/MapError.swift",
+      "line": 24,
+      "symbol": "Publishers.MapError.init(upstream:transform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/MapError.swift",
+      "line": 47,
+      "symbol": "Publishers.MapError.init(upstream:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/RemoveDuplicates.swift",
+      "line": 19,
+      "symbol": "Publishers.RemoveDuplicates.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/RemoveDuplicates.swift",
+      "line": 61,
+      "symbol": "Publishers.TryRemoveDuplicates.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/ReplaceEmpty.swift",
+      "line": 19,
+      "symbol": "Publishers.ReplaceEmpty.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/ReplaceEmpty.swift",
+      "line": 29,
+      "symbol": "Publishers.ReplaceEmpty.init(upstream:output:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/ReplaceError.swift",
+      "line": 19,
+      "symbol": "Publishers.ReplaceError.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Modify/ReplaceError.swift",
+      "line": 29,
+      "symbol": "Publishers.ReplaceError.init(upstream:output:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Print.swift",
+      "line": 26,
+      "symbol": "Publishers.Print.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Publisher.swift",
+      "line": 30,
+      "symbol": "Publisher.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/ReceiveOn.swift",
+      "line": 19,
+      "symbol": "Publishers.ReceiveOn",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/ReceiveOn.swift",
+      "line": 21,
+      "symbol": "Publishers.ReceiveOn.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/ReceiveOn.swift",
+      "line": 31,
+      "symbol": "Publishers.ReceiveOn.init(upstream:scheduler:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 19,
+      "symbol": "Publishers.Merge.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 29,
+      "symbol": "Publishers.Merge.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 30,
+      "symbol": "Publishers.Merge.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 32,
+      "symbol": "Publishers.Merge.init(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 52,
+      "symbol": "Publishers.Merge.merge(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 57,
+      "symbol": "Publishers.Merge.merge(with:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 64,
+      "symbol": "Publishers.Merge.merge(with:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 72,
+      "symbol": "Publishers.Merge.merge(with:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 81,
+      "symbol": "Publishers.Merge.merge(with:_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 91,
+      "symbol": "Publishers.Merge.merge(with:_:_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 109,
+      "symbol": "Publishers.Merge3.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 119,
+      "symbol": "Publishers.Merge3.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 120,
+      "symbol": "Publishers.Merge3.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 121,
+      "symbol": "Publishers.Merge3.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 123,
+      "symbol": "Publishers.Merge3.init(_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 146,
+      "symbol": "Publishers.Merge3.merge(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 151,
+      "symbol": "Publishers.Merge3.merge(with:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 158,
+      "symbol": "Publishers.Merge3.merge(with:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 166,
+      "symbol": "Publishers.Merge3.merge(with:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 175,
+      "symbol": "Publishers.Merge3.merge(with:_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 193,
+      "symbol": "Publishers.Merge4.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 203,
+      "symbol": "Publishers.Merge4.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 204,
+      "symbol": "Publishers.Merge4.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 205,
+      "symbol": "Publishers.Merge4.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 206,
+      "symbol": "Publishers.Merge4.d",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 208,
+      "symbol": "Publishers.Merge4.init(_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 234,
+      "symbol": "Publishers.Merge4.merge(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 239,
+      "symbol": "Publishers.Merge4.merge(with:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 246,
+      "symbol": "Publishers.Merge4.merge(with:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 254,
+      "symbol": "Publishers.Merge4.merge(with:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 272,
+      "symbol": "Publishers.Merge5.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 282,
+      "symbol": "Publishers.Merge5.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 283,
+      "symbol": "Publishers.Merge5.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 284,
+      "symbol": "Publishers.Merge5.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 285,
+      "symbol": "Publishers.Merge5.d",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 286,
+      "symbol": "Publishers.Merge5.e",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 288,
+      "symbol": "Publishers.Merge5.init(_:_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 317,
+      "symbol": "Publishers.Merge5.merge(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 322,
+      "symbol": "Publishers.Merge5.merge(with:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 329,
+      "symbol": "Publishers.Merge5.merge(with:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 347,
+      "symbol": "Publishers.Merge6.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 357,
+      "symbol": "Publishers.Merge6.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 358,
+      "symbol": "Publishers.Merge6.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 359,
+      "symbol": "Publishers.Merge6.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 360,
+      "symbol": "Publishers.Merge6.d",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 361,
+      "symbol": "Publishers.Merge6.e",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 362,
+      "symbol": "Publishers.Merge6.f",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 364,
+      "symbol": "Publishers.Merge6.init(_:_:_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 401,
+      "symbol": "Publishers.Merge6.merge(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 406,
+      "symbol": "Publishers.Merge6.merge(with:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 422,
+      "symbol": "Publishers.Merge7.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 432,
+      "symbol": "Publishers.Merge7.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 433,
+      "symbol": "Publishers.Merge7.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 434,
+      "symbol": "Publishers.Merge7.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 435,
+      "symbol": "Publishers.Merge7.d",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 436,
+      "symbol": "Publishers.Merge7.e",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 437,
+      "symbol": "Publishers.Merge7.f",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 438,
+      "symbol": "Publishers.Merge7.g",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 440,
+      "symbol": "Publishers.Merge7.init(_:_:_:_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 481,
+      "symbol": "Publishers.Merge7.merge(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 498,
+      "symbol": "Publishers.Merge8.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 508,
+      "symbol": "Publishers.Merge8.a",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 509,
+      "symbol": "Publishers.Merge8.b",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 510,
+      "symbol": "Publishers.Merge8.c",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 511,
+      "symbol": "Publishers.Merge8.d",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 512,
+      "symbol": "Publishers.Merge8.e",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 513,
+      "symbol": "Publishers.Merge8.f",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 514,
+      "symbol": "Publishers.Merge8.g",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 515,
+      "symbol": "Publishers.Merge8.h",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 517,
+      "symbol": "Publishers.Merge8.init(_:_:_:_:_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 563,
+      "symbol": "Publishers.MergeMany",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 565,
+      "symbol": "Publishers.MergeMany.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 575,
+      "symbol": "Publishers.MergeMany.publishers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 577,
+      "symbol": "Publishers.MergeMany.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 603,
+      "symbol": "Publishers.MergeMany.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Relationship/Merge.swift",
+      "line": 630,
+      "symbol": "Publishers.MergeMany.merge(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Publishers/Retry.swift",
+      "line": 19,
+      "symbol": "Publishers.Retry.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Scheduler/DispatchQueue.swift",
+      "line": 13,
+      "symbol": "DispatchQueue.schedulerType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Scheduler/DispatchQueue.swift",
+      "line": 305,
+      "symbol": "DispatchQueue.CombineSchedulerOptions.init(qos:flags:group:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Scheduler/Scheduler.swift",
+      "line": 18,
+      "symbol": "Scheduler.schedulerType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subjects/CurrentValueSubject.swift",
+      "line": 19,
+      "symbol": "CurrentValueSubject.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subjects/CurrentValueSubject.swift",
+      "line": 21,
+      "symbol": "CurrentValueSubject.observer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subjects/PassthroughSubject.swift",
+      "line": 14,
+      "symbol": "PassthroughSubject",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subjects/PassthroughSubject.swift",
+      "line": 18,
+      "symbol": "PassthroughSubject.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subjects/PassthroughSubject.swift",
+      "line": 20,
+      "symbol": "PassthroughSubject.observer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subjects/PassthroughSubject.swift",
+      "line": 36,
+      "symbol": "PassthroughSubject.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subscribers/AnySubscriber.swift",
+      "line": 17,
+      "symbol": "AnySubscriber.observer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subscribers/Sink.swift",
+      "line": 19,
+      "symbol": "Subscribers.Sink.disposable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subscribers/Sink.swift",
+      "line": 20,
+      "symbol": "Subscribers.Sink.observer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subscribers/Subscriber.swift",
+      "line": 17,
+      "symbol": "Subscriber.observer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subscribers/Subscribers.swift",
+      "line": 25,
+      "symbol": "Subscribers.Completion.finished",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/CombineFoundation/CombineFoundation/Subscribers/Subscribers.swift",
+      "line": 27,
+      "symbol": "Subscribers.Completion.failure(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/adamaszhu/Documents/Projects/CombineFoundation"
+}
