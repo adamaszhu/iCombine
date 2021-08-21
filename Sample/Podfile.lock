@@ -1,0 +1,33 @@
+PODS:
+  - CombineFoundation (0.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
+
+DEPENDENCIES:
+  - CombineFoundation (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  CombineFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CombineFoundation: 55db62791b8592c0109a53493ec5937d8e931542
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+
+PODFILE CHECKSUM: de940467a9492886154ff54e6a34f5aba7925ade
+
+COCOAPODS: 1.10.2
