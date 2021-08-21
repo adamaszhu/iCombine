@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">CombineFoundation 0.1.0 Docs</a> (58% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">CombineFoundation Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AnyCancellable.html">AnyCancellable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CurrentValueSubject.html">CurrentValueSubject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PassthroughSubject.html">PassthroughSubject</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/CodingError.html">CodingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers.html">Publishers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/CombineLatest.html">– CombineLatest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/CombineLatest3.html">– CombineLatest3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/CombineLatest4.html">– CombineLatest4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Sequence.html">– Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Drop.html">– Drop</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/DropUntilOutput.html">– DropUntilOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/DropWhile.html">– DropWhile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/TryDropWhile.html">– TryDropWhile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Filter.html">– Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/TryFilter.html">– TryFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/First.html">– First</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/FirstWhere.html">– FirstWhere</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/TryFirstWhere.html">– TryFirstWhere</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/LastWhere.html">– LastWhere</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/TryLastWhere.html">– TryLastWhere</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Last.html">– Last</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/HandleEvents.html">– HandleEvents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Catch.html">– Catch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/TryCatch.html">– TryCatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Decode.html">– Decode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/FlatMap.html">– FlatMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Map.html">– Map</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/TryMap.html">– TryMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/MapError.html">– MapError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/RemoveDuplicates.html">– RemoveDuplicates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/TryRemoveDuplicates.html">– TryRemoveDuplicates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/ReplaceEmpty.html">– ReplaceEmpty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/ReplaceError.html">– ReplaceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Print.html">– Print</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/ReceiveOn.html">– ReceiveOn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Merge.html">– Merge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Merge3.html">– Merge3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Merge4.html">– Merge4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Merge5.html">– Merge5</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Merge6.html">– Merge6</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Merge7.html">– Merge7</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Merge8.html">– Merge8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/MergeMany.html">– MergeMany</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Publishers/Retry.html">– Retry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Subscribers.html">Subscribers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Subscribers/Demand.html">– Demand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Subscribers/Sink.html">– Sink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Subscribers/Completion.html">– Completion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DispatchQueue/CombineSchedulerOptions.html">– CombineSchedulerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/s:10Foundation11JSONDecoderC">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/s:10Foundation11JSONEncoderC">JSONEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/URLSession.html">URLSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/URLSession/CombineDataTaskPublisher.html">– CombineDataTaskPublisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Cancellable.html">Cancellable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Scheduler.html">Scheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Subject.html">Subject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Subscriber.html">Subscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Subscription.html">Subscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TopLevelDecoder.html">TopLevelDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TopLevelEncoder.html">TopLevelEncoder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AnyPublisher.html">AnyPublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AnySubscriber.html">AnySubscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Empty.html">Empty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Fail.html">Fail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Just.html">Just</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17CombineFoundation11CancellableP"></a>
+                    <a name="//apple_ref/swift/Protocol/Cancellable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17CombineFoundation11CancellableP">Cancellable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A protocol indicating that an activity or action may be canceled.</p>
+
+<p>Calling <code>cancel()</code> frees up any allocated resources. It also stops side effects such as timers, network access, or disk I/O.</p>
+
+                        <a href="Protocols/Cancellable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Cancellable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17CombineFoundation9PublisherP"></a>
+                    <a name="//apple_ref/swift/Protocol/Publisher" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17CombineFoundation9PublisherP">Publisher</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Declares that a type can transmit a sequence of values over time.</p>
+
+<p>There are four kinds of messages:
+    subscription - A connection between <code>Publisher</code> and <code><a href="Protocols/Subscriber.html">Subscriber</a></code>.
+    value - An element in the sequence.
+    error - The sequence ended with an error (<code>.failure(e)</code>).
+    complete - The sequence ended successfully (<code>.finished</code>).</p>
+
+<p>Both <code>.failure</code> and <code>.finished</code> are terminal messages.</p>
+
+<p>You can summarize these possibilities with a regular expression:
+  value*(error|finished)?</p>
+
+<p>Every <code>Publisher</code> must adhere to this contract.</p>
+
+                        <a href="Protocols/Publisher.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Publisher</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17CombineFoundation15TopLevelDecoderP"></a>
+                    <a name="//apple_ref/swift/Protocol/TopLevelDecoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17CombineFoundation15TopLevelDecoderP">TopLevelDecoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/TopLevelDecoder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TopLevelDecoder</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17CombineFoundation15TopLevelEncoderP"></a>
+                    <a name="//apple_ref/swift/Protocol/TopLevelEncoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17CombineFoundation15TopLevelEncoderP">TopLevelEncoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/TopLevelEncoder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TopLevelEncoder</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17CombineFoundation9SchedulerP"></a>
+                    <a name="//apple_ref/swift/Protocol/Scheduler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17CombineFoundation9SchedulerP">Scheduler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A protocol that defines when and how to execute a closure.</p>
+
+<p>A scheduler used to execute code as soon as possible, or after a future date.
+Individual scheduler implementations use whatever time-keeping system makes sense for them. Schdedulers express this as their <code>SchedulerTimeType</code>. Since this type conforms to <code>SchedulerTimeIntervalConvertible</code>, you can always express these times with the convenience functions like <code>.milliseconds(500)</code>.
+Schedulers can accept options to control how they execute the actions passed to them. These options may control factors like which threads or dispatch queues execute the actions.</p>
+
+                        <a href="Protocols/Scheduler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Scheduler</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17CombineFoundation7SubjectP"></a>
+                    <a name="//apple_ref/swift/Protocol/Subject" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17CombineFoundation7SubjectP">Subject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A publisher that exposes a method for outside callers to publish elements.</p>
+
+<p>A subject is a publisher that you can use to ”inject” values into a stream, by calling its <code>send()</code> method. This can be useful for adapting existing imperative code to the Combine model.</p>
+
+                        <a href="Protocols/Subject.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Subject</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/Publisher.html">Publisher</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/Subscriber.html">Subscriber</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17CombineFoundation10SubscriberP"></a>
+                    <a name="//apple_ref/swift/Protocol/Subscriber" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17CombineFoundation10SubscriberP">Subscriber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A protocol that declares a type that can receive input from a publisher.</p>
+
+                        <a href="Protocols/Subscriber.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Subscriber</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17CombineFoundation12SubscriptionP"></a>
+                    <a name="//apple_ref/swift/Protocol/Subscription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17CombineFoundation12SubscriptionP">Subscription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A protocol representing the connection of a subscriber to a publisher.</p>
+
+<p>Subcriptions are class constrained because a <code>Subscription</code> has identity -
+defined by the moment in time a particular subscriber attached to a publisher.
+Canceling a <code>Subscription</code> must be thread-safe.</p>
+
+<p>You can only cancel a <code>Subscription</code> once.</p>
+
+<p>Canceling a subscription frees up any resources previously allocated by attaching the <code><a href="Protocols/Subscriber.html">Subscriber</a></code>.</p>
+
+                        <a href="Protocols/Subscription.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Subscription</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Cancellable.html">Cancellable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://github.com/adamaszhu/CombineFoundation" target="_blank" rel="noopener" rel="external">Adamas Zhu and Leon Nguyen</a>. All rights reserved. (Last updated: 2021-08-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="noopener" rel="external">jazzy ♪♫ v0.14.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="noopener" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
