@@ -56,7 +56,7 @@ final public class AnyCancellable : Cancellable, Hashable {
     /// - Parameter hasher: The hasher to use when combining the components
     ///   of this instance.
     final public func hash(into hasher: inout Hasher) {
-        hasher.combine(String(describing: self))
+        hasher.combine(String(describing: disposable))
     }
 
     /// Returns a Boolean value indicating whether two values are equal.
@@ -68,7 +68,7 @@ final public class AnyCancellable : Cancellable, Hashable {
     ///   - lhs: A value to compare.
     ///   - rhs: Another value to compare.
     public static func == (lhs: AnyCancellable, rhs: AnyCancellable) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
+        return lhs.hashValue == rhs.hashValue
     }
     
     deinit {
