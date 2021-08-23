@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -60,6 +60,18 @@
 		28BAE54426BB4A4F00ACBC30 /* Subscribers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE54326BB4A4F00ACBC30 /* Subscribers.swift */; };
 		28BAE54726BB4B2600ACBC30 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE54626BB4B2600ACBC30 /* Subject.swift */; };
 		28BAE54926BB4BE800ACBC30 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAE54826BB4BE800ACBC30 /* Publisher.swift */; };
+		28DE78D526D2481900A58707 /* AnyCancellableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE78D426D2481900A58707 /* AnyCancellableSpec.swift */; };
+		28DE78D626D24DEF00A58707 /* AnyCancellableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE78D426D2481900A58707 /* AnyCancellableSpec.swift */; };
+		28DE794926D3C29100A58707 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE794826D3C29100A58707 /* Nimble */; };
+		28DE794B26D3C2A000A58707 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE794A26D3C2A000A58707 /* Nimble */; };
+		28DE794E26D3C2C800A58707 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE794D26D3C2C800A58707 /* Quick */; };
+		28DE795026D3C2D500A58707 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE794F26D3C2D500A58707 /* Quick */; };
+		28DE795326D3C40A00A58707 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE795226D3C40A00A58707 /* RxSwift */; };
+		28DE795526D3C40A00A58707 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE795426D3C40A00A58707 /* RxCocoa */; };
+		28DE795726D3C41C00A58707 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE795626D3C41C00A58707 /* RxCocoa */; };
+		28DE795926D3C41C00A58707 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE795826D3C41C00A58707 /* RxSwift */; };
+		28DE795B26D3C6A700A58707 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE795A26D3C6A700A58707 /* RxRelay */; };
+		28DE795D26D3C6B000A58707 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE795C26D3C6B000A58707 /* RxRelay */; };
 		2A426292A696173119AD356F /* libPods-CombineFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D2902CE1B1FB8A1E413461 /* libPods-CombineFoundation.a */; };
 		4E4E282FA0F5F85C03F75E98 /* libPods-CombineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90812504967F56971E7F11B6 /* libPods-CombineTests.a */; };
 		8913F57026C00BC30069427E /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F56F26C00BC30069427E /* Sequence.swift */; };
@@ -172,6 +184,7 @@
 		28BAE54326BB4A4F00ACBC30 /* Subscribers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscribers.swift; sourceTree = "<group>"; };
 		28BAE54626BB4B2600ACBC30 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		28BAE54826BB4BE800ACBC30 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		28DE78D426D2481900A58707 /* AnyCancellableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellableSpec.swift; sourceTree = "<group>"; };
 		4932EFC59DB0406C53BCADC0 /* libPods-CombineFoundationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineFoundationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0EA0A16CB412F3691E1E7 /* Pods-CombineFoundationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFoundationTests.debug.xcconfig"; path = "Target Support Files/Pods-CombineFoundationTests/Pods-CombineFoundationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6CAE69D026E1BE33BD4F5D2C /* Pods-CombineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTests.release.xcconfig"; path = "Target Support Files/Pods-CombineTests/Pods-CombineTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -217,6 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A426292A696173119AD356F /* libPods-CombineFoundation.a in Frameworks */,
+				28DE795526D3C40A00A58707 /* RxCocoa in Frameworks */,
+				28DE795B26D3C6A700A58707 /* RxRelay in Frameworks */,
+				28DE795326D3C40A00A58707 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +242,11 @@
 			files = (
 				2850ECD226BAC17A005DCC4F /* CombineFoundation.framework in Frameworks */,
 				F9B4415733F8D21116A16BAD /* libPods-CombineFoundationTests.a in Frameworks */,
+				28DE794926D3C29100A58707 /* Nimble in Frameworks */,
+				28DE794E26D3C2C800A58707 /* Quick in Frameworks */,
+				28DE795726D3C41C00A58707 /* RxCocoa in Frameworks */,
+				28DE795D26D3C6B000A58707 /* RxRelay in Frameworks */,
+				28DE795926D3C41C00A58707 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +256,8 @@
 			files = (
 				2850ECEB26BAC21A005DCC4F /* CombineFoundation.framework in Frameworks */,
 				4E4E282FA0F5F85C03F75E98 /* libPods-CombineTests.a in Frameworks */,
+				28DE794B26D3C2A000A58707 /* Nimble in Frameworks */,
+				28DE795026D3C2D500A58707 /* Quick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +323,7 @@
 		2850ECD526BAC17A005DCC4F /* CombineFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				28DE78D326D247FF00A58707 /* Cancellable */,
 				89A33EC526BC1FCE00D72674 /* Mocker */,
 				89A33EB626BC161800D72674 /* Publishers */,
 				8913F57926C00F0B0069427E /* Subjects */,
@@ -393,6 +417,14 @@
 				28BAE54626BB4B2600ACBC30 /* Subject.swift */,
 			);
 			path = Subjects;
+			sourceTree = "<group>";
+		};
+		28DE78D326D247FF00A58707 /* Cancellable */ = {
+			isa = PBXGroup;
+			children = (
+				28DE78D426D2481900A58707 /* AnyCancellableSpec.swift */,
+			);
+			path = Cancellable;
 			sourceTree = "<group>";
 		};
 		8913F57926C00F0B0069427E /* Subjects */ = {
@@ -568,6 +600,11 @@
 			dependencies = (
 			);
 			name = CombineFoundation;
+			packageProductDependencies = (
+				28DE795226D3C40A00A58707 /* RxSwift */,
+				28DE795426D3C40A00A58707 /* RxCocoa */,
+				28DE795A26D3C6A700A58707 /* RxRelay */,
+			);
 			productName = CombineFoundation;
 			productReference = 2850ECC826BAC17A005DCC4F /* CombineFoundation.framework */;
 			productType = "com.apple.product-type.framework";
@@ -587,6 +624,13 @@
 				2850ECD426BAC17A005DCC4F /* PBXTargetDependency */,
 			);
 			name = CombineFoundationTests;
+			packageProductDependencies = (
+				28DE794826D3C29100A58707 /* Nimble */,
+				28DE794D26D3C2C800A58707 /* Quick */,
+				28DE795626D3C41C00A58707 /* RxCocoa */,
+				28DE795826D3C41C00A58707 /* RxSwift */,
+				28DE795C26D3C6B000A58707 /* RxRelay */,
+			);
 			productName = CombineFoundationTests;
 			productReference = 2850ECD126BAC17A005DCC4F /* CombineFoundationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -606,6 +650,10 @@
 				2850ECED26BAC21A005DCC4F /* PBXTargetDependency */,
 			);
 			name = CombineTests;
+			packageProductDependencies = (
+				28DE794A26D3C2A000A58707 /* Nimble */,
+				28DE794F26D3C2D500A58707 /* Quick */,
+			);
 			productName = CombineTests;
 			productReference = 2850ECE626BAC21A005DCC4F /* CombineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -640,6 +688,11 @@
 				Base,
 			);
 			mainGroup = 2850ECBE26BAC17A005DCC4F;
+			packageReferences = (
+				28DE794726D3C29100A58707 /* XCRemoteSwiftPackageReference "Nimble" */,
+				28DE794C26D3C2C800A58707 /* XCRemoteSwiftPackageReference "quick" */,
+				28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 2850ECC926BAC17A005DCC4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -797,6 +850,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DE78D526D2481900A58707 /* AnyCancellableSpec.swift in Sources */,
 				285F148526CA8FAD00AD6FCD /* AnyPublisherSpec.swift in Sources */,
 				285F148A26CA94E100AD6FCD /* AnySubscriberSpec.swift in Sources */,
 				285F147D26CA8F5100AD6FCD /* CatchSpec.swift in Sources */,
@@ -829,6 +883,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DE78D626D24DEF00A58707 /* AnyCancellableSpec.swift in Sources */,
 				285F149226CA967D00AD6FCD /* AnyPublisherSpec.swift in Sources */,
 				285F149426CA968700AD6FCD /* AnySubscriberSpec.swift in Sources */,
 				285F148E26CA966E00AD6FCD /* CatchSpec.swift in Sources */,
@@ -1016,7 +1071,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.combine.foundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1049,7 +1104,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.combine.foundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1201,6 +1256,86 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28DE794726D3C29100A58707 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		28DE794C26D3C2C800A58707 /* XCRemoteSwiftPackageReference "quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28DE794826D3C29100A58707 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE794726D3C29100A58707 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		28DE794A26D3C2A000A58707 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE794726D3C29100A58707 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		28DE794D26D3C2C800A58707 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE794C26D3C2C800A58707 /* XCRemoteSwiftPackageReference "quick" */;
+			productName = Quick;
+		};
+		28DE794F26D3C2D500A58707 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE794C26D3C2C800A58707 /* XCRemoteSwiftPackageReference "quick" */;
+			productName = Quick;
+		};
+		28DE795226D3C40A00A58707 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		28DE795426D3C40A00A58707 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		28DE795626D3C41C00A58707 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		28DE795826D3C41C00A58707 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		28DE795A26D3C6A700A58707 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		28DE795C26D3C6B000A58707 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2850ECBF26BAC17A005DCC4F /* Project object */;
 }
