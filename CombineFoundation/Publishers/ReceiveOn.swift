@@ -5,6 +5,7 @@
 //  Created by Leon Nguyen on 5/8/21.
 //
 
+import Foundation
 import RxCocoa
 import RxSwift
 #if canImport(Combine)
@@ -30,7 +31,7 @@ extension Publishers {
 
         public init(upstream: Upstream, scheduler: Context, options: Context.CombineSchedulerOptions?) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                     let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.ReceiveOn(upstream: publisher, scheduler: scheduler, options: nil)
                                 .eraseToAnyPublisher()

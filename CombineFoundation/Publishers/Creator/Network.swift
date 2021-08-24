@@ -5,6 +5,7 @@
 //  Created by Leon Nguyen on 11/8/21.
 //
 
+import Foundation
 import RxCocoa
 import RxSwift
 #if canImport(Combine)
@@ -27,7 +28,7 @@ extension URLSession {
 
         public init(request: URLRequest, session: URLSession) {
             #if canImport(Combine)
-            if #available(iOS 14, *) {
+            if #available(iOS 14, macOS 10.15, *) {
                 observable = URLSession.DataTaskPublisher(request: request, session: session)
                     .map { (data: $0.data, response: $0.response as URLResponse) }
                     .eraseToAnyPublisher()

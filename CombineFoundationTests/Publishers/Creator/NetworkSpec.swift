@@ -5,6 +5,7 @@
 //  Created by Leon Nguyen on 11/8/21.
 //
 
+import Foundation
 import Nimble
 import Quick
 #if COMBINE

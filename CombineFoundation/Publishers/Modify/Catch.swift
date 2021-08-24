@@ -33,7 +33,7 @@ extension Publishers {
         ///   - handler: A closure that accepts the upstream failure as input and returns a publisher to replace the upstream publisher.
         public init(upstream: Upstream, handler: @escaping (Upstream.Failure) -> NewPublisher) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Output, Upstream.Failure> {
                 observable = publisher.catch({ (error) -> Combine.AnyPublisher<Output, Failure> in
                     let publisher = handler(error).observable as? Combine.AnyPublisher<Output, Failure>
@@ -74,7 +74,7 @@ extension Publishers {
 
         public init(upstream: Upstream, handler: @escaping (Upstream.Failure) throws -> NewPublisher) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Output, Upstream.Failure> {
                 observable = publisher.tryCatch({ (error) -> Combine.AnyPublisher<Output, NewPublisher.Failure> in
                     let publisher = try handler(error).observable as? Combine.AnyPublisher<Output, NewPublisher.Failure>

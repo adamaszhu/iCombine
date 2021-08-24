@@ -40,7 +40,7 @@ extension Publishers {
             self.upstream = upstream
             self.predicate = predicate
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Failure> {
                 observable = Combine.Publishers.RemoveDuplicates(upstream: publisher, predicate: predicate)
                     .eraseToAnyPublisher()
@@ -82,7 +82,7 @@ extension Publishers {
             self.upstream = upstream
             self.predicate = predicate
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.TryRemoveDuplicates(upstream: publisher, predicate: predicate)
                     .eraseToAnyPublisher()

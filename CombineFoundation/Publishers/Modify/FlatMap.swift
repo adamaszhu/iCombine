@@ -29,7 +29,7 @@ extension Publishers {
                     maxPublishers: Subscribers.Demand,
                     transform: @escaping (Upstream.Output) -> NewPublisher) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Failure> {
                 observable = publisher.flatMap({ (output) -> Combine.AnyPublisher<NewPublisher.Output, Failure> in
                     let publisher = transform(output).observable as? Combine.AnyPublisher<NewPublisher.Output, Failure>

@@ -5,6 +5,7 @@
 //  Created by Adamas Zhu on 15/8/21.
 //
 
+import Foundation
 import RxCocoa
 import RxSwift
 #if canImport(Combine)
@@ -46,7 +47,7 @@ extension Publishers {
         
         public init(upstream: Upstream, decoder: Coder) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 let mappedObserable: Combine.AnyPublisher<Output, Failure> = publisher.tryMap({ value in
                     do {

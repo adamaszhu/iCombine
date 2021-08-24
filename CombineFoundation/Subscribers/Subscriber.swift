@@ -46,7 +46,7 @@ extension Subscriber {
     
     public func receive(completion: Subscribers.Completion<Self.Failure>) {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
            let subscriber = observer as? Combine.AnySubscriber<Input, Failure> {
             subscriber.receive(completion: completion.combineCompletion)
             return

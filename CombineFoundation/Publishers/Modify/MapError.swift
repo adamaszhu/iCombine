@@ -23,7 +23,7 @@ extension Publishers {
         
         public init(upstream: Upstream, transform: @escaping (Upstream.Failure) -> Failure) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                     let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.MapError(upstream: publisher, transform: transform)
                                 .eraseToAnyPublisher()
