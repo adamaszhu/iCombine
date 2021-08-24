@@ -33,7 +33,7 @@ extension Publishers {
         ///   - retries: The maximum number of retry attempts to perform. If `nil`, this publisher attempts to reconnect with the upstream publisher an unlimited number of times.
         public init(upstream: Upstream, retries: Int?) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.Retry(upstream: publisher, retries: retries)
                     .eraseToAnyPublisher()

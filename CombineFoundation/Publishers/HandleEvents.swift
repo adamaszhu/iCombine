@@ -32,7 +32,7 @@ extension Publishers {
                     receiveCompletion: ((Subscribers.Completion<Publishers.HandleEvents<Upstream>.Failure>) -> Void)? = nil,
                     receiveCancel: (() -> Void)? = nil, receiveRequest: ((Subscribers.Demand) -> Void)?) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                     let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers
                 .HandleEvents(upstream: publisher,

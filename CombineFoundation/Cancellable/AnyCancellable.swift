@@ -31,7 +31,7 @@ final public class AnyCancellable : Cancellable, Hashable {
     /// Cancel the activity.
     final public func cancel() {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
            let cancellable = disposable as? Combine.Cancellable {
             cancellable.cancel()
             return

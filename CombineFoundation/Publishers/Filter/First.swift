@@ -28,7 +28,7 @@ extension Publishers {
 
         public init(upstream: Upstream) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Failure> {
                 observable = Combine.Publishers.First(upstream: publisher)
                     .eraseToAnyPublisher()
@@ -58,7 +58,7 @@ extension Publishers {
 
         public init(upstream: Upstream, predicate: @escaping (Publishers.FirstWhere<Upstream>.Output) -> Bool) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Failure> {
                 observable = Combine.Publishers.FirstWhere(upstream: publisher, predicate: predicate)
                     .eraseToAnyPublisher()
@@ -88,7 +88,7 @@ extension Publishers {
 
         public init(upstream: Upstream, predicate: @escaping (Publishers.TryFirstWhere<Upstream>.Output) throws -> Bool) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.TryFirstWhere(upstream: publisher, predicate: predicate)
                     .eraseToAnyPublisher()

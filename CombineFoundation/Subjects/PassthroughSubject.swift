@@ -19,7 +19,7 @@ final public class PassthroughSubject<Output, Failure> : Subject where Failure :
     
     public var observer: Any {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
             let passthoughSubject = self.publishSubject as? Combine.PassthroughSubject<Output, Failure> {
                 return Combine.AnySubscriber(passthoughSubject)
         }
@@ -35,7 +35,7 @@ final public class PassthroughSubject<Output, Failure> : Subject where Failure :
 
     public init() {
         #if canImport(Combine)
-        if #available(iOS 14, *) {
+        if #available(iOS 14, macOS 10.15, *) {
             let passthoughSubject = Combine.PassthroughSubject<Output, Failure>()
             observable = passthoughSubject.eraseToAnyPublisher()
             publishSubject = passthoughSubject
@@ -55,7 +55,7 @@ final public class PassthroughSubject<Output, Failure> : Subject where Failure :
     /// - Parameter value: The value to send.
     final public func send(_ input: Output) {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
                 let passthoughSubject = self.publishSubject as? Combine.PassthroughSubject<Output, Failure> {
             passthoughSubject.send(input)
             return
@@ -71,7 +71,7 @@ final public class PassthroughSubject<Output, Failure> : Subject where Failure :
     /// - Parameter completion: A `Completion` instance which indicates whether publishing has finished normally or failed with an error.
     final public func send(completion: Subscribers.Completion<Failure>) {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
                 let passthoughSubject = self.publishSubject as? Combine.PassthroughSubject<Output, Failure> {
             switch completion {
             case .finished:

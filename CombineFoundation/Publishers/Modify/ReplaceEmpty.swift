@@ -28,7 +28,7 @@ extension Publishers {
 
         public init(upstream: Upstream, output: Publishers.ReplaceEmpty<Upstream>.Output) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Output, Failure> {
                 observable = Combine.Publishers.ReplaceEmpty(upstream: publisher, output: output)
                     .eraseToAnyPublisher()

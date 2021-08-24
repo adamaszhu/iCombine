@@ -25,7 +25,7 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
     final public var value: Output {
         get {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let currentValueSubject = self.behaviourSubject as? Combine.CurrentValueSubject<Output, Failure> {
                     return currentValueSubject.value
             }
@@ -39,7 +39,7 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
         }
         set {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let currentValueSubject = self.behaviourSubject as? Combine.CurrentValueSubject<Output, Failure> {
                     currentValueSubject.value = newValue
                 return
@@ -58,7 +58,7 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
     /// - Parameter value: The initial value to publish.
     public init(_ value: Output) {
         #if canImport(Combine)
-        if #available(iOS 14, *) {
+        if #available(iOS 14, macOS 10.15, *) {
             let currentValueSubject = Combine.CurrentValueSubject<Output, Failure>(value)
             observable = currentValueSubject.eraseToAnyPublisher()
             behaviourSubject = currentValueSubject
@@ -80,7 +80,7 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
     /// - Parameter value: The value to send.
     final public func send(_ input: Output) {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
             let currentValueSubject = self.behaviourSubject as? Combine.CurrentValueSubject<Output, Failure> {
                 return currentValueSubject.send(input)
         }
@@ -97,7 +97,7 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
     /// - Parameter completion: A `Completion` instance which indicates whether publishing has finished normally or failed with an error.
     final public func send(completion: Subscribers.Completion<Failure>) {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
             let currentValueSubject = self.behaviourSubject as? Combine.CurrentValueSubject<Output, Failure> {
                 switch completion {
                 case .finished:

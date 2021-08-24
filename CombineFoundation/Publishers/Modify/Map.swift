@@ -25,8 +25,8 @@ extension Publishers {
 
         public init(upstream: Upstream, transform: @escaping (Upstream.Output) -> Output) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
-                let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Failure> {
+            if #available(iOS 14, macOS 10.15, *),
+               let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Failure> {
                 observable = publisher.map(transform)
                     .eraseToAnyPublisher()
                 return
@@ -57,7 +57,7 @@ extension Publishers {
 
         public init(upstream: Upstream, transform: @escaping (Upstream.Output) throws -> Output) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = publisher.tryMap(transform)
                     .eraseToAnyPublisher()
@@ -102,7 +102,8 @@ extension Publishers.Map {
 
     public func map<T>(_ transform: @escaping (Output) -> T) -> Publishers.Map<Upstream, T> {
         #if canImport(Combine)
-        if #available(iOS 14, *), let publisher = self.observable as? Combine.AnyPublisher<Output, Failure> {
+        if #available(iOS 14, macOS 10.15, *),
+           let publisher = self.observable as? Combine.AnyPublisher<Output, Failure> {
             let newPublisher = publisher.map(transform).eraseToAnyPublisher()
             return Publishers.Map(observable: newPublisher)
         }
@@ -117,7 +118,8 @@ extension Publishers.Map {
 
     public func tryMap<T>(_ transform: @escaping (Output) throws -> T) -> Publishers.TryMap<Upstream, T> {
         #if canImport(Combine)
-        if #available(iOS 14, *), let publisher = self.observable as? Combine.AnyPublisher<Output, Failure> {
+        if #available(iOS 14, macOS 10.15, *),
+           let publisher = self.observable as? Combine.AnyPublisher<Output, Failure> {
             let newPublisher = publisher.tryMap(transform).eraseToAnyPublisher()
             return Publishers.TryMap(observable: newPublisher)
         }
@@ -135,7 +137,8 @@ extension Publishers.TryMap {
 
     public func map<T>(_ transform: @escaping (Output) -> T) -> Publishers.TryMap<Upstream, T> {
         #if canImport(Combine)
-        if #available(iOS 14, *), let publisher = self.observable as? Combine.AnyPublisher<Output, Failure> {
+        if #available(iOS 14, macOS 10.15, *),
+           let publisher = self.observable as? Combine.AnyPublisher<Output, Failure> {
             let newPublisher = publisher.tryMap(transform).eraseToAnyPublisher()
             return Publishers.TryMap(observable: newPublisher)
         }
@@ -150,7 +153,8 @@ extension Publishers.TryMap {
 
     public func tryMap<T>(_ transform: @escaping (Output) throws -> T) -> Publishers.TryMap<Upstream, T> {
         #if canImport(Combine)
-        if #available(iOS 14, *), let publisher = self.observable as? Combine.AnyPublisher<Output, Failure> {
+        if #available(iOS 14, macOS 10.15, *),
+           let publisher = self.observable as? Combine.AnyPublisher<Output, Failure> {
             let newPublisher = publisher.tryMap(transform).eraseToAnyPublisher()
             return Publishers.TryMap(observable: newPublisher)
         }
