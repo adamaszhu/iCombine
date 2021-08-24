@@ -56,7 +56,7 @@ final public class AnyCancellable : Cancellable, Hashable {
     /// - Parameter hasher: The hasher to use when combining the components
     ///   of this instance.
     final public func hash(into hasher: inout Hasher) {
-        hasher.combine(String(describing: disposable))
+        hasher.combine(ObjectIdentifier(self))
     }
 
     /// Returns a Boolean value indicating whether two values are equal.

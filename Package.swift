@@ -30,6 +30,6 @@ let package = Package(
                            "Nimble",
                            "Quick",
                            .product(name: "RxCocoa", package: "RxSwift")],
-            path: "CombineFoundationTests"),
+            path: "CombineFoundationTests")
     ]
 )

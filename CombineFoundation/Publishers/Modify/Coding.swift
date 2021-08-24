@@ -5,6 +5,7 @@
 //  Created by Adamas Zhu on 15/8/21.
 //
 
+import Foundation
 import RxCocoa
 import RxSwift
 #if canImport(Combine)
