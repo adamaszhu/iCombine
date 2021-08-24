@@ -28,7 +28,7 @@ extension Publishers {
 
         public init(upstream: Upstream, count: Int) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.Drop(upstream: publisher, count: count)
                     .eraseToAnyPublisher()
@@ -63,7 +63,7 @@ extension Publishers {
         ///   - other: A publisher to monitor for its first emitted element.
         public init(upstream: Upstream, other: Other) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure>,
                 let otherPublisher = upstream.observable as? Combine.AnyPublisher<Other.Output, Other.Failure> {
                 observable = Combine.Publishers.DropUntilOutput(upstream: publisher, other: otherPublisher)
@@ -96,7 +96,7 @@ extension Publishers {
 
         public init(upstream: Upstream, predicate: @escaping (Publishers.DropWhile<Upstream>.Output) -> Bool) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.DropWhile(upstream: publisher, predicate: predicate)
                     .eraseToAnyPublisher()
@@ -126,7 +126,7 @@ extension Publishers {
 
         public init(upstream: Upstream, predicate: @escaping (Publishers.TryDropWhile<Upstream>.Output) throws -> Bool) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.TryDropWhile(upstream: publisher, predicate: predicate)
                     .eraseToAnyPublisher()

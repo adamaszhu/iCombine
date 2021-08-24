@@ -5,6 +5,7 @@
 //  Created by Adamas Zhu on 5/8/21.
 //
 
+import Foundation
 import RxCocoa
 import RxSwift
 #if canImport(Combine)
@@ -50,7 +51,7 @@ public extension Publisher {
     
     func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
             let publisher = observable as? Combine.AnyPublisher<Output, Failure>,
             let subscriber = subscriber.observer as? Combine.AnySubscriber<Output, Failure> {
             publisher.subscribe(subscriber)

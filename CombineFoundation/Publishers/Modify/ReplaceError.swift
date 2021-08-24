@@ -28,7 +28,7 @@ extension Publishers {
         
         public init(upstream: Upstream, output: Publishers.ReplaceError<Upstream>.Output) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Output, Upstream.Failure> {
                 observable = Combine.Publishers.ReplaceError(upstream: publisher, output: output)
                     .eraseToAnyPublisher()

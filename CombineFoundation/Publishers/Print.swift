@@ -40,7 +40,7 @@ extension Publishers {
         ///   - prefix: A string with which to prefix all log messages.
         public init(upstream: Upstream, prefix: String, to stream: TextOutputStream? = nil) {
             #if canImport(Combine)
-            if #available(iOS 14, *),
+            if #available(iOS 14, macOS 10.15, *),
                 let publisher = upstream.observable as? Combine.AnyPublisher<Upstream.Output, Upstream.Failure> {
                 observable = Combine.Publishers.Print(upstream: publisher, prefix: prefix, to: stream)
                     .eraseToAnyPublisher()

@@ -31,7 +31,7 @@ final public class AnyCancellable : Cancellable, Hashable {
     /// Cancel the activity.
     final public func cancel() {
         #if canImport(Combine)
-        if #available(iOS 14, *),
+        if #available(iOS 14, macOS 10.15, *),
            let cancellable = disposable as? Combine.Cancellable {
             cancellable.cancel()
             return
@@ -56,7 +56,7 @@ final public class AnyCancellable : Cancellable, Hashable {
     /// - Parameter hasher: The hasher to use when combining the components
     ///   of this instance.
     final public func hash(into hasher: inout Hasher) {
-        hasher.combine(String(describing: disposable))
+        hasher.combine(ObjectIdentifier(self))
     }
 
     /// Returns a Boolean value indicating whether two values are equal.
