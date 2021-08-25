@@ -1,21 +1,21 @@
-# CombineFoundation
+# iCombine
 
 <p align="center">
-<img src="https://github.com/adamaszhu/CombineFoundation/raw/master/Resources/logo.png" width="220">
+<img src="https://github.com/adamaszhu/iCombine/raw/master/Resources/logo.png" width="220">
 <br /><br />
 <img src="https://img.shields.io/badge/platforms-iOS%208.0-333333.svg" />
 </p>
 
-CombineFoundation gives developers the ability to use Combine syntax on iOS below 13. In other word, CombineFoundation makes Combine available on iOS 12 to 8.
+iCombine gives developers the ability to use Combine syntax on iOS below 13. In other word, iCombine makes Combine available on iOS 12 to 8.
 The way that we do this is to create a wrapper around RxSwift to offer Combine syntax.
 
-**Q: What's the benefit of CombineFoundation?**
+**Q: What's the benefit of iCombine?**
 
-**A**: Developers can write Combine code now for their applications to support all the iOS from 15 to 8 and when the time is right, they can do a global find and replace to replace all the `import CombineFoundation` by `import Combine` and everything will just work.
+**A**: Developers can write Combine code now for their applications to support all the iOS from 15 to 8 and when the time is right, they can do a global find and replace to replace all the `import iCombine` by `import Combine` and everything will just work.
 
 ## How to use
 ```swift
-import CombineFoundation
+import iCombine
 
 let subscriber = Subscribers.Sink<Int, Never>(
     receiveCompletion: { completion in
@@ -29,9 +29,9 @@ Publishers
 ```
 
 ## Snippet
-To bridge CombineFoundation with ReactiveSwift, please use this snippet [CombineFoundation+Convertable.swift](Snippet/CombineFoundation+Convertable.swift)
+To bridge iCombine with ReactiveSwift, please use this snippet [iCombine+Convertable.swift](Snippet/iCombine+Convertable.swift)
 
-For ReactiveSwift 5.x please use this snippet [CombineFoundation+ReactiveSwift5.swift](Snippet/CombineFoundation+ReactiveSwift5.swift)
+For ReactiveSwift 5.x please use this snippet [iCombine+ReactiveSwift5.swift](Snippet/iCombine+ReactiveSwift5.swift)
 
 ## WIP
 

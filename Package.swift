@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "CombineFoundation",
+    name: "iCombine",
     products: [
         .library(
-            name: "CombineFoundation",
-            targets: ["CombineFoundation"]),
+            name: "iCombine",
+            targets: ["iCombine"]),
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .upToNextMajor(from: "5.0.0")),
@@ -19,17 +19,17 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "CombineFoundation",
+            name: "iCombine",
             dependencies: ["RxSwift",
                            .product(name: "RxCocoa", package: "RxSwift")],
-            path: "CombineFoundation"),
+            path: "iCombine"),
         .testTarget(
-            name: "CombineFoundationTests",
-            dependencies: ["CombineFoundation",
+            name: "iCombineTests",
+            dependencies: ["iCombine",
                            "RxSwift",
                            "Nimble",
                            "Quick",
                            .product(name: "RxCocoa", package: "RxSwift")],
-            path: "CombineFoundationTests")
+            path: "iCombineTests")
     ]
 )
