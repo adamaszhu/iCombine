@@ -1,0 +1,18 @@
+#!/bin/bash
+
+NEW_RELEASE=$1
+
+if [[ -z $NEW_RELEASE ]]; then
+echo "The new version number should be passed in as the first parameter"
+exit 0
+fi
+
+NEW_BRANCH="release/$NEW_RELEASE"
+
+git branch $NEW_BRANCH
+git checkout $NEW_BRANCH
+
+git checkout "master"
+git merge --no-ff $NEW_BRANCH
+git tag $NEW_RELEASE
+git branch -d $NEW_BRANCH
