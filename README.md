@@ -1,9 +1,14 @@
 # iCombine
 
 <p align="center">
-<img src="https://github.com/adamaszhu/iCombine/raw/master/Resources/logo.png" width="220">
+<img src="Resources/logo.png" width="220">
 <br /><br />
-<img src="https://img.shields.io/badge/platforms-iOS%208.0-333333.svg" />
+<!-- https://img.shields.io/badge/cocoapods-iOS%208.0+%20%7C%20macOS-9a9a9a.svg -->
+<img src="Resources/platforms.svg" />
+<!-- https://img.shields.io/badge/pod-v0.3.0-3a7db8.svg -->
+<img src="Resources/pod.svg" />
+<!-- https://img.shields.io/badge/swift%20package%20manager-v0.3.0-72c147.svg -->
+<img src="Resources/spm.svg" />
 </p>
 
 iCombine gives developers the ability to use Combine syntax on iOS below 13. In other word, iCombine makes Combine available on iOS 12 to 8.
@@ -12,6 +17,15 @@ The way that we do this is to create a wrapper around RxSwift to offer Combine s
 **Q: What's the benefit of iCombine?**
 
 **A**: Developers can write Combine code now for their applications to support all the iOS from 15 to 8 and when the time is right, they can do a global find and replace to replace all the `import iCombine` by `import Combine` and everything will just work.
+
+## Install
+### Cocoapods
+Include follow pod line in the `Podfile`
+
+`pod iCombine`
+
+### Swift package manager
+Add a `Package Dependency` using the current Github URL
 
 ## How to use
 ```swift
