@@ -22,6 +22,7 @@ git checkout $NEW_BRANCH
 echo ""
 
 echo "Update Jazzy documentation"
+echo "Generating documents ..."
 sh $JAZZY_SCRIPT_PATH > /dev/null 2>&1
 git add --all
 git commit -m "Update documentations"
@@ -36,18 +37,18 @@ echo ""
 echo "Tag the release on master"
 git checkout master
 git merge --no-ff -m $RELEASE_MESSAGE $NEW_BRANCH
-git push
+git push > /dev/null 2>&1
 git tag $NEW_RELEASE
 git push --tags
 echo ""
 
 echo "Release to Cocoapods"
-#pod trunk push $POD_SPEC_PATH
+pod trunk push $POD_SPEC_PATH
 echo ""
 
 echo "Clean up"
 git checkout develop
 git merge --no-ff --no-edit $NEW_BRANCH
-git push
+git push > /dev/null 2>&1
 git branch -d $NEW_BRANCH
 echo ""
