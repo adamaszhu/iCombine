@@ -16,7 +16,7 @@ git checkout $NEW_BRANCH
 echo ""
 
 echo "Update Jazzy documentation"
-sh JAZZY_SCRIPT_PATH
+sh $JAZZY_SCRIPT_PATH
 git add --all
 git commit -m "Update documentations"
 echo ""
@@ -28,7 +28,7 @@ git commit -m "Raise the version"
 echo ""
 
 echo "Tag the release on master"
-git checkout "master"
+git checkout master
 git merge --no-ff $NEW_BRANCH
 git tag $NEW_RELEASE
 git push --follow-tags
