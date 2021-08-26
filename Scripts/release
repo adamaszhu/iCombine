@@ -1,10 +1,16 @@
 #!/bin/bash
 
 NEW_RELEASE=$1
+RELEASE_MESSAGE=$2
 JAZZY_SCRIPT_PATH="Scripts/generate-doc"
 
 if [[ -z $NEW_RELEASE ]]; then
   echo "The new version number should be passed in as the first parameter"
+  exit 0
+fi
+
+if [[ -z $RELEASE_MESSAGE ]]; then
+  echo "A release message should be passed in as the second parameter"
   exit 0
 fi
 
@@ -29,7 +35,7 @@ echo ""
 
 echo "Tag the release on master"
 git checkout master
-git merge --no-ff $NEW_BRANCH
+git merge --no-ff -m $RELEASE_MESSAGE $NEW_BRANCH
 git push
 git tag $NEW_RELEASE
 git push --tags
