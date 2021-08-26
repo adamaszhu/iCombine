@@ -41,7 +41,7 @@ echo ""
 
 echo "Clean up"
 git checkout develop
-git merge --no-ff $NEW_BRANCH
+git merge --no-ff --no-edit $NEW_BRANCH
 git push
 git branch -d $NEW_BRANCH
 echo ""
