@@ -29,10 +29,11 @@ echo "Tag the release on master"
 git checkout "master"
 git merge --no-ff $NEW_BRANCH
 git tag $NEW_RELEASE
+git push --follow-tags
 echo ""
 
 echo "Release to Cocoapods"
-# pod trunk push $POD_SPEC_PATH
+pod trunk push $POD_SPEC_PATH
 echo ""
 
 echo "Clean up"
