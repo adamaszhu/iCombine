@@ -1,10 +1,16 @@
 #!/bin/bash
 
 NEW_RELEASE=$1
+RELEASE_MESSAGE=$2
 JAZZY_SCRIPT_PATH="Scripts/generate-doc"
 
 if [[ -z $NEW_RELEASE ]]; then
   echo "The new version number should be passed in as the first parameter"
+  exit 0
+fi
+
+if [[ -z $RELEASE_MESSAGE ]]; then
+  echo "A release message should be passed in as the second parameter"
   exit 0
 fi
 
@@ -16,7 +22,8 @@ git checkout $NEW_BRANCH
 echo ""
 
 echo "Update Jazzy documentation"
-sh $JAZZY_SCRIPT_PATH
+echo "Generating documents ..."
+sh $JAZZY_SCRIPT_PATH > /dev/null 2>&1
 git add --all
 git commit -m "Update documentations"
 echo ""
@@ -29,7 +36,7 @@ echo ""
 
 echo "Tag the release on master"
 git checkout master
-git merge --no-ff $NEW_BRANCH
+git merge --no-ff $NEW_BRANCH -m "$RELEASE_MESSAGE"
 git push
 git tag $NEW_RELEASE
 git push --tags
@@ -41,7 +48,7 @@ echo ""
 
 echo "Clean up"
 git checkout develop
-git merge --no-ff $NEW_BRANCH
+git merge --no-ff --no-edit $NEW_BRANCH
 git push
 git branch -d $NEW_BRANCH
 echo ""
