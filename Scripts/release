@@ -30,8 +30,8 @@ echo ""
 echo "Tag the release on master"
 git checkout master
 git merge --no-ff $NEW_BRANCH
-git tag $NEW_RELEASE
 git push
+git tag $NEW_RELEASE
 git push --tags
 echo ""
 
@@ -40,5 +40,8 @@ pod trunk push $POD_SPEC_PATH
 echo ""
 
 echo "Clean up"
+git checkout develop
+git merge --no-ff $NEW_BRANCH
+git push
 git branch -d $NEW_BRANCH
 echo ""
