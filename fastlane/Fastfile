@@ -1,0 +1,32 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  project_path = "iCombine.xcodeproj"
+  pod_path = "iCombine.podspec"
+
+  before_all do
+    ENV['FL_VERSION_NUMBER_PROJECT'] = project_path
+  end
+
+  desc "Set the version"
+  lane :set_version do |options|
+    version_bump_podspec(path: pod_path, version_number: options[:version])
+    increment_version_number(version_number: options[:version])
+  end
+end
