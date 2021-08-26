@@ -5,7 +5,7 @@ s.ios.deployment_target = '8.0'
 s.name = "iCombine"
 s.summary = "iCombine allows a project to use Combine syntax before iOS 13."
 s.requires_arc = true
-s.version = "0.3.2"
+s.version = "0.3.3"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Adamas Zhu" => "developer@adamaszhu.com",
 "Leon Nguyen" => "leon.nguyen291@gmail.com" }
