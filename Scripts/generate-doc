@@ -1,10 +1,10 @@
-cd ..
+#!/bin/bash
 
 if ! gem spec jazzy > /dev/null 2>&1; then
   sudo gem install jazzy
 fi
 
-jazzy --build-tool-arguments -workspace,CombineFoundation.xcworkspace,-scheme,CombineFoundation
+jazzy --build-tool-arguments -workspace,iCombine.xcworkspace,-scheme,iCombine
 
 rm -rf build
 

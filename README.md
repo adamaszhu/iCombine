@@ -42,6 +42,9 @@ Publishers
       .receive(subscriber: subscriber)
 ```
 
+## Documentation
+[Combine Interfaces](https://adamaszhu.github.io/iCombine/)
+
 ## Snippet
 To bridge iCombine with ReactiveSwift, please use this snippet [iCombine+Convertable.swift](Snippet/iCombine+Convertable.swift)
 
