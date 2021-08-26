@@ -36,8 +36,8 @@ echo ""
 
 echo "Tag the release on master"
 git checkout master
-git merge --no-ff $NEW_BRANCH -m $RELEASE_MESSAGE
-git push > /dev/null 2>&1
+git merge --no-ff $NEW_BRANCH -m "$RELEASE_MESSAGE"
+git push
 git tag $NEW_RELEASE
 git push --tags
 echo ""
@@ -49,6 +49,6 @@ echo ""
 echo "Clean up"
 git checkout develop
 git merge --no-ff --no-edit $NEW_BRANCH
-git push > /dev/null 2>&1
+git push
 git branch -d $NEW_BRANCH
 echo ""
