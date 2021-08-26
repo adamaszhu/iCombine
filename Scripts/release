@@ -22,7 +22,7 @@ git checkout $NEW_BRANCH
 echo ""
 
 echo "Update Jazzy documentation"
-sh $JAZZY_SCRIPT_PATH
+sh $JAZZY_SCRIPT_PATH > /dev/null 2>&1
 git add --all
 git commit -m "Update documentations"
 echo ""
@@ -42,7 +42,7 @@ git push --tags
 echo ""
 
 echo "Release to Cocoapods"
-pod trunk push $POD_SPEC_PATH
+#pod trunk push $POD_SPEC_PATH
 echo ""
 
 echo "Clean up"
