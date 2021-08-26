@@ -1,18 +1,40 @@
 #!/bin/bash
 
 NEW_RELEASE=$1
+JAZZY_SCRIPT_PATH="Scripts/generate-doc"
 
 if [[ -z $NEW_RELEASE ]]; then
-echo "The new version number should be passed in as the first parameter"
-exit 0
+  echo "The new version number should be passed in as the first parameter"
+  exit 0
 fi
 
 NEW_BRANCH="release/$NEW_RELEASE"
 
+echo "Create the release branch"
 git branch $NEW_BRANCH
 git checkout $NEW_BRANCH
+echo ""
 
+echo "Update Jazzy documentation"
+sh JAZZY_SCRIPT_PATH
+git commit -m "Update documentations"
+echo ""
+
+echo "Raise the version"
+bundle exec fastlane set_version version:$NEW_RELEASE
+git commit -m "Raise the version"
+echo ""
+
+echo "Tag the release on master"
 git checkout "master"
 git merge --no-ff $NEW_BRANCH
 git tag $NEW_RELEASE
+echo ""
+
+echo "Release to Cocoapods"
+# pod trunk push $POD_SPEC_PATH
+echo ""
+
+echo "Clean up"
 git branch -d $NEW_BRANCH
+echo ""
