@@ -17,11 +17,13 @@ echo ""
 
 echo "Update Jazzy documentation"
 sh JAZZY_SCRIPT_PATH
+git add --all
 git commit -m "Update documentations"
 echo ""
 
 echo "Raise the version"
 bundle exec fastlane set_version version:$NEW_RELEASE
+git add --all
 git commit -m "Raise the version"
 echo ""
 
