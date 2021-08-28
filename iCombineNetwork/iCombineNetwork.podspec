@@ -12,7 +12,7 @@ s.author = { "Adamas Zhu" => "developer@adamaszhu.com",
 s.homepage = "https://github.com/adamaszhu/iCombine"
 s.source = { :git => "https://github.com/adamaszhu/iCombine.git",
 :tag => "#{s.version}" }
-s.source_files = "iCombine/**/*.{swift}"
+s.source_files = "iCombineNetwork/**/*.{swift}"
 s.swift_version = "5"
 
 s.framework = "Foundation"
