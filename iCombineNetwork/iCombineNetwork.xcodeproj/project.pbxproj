@@ -12,6 +12,21 @@
 		3549E6E32374E01800EA21C9 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549E6E22374E01800EA21C9 /* RequestMethod.swift */; };
 		784417DCFD94A56C2914E548 /* libPods-iCombineNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB053CE1142720D98E2A76 /* libPods-iCombineNetwork.a */; };
 		89CD10A026DA70F100605C63 /* iCombineNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD109F26DA70F100605C63 /* iCombineNetworkTests.swift */; };
+		89CD10A626DA72DE00605C63 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10A226DA72DE00605C63 /* ResponseHandler.swift */; };
+		89CD10A726DA72DE00605C63 /* NetworkConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10A326DA72DE00605C63 /* NetworkConnectionManager.swift */; };
+		89CD10A826DA72DE00605C63 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10A426DA72DE00605C63 /* HTTPClient.swift */; };
+		89CD10A926DA72DE00605C63 /* HTTPClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10A526DA72DE00605C63 /* HTTPClientType.swift */; };
+		89CD10AB26DA730300605C63 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10AA26DA730300605C63 /* RequestBody.swift */; };
+		89CD10B126DA731500605C63 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10AD26DA731500605C63 /* ServerError.swift */; };
+		89CD10B226DA731500605C63 /* BusinessError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10AE26DA731500605C63 /* BusinessError.swift */; };
+		89CD10B326DA731500605C63 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10AF26DA731500605C63 /* HTTPError.swift */; };
+		89CD10B426DA731500605C63 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10B026DA731500605C63 /* NetworkError.swift */; };
+		89CD10B626DA732A00605C63 /* RequestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10B526DA732A00605C63 /* RequestHeader.swift */; };
+		89CD10B826DA733500605C63 /* URLParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10B726DA733500605C63 /* URLParameters.swift */; };
+		89CD10BA26DA734600605C63 /* RequestBodyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10B926DA734600605C63 /* RequestBodyType.swift */; };
+		89CD10BF26DA736000605C63 /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10BC26DA736000605C63 /* String+Constants.swift */; };
+		89CD10C026DA736000605C63 /* Dictionary+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10BD26DA736000605C63 /* Dictionary+Formatter.swift */; };
+		89CD10C126DA736000605C63 /* URL+Mutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD10BE26DA736000605C63 /* URL+Mutable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +51,21 @@
 		587FE5C6A29AE472B97A04BC /* Pods-iCombineNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineNetwork.debug.xcconfig"; path = "Target Support Files/Pods-iCombineNetwork/Pods-iCombineNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		5F92EC4CE08AC382A0614B0B /* Pods-CombineNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineNetwork.release.xcconfig"; path = "Target Support Files/Pods-CombineNetwork/Pods-CombineNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		89CD109F26DA70F100605C63 /* iCombineNetworkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCombineNetworkTests.swift; sourceTree = "<group>"; };
+		89CD10A226DA72DE00605C63 /* ResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		89CD10A326DA72DE00605C63 /* NetworkConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnectionManager.swift; sourceTree = "<group>"; };
+		89CD10A426DA72DE00605C63 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		89CD10A526DA72DE00605C63 /* HTTPClientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientType.swift; sourceTree = "<group>"; };
+		89CD10AA26DA730300605C63 /* RequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
+		89CD10AD26DA731500605C63 /* ServerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		89CD10AE26DA731500605C63 /* BusinessError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessError.swift; sourceTree = "<group>"; };
+		89CD10AF26DA731500605C63 /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		89CD10B026DA731500605C63 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		89CD10B526DA732A00605C63 /* RequestHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHeader.swift; sourceTree = "<group>"; };
+		89CD10B726DA733500605C63 /* URLParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameters.swift; sourceTree = "<group>"; };
+		89CD10B926DA734600605C63 /* RequestBodyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBodyType.swift; sourceTree = "<group>"; };
+		89CD10BC26DA736000605C63 /* String+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
+		89CD10BD26DA736000605C63 /* Dictionary+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Formatter.swift"; sourceTree = "<group>"; };
+		89CD10BE26DA736000605C63 /* URL+Mutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Mutable.swift"; sourceTree = "<group>"; };
 		E161EAF4A912B311359AE78A /* Pods-iCombineNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineNetwork.release.xcconfig"; path = "Target Support Files/Pods-iCombineNetwork/Pods-iCombineNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +112,9 @@
 		3549E6C92374DFB300EA21C9 /* iCombineNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				89CD10BB26DA736000605C63 /* Utilities */,
+				89CD10AC26DA731500605C63 /* Errors */,
+				89CD10A126DA72DE00605C63 /* Client */,
 				3549E6CA2374DFB300EA21C9 /* iCombineNetwork.h */,
 				3549E6CB2374DFB300EA21C9 /* Info.plist */,
 				3549E6E12374DFE200EA21C9 /* Request */,
@@ -101,6 +134,10 @@
 		3549E6E12374DFE200EA21C9 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				89CD10B926DA734600605C63 /* RequestBodyType.swift */,
+				89CD10B726DA733500605C63 /* URLParameters.swift */,
+				89CD10B526DA732A00605C63 /* RequestHeader.swift */,
+				89CD10AA26DA730300605C63 /* RequestBody.swift */,
 				3549E6E22374E01800EA21C9 /* RequestMethod.swift */,
 			);
 			path = Request;
@@ -115,6 +152,38 @@
 				E161EAF4A912B311359AE78A /* Pods-iCombineNetwork.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		89CD10A126DA72DE00605C63 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				89CD10A226DA72DE00605C63 /* ResponseHandler.swift */,
+				89CD10A326DA72DE00605C63 /* NetworkConnectionManager.swift */,
+				89CD10A426DA72DE00605C63 /* HTTPClient.swift */,
+				89CD10A526DA72DE00605C63 /* HTTPClientType.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		89CD10AC26DA731500605C63 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				89CD10AD26DA731500605C63 /* ServerError.swift */,
+				89CD10AE26DA731500605C63 /* BusinessError.swift */,
+				89CD10AF26DA731500605C63 /* HTTPError.swift */,
+				89CD10B026DA731500605C63 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		89CD10BB26DA736000605C63 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				89CD10BC26DA736000605C63 /* String+Constants.swift */,
+				89CD10BD26DA736000605C63 /* Dictionary+Formatter.swift */,
+				89CD10BE26DA736000605C63 /* URL+Mutable.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		FB2D93A43DE0F94A8CABCCC7 /* Frameworks */ = {
@@ -261,7 +330,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CD10A726DA72DE00605C63 /* NetworkConnectionManager.swift in Sources */,
+				89CD10B826DA733500605C63 /* URLParameters.swift in Sources */,
+				89CD10B326DA731500605C63 /* HTTPError.swift in Sources */,
+				89CD10C026DA736000605C63 /* Dictionary+Formatter.swift in Sources */,
+				89CD10C126DA736000605C63 /* URL+Mutable.swift in Sources */,
+				89CD10A926DA72DE00605C63 /* HTTPClientType.swift in Sources */,
 				3549E6E32374E01800EA21C9 /* RequestMethod.swift in Sources */,
+				89CD10A826DA72DE00605C63 /* HTTPClient.swift in Sources */,
+				89CD10B226DA731500605C63 /* BusinessError.swift in Sources */,
+				89CD10B626DA732A00605C63 /* RequestHeader.swift in Sources */,
+				89CD10A626DA72DE00605C63 /* ResponseHandler.swift in Sources */,
+				89CD10AB26DA730300605C63 /* RequestBody.swift in Sources */,
+				89CD10BF26DA736000605C63 /* String+Constants.swift in Sources */,
+				89CD10B126DA731500605C63 /* ServerError.swift in Sources */,
+				89CD10B426DA731500605C63 /* NetworkError.swift in Sources */,
+				89CD10BA26DA734600605C63 /* RequestBodyType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
