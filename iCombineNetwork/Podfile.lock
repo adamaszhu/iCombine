@@ -1,0 +1,30 @@
+PODS:
+  - iCombine (0.3.5):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+
+DEPENDENCIES:
+  - iCombine (~> 0.3.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - iCombine
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  iCombine: 2f332a5047d9b666d9165a220ddca2bb089d38f2
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+
+PODFILE CHECKSUM: 316141c118fea921dade3761fefa6b89238c1857
+
+COCOAPODS: 1.9.3
