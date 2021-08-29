@@ -29,6 +29,9 @@
 		892C989126DBBB80000883B4 /* PublisherErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C988E26DBBB80000883B4 /* PublisherErrorSpec.swift */; };
 		892C989226DBBB80000883B4 /* PublisherNilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C988F26DBBB80000883B4 /* PublisherNilSpec.swift */; };
 		892C989326DBBB80000883B4 /* PublisherNilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C988F26DBBB80000883B4 /* PublisherNilSpec.swift */; };
+		892C989626DBBC27000883B4 /* Operator+Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C989526DBBC27000883B4 /* Operator+Cancellable.swift */; };
+		892C989926DBBC33000883B4 /* OperatorCancellableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C989826DBBC33000883B4 /* OperatorCancellableSpec.swift */; };
+		892C989A26DBBC33000883B4 /* OperatorCancellableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C989826DBBC33000883B4 /* OperatorCancellableSpec.swift */; };
 		B03AB2A66559E3B06B099194 /* libPods-iCombineUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E69FB568BE75BBF7D1F06E /* libPods-iCombineUtility.a */; };
 		C21EB198B487A6952C9228A0 /* libPods-iCombineUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E1C3B319B86675709F78E /* libPods-iCombineUtilityTests.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,8 @@
 		892C988A26DBBB60000883B4 /* Publisher+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Error.swift"; sourceTree = "<group>"; };
 		892C988E26DBBB80000883B4 /* PublisherErrorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherErrorSpec.swift; sourceTree = "<group>"; };
 		892C988F26DBBB80000883B4 /* PublisherNilSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherNilSpec.swift; sourceTree = "<group>"; };
+		892C989526DBBC27000883B4 /* Operator+Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Operator+Cancellable.swift"; sourceTree = "<group>"; };
+		892C989826DBBC33000883B4 /* OperatorCancellableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorCancellableSpec.swift; sourceTree = "<group>"; };
 		A1882C7D544CB5BB8047B835 /* Pods-iCombineUtility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineUtility.debug.xcconfig"; path = "Target Support Files/Pods-iCombineUtility/Pods-iCombineUtility.debug.xcconfig"; sourceTree = "<group>"; };
 		A55E1C3B319B86675709F78E /* libPods-iCombineUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iCombineUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A75748EBEA02B86ABB9416 /* Pods-iCombineUtility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineUtility.release.xcconfig"; path = "Target Support Files/Pods-iCombineUtility/Pods-iCombineUtility.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +154,7 @@
 		4224CB9323A1D08300F87932 /* iCombineUtility */ = {
 			isa = PBXGroup;
 			children = (
+				892C989426DBBC27000883B4 /* Operator */,
 				892C988826DBBB60000883B4 /* Transform */,
 				892C988126DBBA9A000883B4 /* Constants */,
 				424F758523A1D2CD001106CC /* Spec */,
@@ -161,6 +167,7 @@
 		4224CB9E23A1D08300F87932 /* CombineUtilityTests */ = {
 			isa = PBXGroup;
 			children = (
+				892C989726DBBC33000883B4 /* Operator */,
 				892C988D26DBBB80000883B4 /* Transform */,
 				892C988426DBBAAA000883B4 /* Constants */,
 				892C987D26DBB9CC000883B4 /* Spec */,
@@ -247,6 +254,22 @@
 				892C988F26DBBB80000883B4 /* PublisherNilSpec.swift */,
 			);
 			path = Transform;
+			sourceTree = "<group>";
+		};
+		892C989426DBBC27000883B4 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				892C989526DBBC27000883B4 /* Operator+Cancellable.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		892C989726DBBC33000883B4 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				892C989826DBBC33000883B4 /* OperatorCancellableSpec.swift */,
+			);
+			path = Operator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +486,7 @@
 			files = (
 				424F758923A1D2CD001106CC /* Publisher+Testable.swift in Sources */,
 				892C988326DBBA9A000883B4 /* Publisher+Constants.swift in Sources */,
+				892C989626DBBC27000883B4 /* Operator+Cancellable.swift in Sources */,
 				892C988B26DBBB60000883B4 /* Publisher+Nil.swift in Sources */,
 				424F758823A1D2CD001106CC /* PublisherResult.swift in Sources */,
 				892C988C26DBBB60000883B4 /* Publisher+Error.swift in Sources */,
@@ -478,6 +502,7 @@
 				892C989226DBBB80000883B4 /* PublisherNilSpec.swift in Sources */,
 				892C989026DBBB80000883B4 /* PublisherErrorSpec.swift in Sources */,
 				892C987A26DBB935000883B4 /* OtherError.swift in Sources */,
+				892C989926DBBC33000883B4 /* OperatorCancellableSpec.swift in Sources */,
 				892C988626DBBAAA000883B4 /* PublisherConstantsSpec.swift in Sources */,
 				892C987F26DBB9CC000883B4 /* PublisherTestableSpec.swift in Sources */,
 			);
@@ -489,6 +514,7 @@
 			files = (
 				892C988026DBB9CC000883B4 /* PublisherTestableSpec.swift in Sources */,
 				892C988726DBBAAA000883B4 /* PublisherConstantsSpec.swift in Sources */,
+				892C989A26DBBC33000883B4 /* OperatorCancellableSpec.swift in Sources */,
 				892C987B26DBB94A000883B4 /* SomeError.swift in Sources */,
 				892C989126DBBB80000883B4 /* PublisherErrorSpec.swift in Sources */,
 				892C987C26DBB94D000883B4 /* OtherError.swift in Sources */,
