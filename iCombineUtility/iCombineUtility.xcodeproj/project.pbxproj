@@ -14,6 +14,12 @@
 		424F758923A1D2CD001106CC /* Publisher+Testable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F758723A1D2CD001106CC /* Publisher+Testable.swift */; };
 		869483800C5DC2B3122FD03D /* libPods-CombineUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054531E4C0C65ADCA3A93543 /* libPods-CombineUtilityTests.a */; };
 		892C987526DBB770000883B4 /* CombineUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987426DBB770000883B4 /* CombineUtilityTests.swift */; };
+		892C987926DBB935000883B4 /* SomeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987726DBB935000883B4 /* SomeError.swift */; };
+		892C987A26DBB935000883B4 /* OtherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987826DBB935000883B4 /* OtherError.swift */; };
+		892C987B26DBB94A000883B4 /* SomeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987726DBB935000883B4 /* SomeError.swift */; };
+		892C987C26DBB94D000883B4 /* OtherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987826DBB935000883B4 /* OtherError.swift */; };
+		892C987F26DBB9CC000883B4 /* PublisherTestableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987E26DBB9CC000883B4 /* PublisherTestableSpec.swift */; };
+		892C988026DBB9CC000883B4 /* PublisherTestableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987E26DBB9CC000883B4 /* PublisherTestableSpec.swift */; };
 		B03AB2A66559E3B06B099194 /* libPods-iCombineUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E69FB568BE75BBF7D1F06E /* libPods-iCombineUtility.a */; };
 		C21EB198B487A6952C9228A0 /* libPods-iCombineUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E1C3B319B86675709F78E /* libPods-iCombineUtilityTests.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +56,9 @@
 		424F758723A1D2CD001106CC /* Publisher+Testable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Testable.swift"; sourceTree = "<group>"; };
 		72E69FB568BE75BBF7D1F06E /* libPods-iCombineUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iCombineUtility.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		892C987426DBB770000883B4 /* CombineUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineUtilityTests.swift; sourceTree = "<group>"; };
+		892C987726DBB935000883B4 /* SomeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeError.swift; sourceTree = "<group>"; };
+		892C987826DBB935000883B4 /* OtherError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherError.swift; sourceTree = "<group>"; };
+		892C987E26DBB9CC000883B4 /* PublisherTestableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherTestableSpec.swift; sourceTree = "<group>"; };
 		A1882C7D544CB5BB8047B835 /* Pods-iCombineUtility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineUtility.debug.xcconfig"; path = "Target Support Files/Pods-iCombineUtility/Pods-iCombineUtility.debug.xcconfig"; sourceTree = "<group>"; };
 		A55E1C3B319B86675709F78E /* libPods-iCombineUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iCombineUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A75748EBEA02B86ABB9416 /* Pods-iCombineUtility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineUtility.release.xcconfig"; path = "Target Support Files/Pods-iCombineUtility/Pods-iCombineUtility.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +144,8 @@
 		4224CB9E23A1D08300F87932 /* CombineUtilityTests */ = {
 			isa = PBXGroup;
 			children = (
+				892C987D26DBB9CC000883B4 /* Spec */,
+				892C987626DBB935000883B4 /* Mocker */,
 				4224CBA123A1D08300F87932 /* Info.plist */,
 				892C987426DBB770000883B4 /* CombineUtilityTests.swift */,
 			);
@@ -166,6 +177,23 @@
 				A55E1C3B319B86675709F78E /* libPods-iCombineUtilityTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		892C987626DBB935000883B4 /* Mocker */ = {
+			isa = PBXGroup;
+			children = (
+				892C987726DBB935000883B4 /* SomeError.swift */,
+				892C987826DBB935000883B4 /* OtherError.swift */,
+			);
+			path = Mocker;
+			sourceTree = "<group>";
+		};
+		892C987D26DBB9CC000883B4 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				892C987E26DBB9CC000883B4 /* PublisherTestableSpec.swift */,
+			);
+			path = Spec;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,7 +417,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892C987926DBB935000883B4 /* SomeError.swift in Sources */,
 				892C987526DBB770000883B4 /* CombineUtilityTests.swift in Sources */,
+				892C987A26DBB935000883B4 /* OtherError.swift in Sources */,
+				892C987F26DBB9CC000883B4 /* PublisherTestableSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +428,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892C988026DBB9CC000883B4 /* PublisherTestableSpec.swift in Sources */,
+				892C987B26DBB94A000883B4 /* SomeError.swift in Sources */,
+				892C987C26DBB94D000883B4 /* OtherError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

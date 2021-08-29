@@ -34,6 +34,20 @@
                ReferencedContainer = "container:iCombineUtility.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4224CBB023A1D0EA00F87932"
+               BuildableName = "iCombineUtilityTests.xctest"
+               BlueprintName = "iCombineUtilityTests"
+               ReferencedContainer = "container:iCombineUtility.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "4224CB9923A1D08300F87932"
                BuildableName = "CombineUtilityTests.xctest"
                BlueprintName = "CombineUtilityTests"
+               ReferencedContainer = "container:iCombineUtility.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4224CBB023A1D0EA00F87932"
+               BuildableName = "iCombineUtilityTests.xctest"
+               BlueprintName = "iCombineUtilityTests"
                ReferencedContainer = "container:iCombineUtility.xcodeproj">
             </BuildableReference>
          </TestableReference>
