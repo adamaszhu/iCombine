@@ -1,0 +1,38 @@
+PODS:
+  - iCombine (0.3.5):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - Nimble (8.0.4)
+  - Quick (2.2.0)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+
+DEPENDENCIES:
+  - iCombine (~> 0.3.5)
+  - Nimble
+  - Quick
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - iCombine
+    - Nimble
+    - Quick
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  iCombine: 2f332a5047d9b666d9165a220ddca2bb089d38f2
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+
+PODFILE CHECKSUM: 90a7d9357047bb76210135f7f4a917ad64cd5282
+
+COCOAPODS: 1.9.3
