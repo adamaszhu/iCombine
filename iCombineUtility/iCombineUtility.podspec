@@ -5,7 +5,7 @@ s.ios.deployment_target = '8.0'
 s.name = "iCombineUtility"
 s.summary = "iCombineUtility provides additional support to Combine and iCombine."
 s.requires_arc = true
-s.version = "0.0.1"
+s.version = "0.3.5"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Adamas Zhu" => "developer@adamaszhu.com",
 "Leon Nguyen" => "leon.nguyen291@gmail.com" }

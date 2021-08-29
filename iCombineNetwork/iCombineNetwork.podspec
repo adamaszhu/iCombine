@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.platform = :ios
-s.ios.deployment_target = '11.0'
+s.ios.deployment_target = '8.0'
 s.name = "iCombineNetwork"
 s.summary = "iCombineNetwork allows a project to construct the network layer using Combine before iOS 13."
 s.requires_arc = true
