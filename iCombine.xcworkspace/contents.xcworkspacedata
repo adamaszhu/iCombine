@@ -4,4 +4,10 @@
    <FileRef
       location = "group:iCombine/iCombine.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:iCombineNetwork/iCombineNetwork.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iCombineUtility/iCombineUtility.xcodeproj">
+   </FileRef>
 </Workspace>
