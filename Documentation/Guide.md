@@ -6,4 +6,4 @@
 
 ## Auto script
 1. `cd` to the project root folder
-2. run command `sh release {version} {releaseMessage}`
+2. run command `sh Scripts/release {version} {releaseMessage}`
