@@ -1,7 +1,9 @@
 # How to publish a new version
+## Manual steps
 1. Tag code using 0.1.0 (without `v`)
 2. Change the tagged version in the spec file
-3. run command `pod repo push {FrameworkSpecs} {FrameworkSpecsFile}`
+3. run command `pod trunk push {FrameworkSpecsFile}`
 
-# Add the customized spec to your pod env for the first time
-`pod repo add {FrameworkSpecs} {FrameworkSpecsRepoURL}`
+## Auto script
+1. `cd` to the project root folder
+2. run command `sh release {version} {releaseMessage}`

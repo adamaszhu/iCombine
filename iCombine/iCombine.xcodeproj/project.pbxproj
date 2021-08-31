@@ -180,7 +180,6 @@
 		28BAE54626BB4B2600ACBC30 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		28BAE54826BB4BE800ACBC30 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		28DE78D426D2481900A58707 /* AnyCancellableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellableSpec.swift; sourceTree = "<group>"; };
-		28DE795F26D3DAD200A58707 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8913F56F26C00BC30069427E /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		8913F57126C00BEE0069427E /* SequenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSpec.swift; sourceTree = "<group>"; };
 		8913F57326C00E400069427E /* CombineLatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatest.swift; sourceTree = "<group>"; };
@@ -257,7 +256,6 @@
 		2850ECBE26BAC17A005DCC4F = {
 			isa = PBXGroup;
 			children = (
-				28DE795F26D3DAD200A58707 /* Package.swift */,
 				2850ECCA26BAC17A005DCC4F /* iCombine */,
 				2850ECD526BAC17A005DCC4F /* iCombineTests */,
 				2850ECE726BAC21A005DCC4F /* CombineTests */,
