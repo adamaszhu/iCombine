@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		288E8EAC26DE644900B66841 /* iCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 288E8EAB26DE644900B66841 /* iCombine */; };
+		28B9A3EE26DE65F7005FB8E4 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 28B9A3ED26DE65F7005FB8E4 /* Nimble */; };
+		28B9A3F126DE6617005FB8E4 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 28B9A3F026DE6617005FB8E4 /* Quick */; };
 		4224CB9B23A1D08300F87932 /* iCombineUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4224CB9123A1D08300F87932 /* iCombineUtility.framework */; };
 		4224CBA223A1D08300F87932 /* iCombineUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 4224CB9423A1D08300F87932 /* iCombineUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4224CBB623A1D0EA00F87932 /* iCombineUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4224CB9123A1D08300F87932 /* iCombineUtility.framework */; };
 		424F758823A1D2CD001106CC /* PublisherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F758623A1D2CD001106CC /* PublisherResult.swift */; };
 		424F758923A1D2CD001106CC /* Publisher+Testable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F758723A1D2CD001106CC /* Publisher+Testable.swift */; };
-		869483800C5DC2B3122FD03D /* libPods-CombineUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054531E4C0C65ADCA3A93543 /* libPods-CombineUtilityTests.a */; };
 		892C987526DBB770000883B4 /* CombineUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987426DBB770000883B4 /* CombineUtilityTests.swift */; };
 		892C987926DBB935000883B4 /* SomeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987726DBB935000883B4 /* SomeError.swift */; };
 		892C987A26DBB935000883B4 /* OtherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C987826DBB935000883B4 /* OtherError.swift */; };
@@ -35,8 +37,6 @@
 		892C989D26DBBCA4000883B4 /* Publisher+Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C989C26DBBCA4000883B4 /* Publisher+Sink.swift */; };
 		892C98A026DBBCB1000883B4 /* PublisherSinkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C989F26DBBCB1000883B4 /* PublisherSinkSpec.swift */; };
 		892C98A126DBBCB1000883B4 /* PublisherSinkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C989F26DBBCB1000883B4 /* PublisherSinkSpec.swift */; };
-		B03AB2A66559E3B06B099194 /* libPods-iCombineUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E69FB568BE75BBF7D1F06E /* libPods-iCombineUtility.a */; };
-		C21EB198B487A6952C9228A0 /* libPods-iCombineUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E1C3B319B86675709F78E /* libPods-iCombineUtilityTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		054531E4C0C65ADCA3A93543 /* libPods-CombineUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		33372B5D4579DD3279CEB6A9 /* Pods-iCombineUtilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineUtilityTests.debug.xcconfig"; path = "Target Support Files/Pods-iCombineUtilityTests/Pods-iCombineUtilityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		374D23DE20D4D869478F1025 /* Pods-CombineUtilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineUtilityTests.release.xcconfig"; path = "Target Support Files/Pods-CombineUtilityTests/Pods-CombineUtilityTests.release.xcconfig"; sourceTree = "<group>"; };
 		4224CB9123A1D08300F87932 /* iCombineUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCombineUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4224CB9423A1D08300F87932 /* iCombineUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCombineUtility.h; sourceTree = "<group>"; };
 		4224CB9523A1D08300F87932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +66,6 @@
 		4224CBB523A1D0EA00F87932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		424F758623A1D2CD001106CC /* PublisherResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherResult.swift; sourceTree = "<group>"; };
 		424F758723A1D2CD001106CC /* Publisher+Testable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Testable.swift"; sourceTree = "<group>"; };
-		72E69FB568BE75BBF7D1F06E /* libPods-iCombineUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iCombineUtility.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		892C987426DBB770000883B4 /* CombineUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineUtilityTests.swift; sourceTree = "<group>"; };
 		892C987726DBB935000883B4 /* SomeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeError.swift; sourceTree = "<group>"; };
 		892C987826DBB935000883B4 /* OtherError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherError.swift; sourceTree = "<group>"; };
@@ -84,11 +80,6 @@
 		892C989826DBBC33000883B4 /* OperatorCancellableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorCancellableSpec.swift; sourceTree = "<group>"; };
 		892C989C26DBBCA4000883B4 /* Publisher+Sink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Sink.swift"; sourceTree = "<group>"; };
 		892C989F26DBBCB1000883B4 /* PublisherSinkSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherSinkSpec.swift; sourceTree = "<group>"; };
-		A1882C7D544CB5BB8047B835 /* Pods-iCombineUtility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineUtility.debug.xcconfig"; path = "Target Support Files/Pods-iCombineUtility/Pods-iCombineUtility.debug.xcconfig"; sourceTree = "<group>"; };
-		A55E1C3B319B86675709F78E /* libPods-iCombineUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iCombineUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0A75748EBEA02B86ABB9416 /* Pods-iCombineUtility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineUtility.release.xcconfig"; path = "Target Support Files/Pods-iCombineUtility/Pods-iCombineUtility.release.xcconfig"; sourceTree = "<group>"; };
-		F53DEC297F26C74E54C7A8CE /* Pods-CombineUtilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineUtilityTests.debug.xcconfig"; path = "Target Support Files/Pods-CombineUtilityTests/Pods-CombineUtilityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FDB011B9739A1C9E516040CB /* Pods-iCombineUtilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineUtilityTests.release.xcconfig"; path = "Target Support Files/Pods-iCombineUtilityTests/Pods-iCombineUtilityTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03AB2A66559E3B06B099194 /* libPods-iCombineUtility.a in Frameworks */,
+				288E8EAC26DE644900B66841 /* iCombine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B9A3F126DE6617005FB8E4 /* Quick in Frameworks */,
 				4224CB9B23A1D08300F87932 /* iCombineUtility.framework in Frameworks */,
-				869483800C5DC2B3122FD03D /* libPods-CombineUtilityTests.a in Frameworks */,
+				28B9A3EE26DE65F7005FB8E4 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,24 +106,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4224CBB623A1D0EA00F87932 /* iCombineUtility.framework in Frameworks */,
-				C21EB198B487A6952C9228A0 /* libPods-iCombineUtilityTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2CE01A845E6723B07FE0424E /* Pods */ = {
+		288E8EB326DE651600B66841 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F53DEC297F26C74E54C7A8CE /* Pods-CombineUtilityTests.debug.xcconfig */,
-				374D23DE20D4D869478F1025 /* Pods-CombineUtilityTests.release.xcconfig */,
-				A1882C7D544CB5BB8047B835 /* Pods-iCombineUtility.debug.xcconfig */,
-				E0A75748EBEA02B86ABB9416 /* Pods-iCombineUtility.release.xcconfig */,
-				33372B5D4579DD3279CEB6A9 /* Pods-iCombineUtilityTests.debug.xcconfig */,
-				FDB011B9739A1C9E516040CB /* Pods-iCombineUtilityTests.release.xcconfig */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4224CB8723A1D08300F87932 = {
@@ -141,8 +126,7 @@
 				4224CB9E23A1D08300F87932 /* CombineUtilityTests */,
 				4224CBB223A1D0EA00F87932 /* iCombineUtilityTests */,
 				4224CB9223A1D08300F87932 /* Products */,
-				2CE01A845E6723B07FE0424E /* Pods */,
-				4483C0EAE450A8FAE342A529 /* Frameworks */,
+				288E8EB326DE651600B66841 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,16 +184,6 @@
 				424F758723A1D2CD001106CC /* Publisher+Testable.swift */,
 			);
 			path = Spec;
-			sourceTree = "<group>";
-		};
-		4483C0EAE450A8FAE342A529 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				054531E4C0C65ADCA3A93543 /* libPods-CombineUtilityTests.a */,
-				72E69FB568BE75BBF7D1F06E /* libPods-iCombineUtility.a */,
-				A55E1C3B319B86675709F78E /* libPods-iCombineUtilityTests.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		892C987626DBB935000883B4 /* Mocker */ = {
@@ -313,7 +287,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4224CBA523A1D08300F87932 /* Build configuration list for PBXNativeTarget "iCombineUtility" */;
 			buildPhases = (
-				9D05F8A8F243A53CB9EE7B2C /* [CP] Check Pods Manifest.lock */,
 				4224CB8C23A1D08300F87932 /* Headers */,
 				4224CB8D23A1D08300F87932 /* Sources */,
 				4224CB8E23A1D08300F87932 /* Frameworks */,
@@ -324,6 +297,9 @@
 			dependencies = (
 			);
 			name = iCombineUtility;
+			packageProductDependencies = (
+				288E8EAB26DE644900B66841 /* iCombine */,
+			);
 			productName = CombineUtility;
 			productReference = 4224CB9123A1D08300F87932 /* iCombineUtility.framework */;
 			productType = "com.apple.product-type.framework";
@@ -332,7 +308,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4224CBA823A1D08300F87932 /* Build configuration list for PBXNativeTarget "CombineUtilityTests" */;
 			buildPhases = (
-				06140AB802A57911D05FA581 /* [CP] Check Pods Manifest.lock */,
 				4224CB9623A1D08300F87932 /* Sources */,
 				4224CB9723A1D08300F87932 /* Frameworks */,
 				4224CB9823A1D08300F87932 /* Resources */,
@@ -343,6 +318,10 @@
 				4224CB9D23A1D08300F87932 /* PBXTargetDependency */,
 			);
 			name = CombineUtilityTests;
+			packageProductDependencies = (
+				28B9A3ED26DE65F7005FB8E4 /* Nimble */,
+				28B9A3F026DE6617005FB8E4 /* Quick */,
+			);
 			productName = CombineUtilityTests;
 			productReference = 4224CB9A23A1D08300F87932 /* CombineUtilityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -351,7 +330,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4224CBB923A1D0EA00F87932 /* Build configuration list for PBXNativeTarget "iCombineUtilityTests" */;
 			buildPhases = (
-				18D6872AAEB973290CD75696 /* [CP] Check Pods Manifest.lock */,
 				4224CBAD23A1D0EA00F87932 /* Sources */,
 				4224CBAE23A1D0EA00F87932 /* Frameworks */,
 				4224CBAF23A1D0EA00F87932 /* Resources */,
@@ -362,6 +340,8 @@
 				4224CBB823A1D0EA00F87932 /* PBXTargetDependency */,
 			);
 			name = iCombineUtilityTests;
+			packageProductDependencies = (
+			);
 			productName = CombineRxUtilityTests;
 			productReference = 4224CBB123A1D0EA00F87932 /* iCombineUtilityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -398,6 +378,11 @@
 				Base,
 			);
 			mainGroup = 4224CB8723A1D08300F87932;
+			packageReferences = (
+				288E8EAA26DE644900B66841 /* XCRemoteSwiftPackageReference "iCombine" */,
+				28B9A3EC26DE65F7005FB8E4 /* XCRemoteSwiftPackageReference "Nimble" */,
+				28B9A3EF26DE6617005FB8E4 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = 4224CB9223A1D08300F87932 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,75 +417,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		06140AB802A57911D05FA581 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CombineUtilityTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		18D6872AAEB973290CD75696 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iCombineUtilityTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9D05F8A8F243A53CB9EE7B2C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iCombineUtility-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4224CB8D23A1D08300F87932 /* Sources */ = {
@@ -686,7 +602,6 @@
 		};
 		4224CBA623A1D08300F87932 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1882C7D544CB5BB8047B835 /* Pods-iCombineUtility.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -715,7 +630,6 @@
 		};
 		4224CBA723A1D08300F87932 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0A75748EBEA02B86ABB9416 /* Pods-iCombineUtility.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -743,7 +657,6 @@
 		};
 		4224CBA923A1D08300F87932 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F53DEC297F26C74E54C7A8CE /* Pods-CombineUtilityTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -766,7 +679,6 @@
 		};
 		4224CBAA23A1D08300F87932 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 374D23DE20D4D869478F1025 /* Pods-CombineUtilityTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -788,7 +700,6 @@
 		};
 		4224CBBA23A1D0EA00F87932 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33372B5D4579DD3279CEB6A9 /* Pods-iCombineUtilityTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X736P3ZPXA;
@@ -807,7 +718,6 @@
 		};
 		4224CBBB23A1D0EA00F87932 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDB011B9739A1C9E516040CB /* Pods-iCombineUtilityTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X736P3ZPXA;
@@ -864,6 +774,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		288E8EAA26DE644900B66841 /* XCRemoteSwiftPackageReference "iCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamaszhu/iCombine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.5;
+			};
+		};
+		28B9A3EC26DE65F7005FB8E4 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		28B9A3EF26DE6617005FB8E4 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		288E8EAB26DE644900B66841 /* iCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 288E8EAA26DE644900B66841 /* XCRemoteSwiftPackageReference "iCombine" */;
+			productName = iCombine;
+		};
+		28B9A3ED26DE65F7005FB8E4 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B9A3EC26DE65F7005FB8E4 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		28B9A3F026DE6617005FB8E4 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B9A3EF26DE6617005FB8E4 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4224CB8823A1D08300F87932 /* Project object */;
 }
