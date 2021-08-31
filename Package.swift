@@ -22,7 +22,7 @@ let package = Package(
             name: "iCombine",
             dependencies: ["RxSwift",
                            .product(name: "RxCocoa", package: "RxSwift")],
-            path: "iCombine"),
+            path: "iCombine/iCombine"),
         .testTarget(
             name: "iCombineTests",
             dependencies: ["iCombine",
@@ -30,6 +30,6 @@ let package = Package(
                            "Nimble",
                            "Quick",
                            .product(name: "RxCocoa", package: "RxSwift")],
-            path: "iCombineTests")
+            path: "iCombine/iCombineTests")
     ]
 )
