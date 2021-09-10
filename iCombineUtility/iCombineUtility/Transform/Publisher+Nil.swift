@@ -21,7 +21,7 @@ public extension iCombine.Publisher {
 
 import Combine
 
-@available(iOS 13.0, *)
+@available(iOS 14.0, macOS 10.15, *)
 public extension Combine.Publisher {
     
     /// Remove all nil values from the stream

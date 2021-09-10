@@ -15,7 +15,7 @@ import Combine
 import iCombine
 #endif
 
-@available(iOS 13.0, *)
+@available(iOS 14.0, macOS 10.15, *)
 final class PublisherSinkSpec: QuickSpec {
     
     override func spec() {
@@ -32,12 +32,6 @@ final class PublisherSinkSpec: QuickSpec {
                     let _ = Just<Int>(0)
                         .sink(receiveFinished: { isFinished = true })
                     expect(isFinished).toEventually(beTrue())
-                }
-                it("gets no error") {
-                    var error: SomeError?
-                    let _ = Just<Int>(0)
-                        .sink(receiveFailure: { _ in error = SomeError() })
-                    expect(error).toEventually(beNil())
                 }
             }
             context("with an error") {

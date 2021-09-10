@@ -7,6 +7,7 @@
 ///
 
 import iCombine
+import Foundation
 
 /// Manage HTTP requests
 open class HTTPClient: HTTPClientType {

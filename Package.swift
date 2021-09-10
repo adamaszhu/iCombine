@@ -6,9 +6,9 @@ import PackageDescription
 let package = Package(
     name: "iCombine",
     products: [
-        .library(
-            name: "iCombine",
-            targets: ["iCombine"]),
+        .library(name: "iCombine", targets: ["iCombine"]),
+        .library(name: "iCombineNetwork", targets: ["iCombineNetwork"]),
+        .library(name: "iCombineUtility", targets: ["iCombineUtility"])
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .upToNextMajor(from: "5.0.0")),
@@ -16,13 +16,19 @@ let package = Package(
         .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "8.0.0"))
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "iCombine",
             dependencies: ["RxSwift",
                            .product(name: "RxCocoa", package: "RxSwift")],
             path: "iCombine/iCombine"),
+        .target(
+            name: "iCombineNetwork",
+            dependencies: ["iCombine"],
+            path: "iCombineNetwork/iCombineNetwork"),
+        .target(
+            name: "iCombineUtility",
+            dependencies: ["iCombine"],
+            path: "iCombineUtility/iCombineUtility"),
         .testTarget(
             name: "iCombineTests",
             dependencies: ["iCombine",
@@ -30,6 +36,30 @@ let package = Package(
                            "Nimble",
                            "Quick",
                            .product(name: "RxCocoa", package: "RxSwift")],
-            path: "iCombine/iCombineTests")
+            path: "iCombine/iCombineTests"),
+        .testTarget(
+            name: "CombineTests",
+            dependencies: ["iCombine",
+                           "Nimble",
+                           "Quick"],
+            path: "iCombine/CombineTests"),
+        .testTarget(
+            name: "iCombineNetworkTests",
+            dependencies: ["iCombineNetwork",
+                           "Nimble",
+                           "Quick"],
+            path: "iCombineNetwork/iCombineNetworkTests"),
+        .testTarget(
+            name: "iCombineUtilityTests",
+            dependencies: ["iCombineUtility",
+                           "Nimble",
+                           "Quick"],
+            path: "iCombineUtility/iCombineUtilityTests"),
+        .testTarget(
+            name: "CombineUtilityTests",
+            dependencies: ["iCombineUtility",
+                           "Nimble",
+                           "Quick"],
+            path: "iCombineUtility/CombineUtilityTests")
     ]
 )

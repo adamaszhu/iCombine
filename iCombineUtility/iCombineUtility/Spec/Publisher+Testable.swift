@@ -35,7 +35,7 @@ public extension iCombine.Publisher {
 
 import Combine
 
-@available(iOS 13.0, *)
+@available(iOS 14.0, macOS 10.15, *)
 public extension Combine.Publisher {
     
     /// Sink a publisher and record any result in `PublisherResult`

@@ -15,7 +15,7 @@ import Combine
 import iCombine
 #endif
 
-@available(iOS 13.0, *)
+@available(iOS 14.0, macOS 10.15, *)
 final class PublisherNilSpec: QuickSpec {
     
     override func spec() {

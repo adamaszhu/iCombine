@@ -19,7 +19,7 @@ public func += (cancellables: inout [iCombine.Cancellable], cancellable: iCombin
 
 import Combine
 
-@available(iOS 13.0, *)
+@available(iOS 14.0, macOS 10.15, *)
 /// Append a cancellable object to a collection
 /// - Parameters:
 ///   - cancellables: The collection
