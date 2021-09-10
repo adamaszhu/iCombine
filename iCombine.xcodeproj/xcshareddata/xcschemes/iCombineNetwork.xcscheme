@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4224CB9023A1D08300F87932"
-               BuildableName = "iCombineUtility.framework"
-               BlueprintName = "iCombineUtility"
-               ReferencedContainer = "container:iCombineUtility.xcodeproj">
+               BlueprintIdentifier = "28ED224926E8F33500296050"
+               BuildableName = "iCombineNetwork.framework"
+               BlueprintName = "iCombineNetwork"
+               ReferencedContainer = "container:iCombine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,8 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "28ED224926E8F33500296050"
+            BuildableName = "iCombineNetwork.framework"
+            BlueprintName = "iCombineNetwork"
+            ReferencedContainer = "container:iCombine.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "28ED225126E8F33500296050"
+               BuildableName = "iCombineNetworkTests.xctest"
+               BlueprintName = "iCombineNetworkTests"
+               ReferencedContainer = "container:iCombine.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,10 +71,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4224CB9023A1D08300F87932"
-            BuildableName = "iCombineUtility.framework"
-            BlueprintName = "iCombineUtility"
-            ReferencedContainer = "container:iCombineUtility.xcodeproj">
+            BlueprintIdentifier = "28ED224926E8F33500296050"
+            BuildableName = "iCombineNetwork.framework"
+            BlueprintName = "iCombineNetwork"
+            ReferencedContainer = "container:iCombine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
