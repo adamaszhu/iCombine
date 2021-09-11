@@ -375,8 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28A0ED9026EAE80F006FD290 /* iCombineNetwork.framework in Frameworks */,
-				28ED228326EA2C4800296050 /* Quick in Frameworks */,
 				28ED228126EA2C4500296050 /* Nimble in Frameworks */,
+				28ED228326EA2C4800296050 /* Quick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,8 +393,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28A0ED9126EAE9E6006FD290 /* iCombineUtility.framework in Frameworks */,
-				28ED232826EA36A600296050 /* Quick in Frameworks */,
 				28ED232626EA36A600296050 /* Nimble in Frameworks */,
+				28ED232826EA36A600296050 /* Quick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,8 +403,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28A0ED9426EAEB2E006FD290 /* iCombineUtility.framework in Frameworks */,
-				28ED232026EA362D00296050 /* Quick in Frameworks */,
 				28ED231E26EA362D00296050 /* Nimble in Frameworks */,
+				28ED232026EA362D00296050 /* Quick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,13 +439,13 @@
 			isa = PBXGroup;
 			children = (
 				2850ECE626BAC21A005DCC4F /* CombineTests.xctest */,
+				28ED22C226EA329900296050 /* CombineUtilityTests.xctest */,
 				2850ECC826BAC17A005DCC4F /* iCombine.framework */,
-				2850ECD126BAC17A005DCC4F /* iCombineTests.xctest */,
 				28ED224A26E8F33500296050 /* iCombineNetwork.framework */,
 				28ED225226E8F33500296050 /* iCombineNetworkTests.xctest */,
+				2850ECD126BAC17A005DCC4F /* iCombineTests.xctest */,
 				28ED228926EA31F700296050 /* iCombineUtility.framework */,
 				28ED229126EA31F800296050 /* iCombineUtilityTests.xctest */,
-				28ED22C226EA329900296050 /* CombineUtilityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -579,11 +579,11 @@
 		28ED222B26E8F23D00296050 /* iCombineNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				28ED222C26E8F23D00296050 /* iCombineNetwork.h */,
-				28ED222D26E8F23D00296050 /* Utilities */,
-				28ED223126E8F23D00296050 /* Request */,
-				28ED223726E8F23D00296050 /* Errors */,
 				28ED223C26E8F23D00296050 /* Client */,
+				28ED223726E8F23D00296050 /* Errors */,
+				28ED223126E8F23D00296050 /* Request */,
+				28ED222D26E8F23D00296050 /* Utilities */,
+				28ED222C26E8F23D00296050 /* iCombineNetwork.h */,
 				28ED224126E8F23D00296050 /* Info.plist */,
 			);
 			name = iCombineNetwork;
@@ -593,8 +593,8 @@
 		28ED222D26E8F23D00296050 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				28ED222E26E8F23D00296050 /* String+Constants.swift */,
 				28ED222F26E8F23D00296050 /* Dictionary+Formatter.swift */,
+				28ED222E26E8F23D00296050 /* String+Constants.swift */,
 				28ED223026E8F23D00296050 /* URL+Mutable.swift */,
 			);
 			path = Utilities;
@@ -604,10 +604,10 @@
 			isa = PBXGroup;
 			children = (
 				28ED223226E8F23D00296050 /* RequestBody.swift */,
+				28ED223626E8F23D00296050 /* RequestBodyType.swift */,
 				28ED223326E8F23D00296050 /* RequestHeader.swift */,
 				28ED223426E8F23D00296050 /* RequestMethod.swift */,
 				28ED223526E8F23D00296050 /* URLParameters.swift */,
-				28ED223626E8F23D00296050 /* RequestBodyType.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -615,10 +615,10 @@
 		28ED223726E8F23D00296050 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
-				28ED223826E8F23D00296050 /* ServerError.swift */,
 				28ED223926E8F23D00296050 /* BusinessError.swift */,
 				28ED223A26E8F23D00296050 /* HTTPError.swift */,
 				28ED223B26E8F23D00296050 /* NetworkError.swift */,
+				28ED223826E8F23D00296050 /* ServerError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -626,10 +626,10 @@
 		28ED223C26E8F23D00296050 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				28ED223D26E8F23D00296050 /* ResponseHandler.swift */,
-				28ED223E26E8F23D00296050 /* NetworkConnectionManager.swift */,
 				28ED223F26E8F23D00296050 /* HTTPClient.swift */,
 				28ED224026E8F23D00296050 /* HTTPClientType.swift */,
+				28ED223E26E8F23D00296050 /* NetworkConnectionManager.swift */,
+				28ED223D26E8F23D00296050 /* ResponseHandler.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -655,13 +655,13 @@
 		28ED22CD26EA32BE00296050 /* iCombineUtility */ = {
 			isa = PBXGroup;
 			children = (
-				28ED22CE26EA32BE00296050 /* iCombineUtility.h */,
 				28ED22CF26EA32BE00296050 /* Constants */,
+				28ED22DA26EA32BE00296050 /* Operator */,
 				28ED22D126EA32BE00296050 /* Spec */,
 				28ED22D426EA32BE00296050 /* Transfer */,
 				28ED22D626EA32BE00296050 /* Transform */,
+				28ED22CE26EA32BE00296050 /* iCombineUtility.h */,
 				28ED22D926EA32BE00296050 /* Info.plist */,
-				28ED22DA26EA32BE00296050 /* Operator */,
 			);
 			name = iCombineUtility;
 			path = iCombineUtility/iCombineUtility;
@@ -678,8 +678,8 @@
 		28ED22D126EA32BE00296050 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
-				28ED22D226EA32BE00296050 /* PublisherResult.swift */,
 				28ED22D326EA32BE00296050 /* Publisher+Testable.swift */,
+				28ED22D226EA32BE00296050 /* PublisherResult.swift */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -695,8 +695,8 @@
 		28ED22D626EA32BE00296050 /* Transform */ = {
 			isa = PBXGroup;
 			children = (
-				28ED22D726EA32BE00296050 /* Publisher+Nil.swift */,
 				28ED22D826EA32BE00296050 /* Publisher+Error.swift */,
+				28ED22D726EA32BE00296050 /* Publisher+Nil.swift */,
 			);
 			path = Transform;
 			sourceTree = "<group>";
@@ -712,12 +712,12 @@
 		28ED22DC26EA32BE00296050 /* iCombineUtilityTests */ = {
 			isa = PBXGroup;
 			children = (
-				28ED22E626EA32BE00296050 /* Mocker */,
 				28ED22E026EA32BE00296050 /* Constants */,
+				28ED22E626EA32BE00296050 /* Mocker */,
+				28ED22ED26EA32BE00296050 /* Operator */,
 				28ED22E226EA32BE00296050 /* Spec */,
 				28ED22E426EA32BE00296050 /* Transfer */,
 				28ED22E926EA32BE00296050 /* Transform */,
-				28ED22ED26EA32BE00296050 /* Operator */,
 				28ED22DD26EA32BE00296050 /* Info.plist */,
 			);
 			name = iCombineUtilityTests;
@@ -760,8 +760,8 @@
 		28ED22E626EA32BE00296050 /* Mocker */ = {
 			isa = PBXGroup;
 			children = (
-				28ED22E726EA32BE00296050 /* SomeError.swift */,
 				28ED22E826EA32BE00296050 /* OtherError.swift */,
+				28ED22E726EA32BE00296050 /* SomeError.swift */,
 			);
 			path = Mocker;
 			sourceTree = "<group>";
@@ -1317,8 +1317,8 @@
 				285F148126CA8F8000AD6FCD /* ReplaceEmptySpec.swift in Sources */,
 				285F148326CA8F9300AD6FCD /* ReplaceErrorSpec.swift in Sources */,
 				8913F57226C00BEE0069427E /* SequenceSpec.swift in Sources */,
-				89A33EC726BC1FDC00D72674 /* TestError.swift in Sources */,
 				28ED232926EACB8D00296050 /* SubscriberSpec.swift in Sources */,
+				89A33EC726BC1FDC00D72674 /* TestError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1360,22 +1360,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28ED227D26EA2BF300296050 /* HTTPClientType.swift in Sources */,
-				28ED227526EA2BE600296050 /* RequestMethod.swift in Sources */,
-				28ED227426EA2BE600296050 /* RequestBody.swift in Sources */,
-				28ED227A26EA2BF300296050 /* HTTPClient.swift in Sources */,
-				28ED227126EA2BE600296050 /* RequestHeader.swift in Sources */,
-				28ED227326EA2BE600296050 /* URLParameters.swift in Sources */,
-				28ED227926EA2BED00296050 /* HTTPError.swift in Sources */,
 				28ED227726EA2BED00296050 /* BusinessError.swift in Sources */,
+				28ED226E26EA2BE000296050 /* Dictionary+Formatter.swift in Sources */,
+				28ED227A26EA2BF300296050 /* HTTPClient.swift in Sources */,
+				28ED227D26EA2BF300296050 /* HTTPClientType.swift in Sources */,
+				28ED227926EA2BED00296050 /* HTTPError.swift in Sources */,
+				28ED227C26EA2BF300296050 /* NetworkConnectionManager.swift in Sources */,
+				28ED227826EA2BED00296050 /* NetworkError.swift in Sources */,
+				28ED227426EA2BE600296050 /* RequestBody.swift in Sources */,
+				28ED227226EA2BE600296050 /* RequestBodyType.swift in Sources */,
+				28ED227126EA2BE600296050 /* RequestHeader.swift in Sources */,
+				28ED227526EA2BE600296050 /* RequestMethod.swift in Sources */,
+				28ED227B26EA2BF300296050 /* ResponseHandler.swift in Sources */,
+				28ED227626EA2BED00296050 /* ServerError.swift in Sources */,
 				28ED226F26EA2BE000296050 /* String+Constants.swift in Sources */,
 				28ED227026EA2BE000296050 /* URL+Mutable.swift in Sources */,
-				28ED227226EA2BE600296050 /* RequestBodyType.swift in Sources */,
-				28ED226E26EA2BE000296050 /* Dictionary+Formatter.swift in Sources */,
-				28ED227826EA2BED00296050 /* NetworkError.swift in Sources */,
-				28ED227C26EA2BF300296050 /* NetworkConnectionManager.swift in Sources */,
-				28ED227626EA2BED00296050 /* ServerError.swift in Sources */,
-				28ED227B26EA2BF300296050 /* ResponseHandler.swift in Sources */,
+				28ED227326EA2BE600296050 /* URLParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1391,13 +1391,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28ED230B26EA34C800296050 /* Publisher+Nil.swift in Sources */,
-				28ED230A26EA34C800296050 /* PublisherResult.swift in Sources */,
+				28ED230726EA34C800296050 /* Operator+Cancellable.swift in Sources */,
 				28ED230926EA34C800296050 /* Publisher+Constants.swift in Sources */,
 				28ED230D26EA34C800296050 /* Publisher+Error.swift in Sources */,
-				28ED230726EA34C800296050 /* Operator+Cancellable.swift in Sources */,
+				28ED230B26EA34C800296050 /* Publisher+Nil.swift in Sources */,
 				28ED230226EA34C800296050 /* Publisher+Sink.swift in Sources */,
 				28ED230826EA34C800296050 /* Publisher+Testable.swift in Sources */,
+				28ED230A26EA34C800296050 /* PublisherResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1405,14 +1405,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28ED232226EA366600296050 /* SomeError.swift in Sources */,
 				28ED231126EA351400296050 /* OperatorCancellableSpec.swift in Sources */,
 				28ED232126EA366600296050 /* OtherError.swift in Sources */,
-				28ED230F26EA351400296050 /* PublisherNilSpec.swift in Sources */,
-				28ED231426EA351400296050 /* PublisherErrorSpec.swift in Sources */,
-				28ED231326EA351400296050 /* PublisherSinkSpec.swift in Sources */,
 				28ED231026EA351400296050 /* PublisherConstantsSpec.swift in Sources */,
+				28ED231426EA351400296050 /* PublisherErrorSpec.swift in Sources */,
+				28ED230F26EA351400296050 /* PublisherNilSpec.swift in Sources */,
+				28ED231326EA351400296050 /* PublisherSinkSpec.swift in Sources */,
 				28ED231226EA351400296050 /* PublisherTestableSpec.swift in Sources */,
+				28ED232226EA366600296050 /* SomeError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1420,14 +1420,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28ED232426EA366700296050 /* SomeError.swift in Sources */,
 				28ED231726EA351400296050 /* OperatorCancellableSpec.swift in Sources */,
 				28ED232326EA366700296050 /* OtherError.swift in Sources */,
-				28ED231526EA351400296050 /* PublisherNilSpec.swift in Sources */,
-				28ED231A26EA351500296050 /* PublisherErrorSpec.swift in Sources */,
-				28ED231926EA351500296050 /* PublisherSinkSpec.swift in Sources */,
 				28ED231626EA351400296050 /* PublisherConstantsSpec.swift in Sources */,
+				28ED231A26EA351500296050 /* PublisherErrorSpec.swift in Sources */,
+				28ED231526EA351400296050 /* PublisherNilSpec.swift in Sources */,
+				28ED231926EA351500296050 /* PublisherSinkSpec.swift in Sources */,
 				28ED231826EA351400296050 /* PublisherTestableSpec.swift in Sources */,
+				28ED232426EA366700296050 /* SomeError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
