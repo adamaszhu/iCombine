@@ -3,56 +3,56 @@
 NEW_RELEASE=$1
 RELEASE_MESSAGE=$2
 JAZZY_SCRIPT_PATH="Scripts/generate-doc"
+PRODUCTS=("iCombine" "iCombineNetwork" "iCombineUtility")
 
-if [[ -z $NEW_RELEASE ]]; then
-  echo "The new version number should be passed in as the first parameter"
-  exit 0
-fi
-
-if [[ -z $RELEASE_MESSAGE ]]; then
-  echo "A release message should be passed in as the second parameter"
-  exit 0
-fi
-
-NEW_BRANCH="release/$NEW_RELEASE"
-
-echo "Create the release branch"
-git branch $NEW_BRANCH
-git checkout $NEW_BRANCH
-echo ""
+# if [[ -z $NEW_RELEASE ]]; then
+#   echo "The new version number should be passed in as the first parameter"
+#   exit 0
+# fi
+#
+# if [[ -z $RELEASE_MESSAGE ]]; then
+#   echo "A release message should be passed in as the second parameter"
+#   exit 0
+# fi
+#
+# NEW_BRANCH="release/$NEW_RELEASE"
+#
+# echo "Create the release branch"
+# git branch $NEW_BRANCH
+# git checkout $NEW_BRANCH
+# echo ""
 
 echo "Update Jazzy documentation"
-echo "Generating iCombine documents ..."
-sh $JAZZY_SCRIPT_PATH "iCombine" > /dev/null 2>&1
-echo "Generating iCombineNetwork documents ..."
-sh $JAZZY_SCRIPT_PATH "iCombineNetwork" > /dev/null 2>&1
-echo "Generating iCombineUtility documents ..."
-sh $JAZZY_SCRIPT_PATH "iCombineUtility" > /dev/null 2>&1
+for product in "${PRODUCTS[@]}"
+do
+  echo "Generating documents for $product ..."
+  sh $JAZZY_SCRIPT_PATH $product > /dev/null 2>&1
+done
 git add --all
 git commit -m "Update documentations"
 echo ""
 
-echo "Raise the version"
-bundle exec fastlane set_version version:$NEW_RELEASE
-git add --all
-git commit -m "Raise the version"
-echo ""
-
-echo "Tag the release on master"
-git checkout master
-git merge --no-ff $NEW_BRANCH -m "$RELEASE_MESSAGE" > /dev/null 2>&1
-git push
-git tag $NEW_RELEASE
-git push --tags
-echo ""
-
-echo "Release to Cocoapods"
-pod trunk push $POD_SPEC_PATH
-echo ""
-
-echo "Clean up"
-git checkout develop
-git merge --no-ff --no-edit $NEW_BRANCH > /dev/null 2>&1
-git push
-git branch -d $NEW_BRANCH
-echo ""
+# echo "Raise the version"
+# bundle exec fastlane set_version version:$NEW_RELEASE
+# git add --all
+# git commit -m "Raise the version"
+# echo ""
+#
+# echo "Tag the release on master"
+# git checkout master
+# git merge --no-ff $NEW_BRANCH -m "$RELEASE_MESSAGE" > /dev/null 2>&1
+# git push
+# git tag $NEW_RELEASE
+# git push --tags
+# echo ""
+#
+# echo "Release to Cocoapods"
+# pod trunk push $POD_SPEC_PATH
+# echo ""
+#
+# echo "Clean up"
+# git checkout develop
+# git merge --no-ff --no-edit $NEW_BRANCH > /dev/null 2>&1
+# git push
+# git branch -d $NEW_BRANCH
+# echo ""
