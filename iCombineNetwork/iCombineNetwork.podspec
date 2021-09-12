@@ -5,7 +5,7 @@ s.ios.deployment_target = '9.0'
 s.name = "iCombineNetwork"
 s.summary = "iCombineNetwork allows a project to construct the network layer using Combine before iOS 13."
 s.requires_arc = true
-s.version = "0.4.2"
+s.version = "0.4.3"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Adamas Zhu" => "developer@adamaszhu.com",
 "Leon Nguyen" => "leon.nguyen291@gmail.com" }
