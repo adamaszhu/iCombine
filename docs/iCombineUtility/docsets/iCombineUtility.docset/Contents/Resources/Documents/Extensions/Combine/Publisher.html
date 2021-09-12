@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Publisher Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Publisher" class="dashAnchor"></a>
+    <a title="Publisher Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">iCombineUtility 0.4.6 Docs</a> (82% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">iCombineUtility Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        Publisher Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/PublisherResult.html">PublisherResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Extensions/Combine.html">Combine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/Combine/Publisher.html">– Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/iCombine.html">iCombine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/iCombine/Publisher.html">– Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Functions.html#/s:15iCombineUtility2peoiyySay01iA011Cancellable_pGz_AcD_ptF">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Functions.html#/s:15iCombineUtility2peoiyySay0A011Cancellable_pGz_AcD_ptF">+=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Publisher</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Combine</span><span class="o">.</span><span class="kt">Publisher</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine9PublisherP01iA7UtilityE5emptyAA03AnyB0Vy6OutputQz7FailureQzGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/empty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine9PublisherP01iA7UtilityE5emptyAA03AnyB0Vy6OutputQz7FailureQzGvpZ">empty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An empty publisher with the current publisher output and failure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">empty</span><span class="p">:</span> <span class="kt">Combine</span><span class="o">.</span><span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">Output</span><span class="p">,</span> <span class="kt">Failure</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine9PublisherP01iA7UtilityE4testAD0B6ResultCy6OutputQz7FailureQzAA11Cancellable_pGyF"></a>
+                    <a name="//apple_ref/swift/Method/test()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine9PublisherP01iA7UtilityE4testAD0B6ResultCy6OutputQz7FailureQzAA11Cancellable_pGyF">test()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sink a publisher and record any result in <code><a href="../../Classes/PublisherResult.html">PublisherResult</a></code></p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This class doesn&rsquo;t belong to Combine and need to be implemented manually after migrating to Combine.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">test</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/PublisherResult.html">PublisherResult</a></span><span class="o">&lt;</span><span class="kt">Output</span><span class="p">,</span> <span class="kt">Failure</span><span class="p">,</span> <span class="kt">Combine</span><span class="o">.</span><span class="kt">Cancellable</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The object that contains any events happening in the result</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine9PublisherP01iA7UtilityE4sink15receiveFinished0E7Failure0E5ValueAA14AnyCancellableCyyc_y0G0Qzcy6OutputQzctF"></a>
+                    <a name="//apple_ref/swift/Method/sink(receiveFinished:receiveFailure:receiveValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine9PublisherP01iA7UtilityE4sink15receiveFinished0E7Failure0E5ValueAA14AnyCancellableCyyc_y0G0Qzcy6OutputQzctF">sink(receiveFinished:<wbr>receiveFailure:<wbr>receiveValue:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attaches a subscriber with closure-based behavior.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sink</span><span class="p">(</span><span class="nv">receiveFinished</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">=</span> <span class="p">{},</span>
+          <span class="nv">receiveFailure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="k">Self</span><span class="o">.</span><span class="kt">Failure</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span> <span class="p">},</span>
+          <span class="nv">receiveValue</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="k">Self</span><span class="o">.</span><span class="kt">Output</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span> <span class="p">})</span> <span class="o">-&gt;</span> <span class="kt">Combine</span><span class="o">.</span><span class="kt">AnyCancellable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>receiveFinished</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to execute on finishing</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>receiveFailure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to execute on receipt of a failure</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>receiveValue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to execute on receipt of a value</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A cancellable instance; used when you end assignment of the received value. Deallocation of the result will tear down the subscription stream.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine9PublisherP01iA7UtilityE8mapError4intoAA03AnyB0Vy6OutputQzqd__Gqd___ts0E0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/mapError(into:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine9PublisherP01iA7UtilityE8mapError4intoAA03AnyB0Vy6OutputQzqd__Gqd___ts0E0Rd__lF">mapError(into:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Map any error into a specific error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">mapError</span><span class="o">&lt;</span><span class="kt">E</span><span class="o">&gt;</span><span class="p">(</span><span class="n">into</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">E</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Combine</span><span class="o">.</span><span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">Output</span><span class="p">,</span> <span class="kt">E</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error to be mapped into.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine9PublisherP01iA7UtilityE11ignoreErrorAA03AnyB0Vy6OutputQzs5NeverOGyF"></a>
+                    <a name="//apple_ref/swift/Method/ignoreError()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine9PublisherP01iA7UtilityE11ignoreErrorAA03AnyB0Vy6OutputQzs5NeverOGyF">ignoreError()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ignore errors occur in the publisher</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">ignoreError</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Combine</span><span class="o">.</span><span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">Output</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine9PublisherP01iA7UtilityE9removeNilAA03AnyB0Vyqd__7FailureQzGyqd__Sg6OutputRtzlF"></a>
+                    <a name="//apple_ref/swift/Method/removeNil()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine9PublisherP01iA7UtilityE9removeNilAA03AnyB0Vyqd__7FailureQzGyqd__Sg6OutputRtzlF">removeNil()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all nil values from the stream</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">removeNil</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Combine</span><span class="o">.</span><span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">O</span><span class="p">,</span> <span class="kt">Failure</span><span class="o">&gt;</span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Output</span> <span class="o">==</span> <span class="kt">O</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://github.com/adamaszhu/iCombine" target="_blank" rel="noopener" rel="external">Adamas Zhu and Leon Nguyen</a>. All rights reserved. (Last updated: 2021-09-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="noopener" rel="external">jazzy ♪♫ v0.14.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="noopener" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
