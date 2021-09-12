@@ -18,9 +18,9 @@ default_platform(:ios)
 platform :ios do
 
   project_path = "iCombine.xcodeproj"
-  pod_path_icombine = "iCombine/iCombine.podspec"
-  pod_path_icombine_network = "iCombineNetwork/iCombineNetwork.podspec"
-  pod_path_icombine_utility = "iCombineUtility/iCombineUtility.podspec"
+  pod_path_icombine = "iCombine.podspec"
+  pod_path_icombine_network = "iCombineNetwork.podspec"
+  pod_path_icombine_utility = "iCombineUtility.podspec"
 
   before_all do
     ENV['FL_VERSION_NUMBER_PROJECT'] = project_path
