@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 
 s.platform = :ios
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 s.name = "iCombineNetwork"
 s.summary = "iCombineNetwork allows a project to construct the network layer using Combine before iOS 13."
 s.requires_arc = true
-s.version = "0.4.0"
+s.version = "0.4.1"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Adamas Zhu" => "developer@adamaszhu.com",
 "Leon Nguyen" => "leon.nguyen291@gmail.com" }
