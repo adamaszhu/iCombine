@@ -17,3 +17,6 @@ jazzy --clean --module $NAME --build-tool-arguments -project,iCombine.xcodeproj,
 mv -f docs Documents/$NAME
 
 mv README.md.backup README.md
+
+mv -f Documents docs
+cp Resources/index.html docs/index.html
