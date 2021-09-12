@@ -48,7 +48,7 @@ echo ""
 echo "Release to Cocoapods"
 for product in "${PRODUCTS[@]}"
 do
-  POD_SPEC_PATH = "$product/$product.podspec"
+  POD_SPEC_PATH="$product/$product.podspec"
   pod trunk push $POD_SPEC_PATH
 done
 echo ""
