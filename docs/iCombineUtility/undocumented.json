@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/iCombine/iCombineUtility/iCombineUtility/Operator/Operator+Cancellable.swift",
+      "line": 27,
+      "symbol": "+=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/iCombine/iCombineUtility/iCombineUtility/Spec/PublisherResult.swift",
+      "line": 13,
+      "symbol": "PublisherResult.outputs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/iCombine/iCombineUtility/iCombineUtility/Spec/PublisherResult.swift",
+      "line": 14,
+      "symbol": "PublisherResult.failure",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/iCombine/iCombineUtility/iCombineUtility/Spec/PublisherResult.swift",
+      "line": 15,
+      "symbol": "PublisherResult.hasFinished",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adamaszhu/Documents/Projects/iCombine/iCombineUtility/iCombineUtility/Spec/PublisherResult.swift",
+      "line": 16,
+      "symbol": "PublisherResult.cancellable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/adamaszhu/Documents/Projects/iCombine"
+}
