@@ -3,6 +3,8 @@
 NEW_RELEASE=$1
 RELEASE_MESSAGE=$2
 JAZZY_SCRIPT_PATH="Scripts/generate-doc"
+TEMP_DIR="temp"
+DOC_DIR="docs"
 PRODUCTS=("iCombine" "iCombineNetwork" "iCombineUtility")
 
 if [[ -z $NEW_RELEASE ]]; then
@@ -22,11 +24,15 @@ git checkout $NEW_BRANCH
 echo ""
 
 echo "Update Jazzy documentation"
+mkdir $TEMP_DIR
 for product in "${PRODUCTS[@]}"
 do
   echo "Generating documents for $product ..."
   sh $JAZZY_SCRIPT_PATH $product > /dev/null 2>&1
+  mv -f $DOC_DIR $TEMP_DIR/$NAME
 done
+mv -f $TEMP_DIR $DOC_DIR
+cp Resources/index.html $DOC_DIR/index.html
 git add --all
 git commit -m "Update documentations"
 echo ""

@@ -6,17 +6,9 @@ if ! gem spec jazzy > /dev/null 2>&1; then
   sudo gem install jazzy
 fi
 
-mkdir Documents
-rm -rf Documents/$NAME
-
 mv README.md README.md.backup
 cp $NAME/README.md README.md
 
 jazzy --clean --module $NAME --build-tool-arguments -project,iCombine.xcodeproj,-scheme,$NAME
 
-mv -f docs Documents/$NAME
-
 mv README.md.backup README.md
-
-mv -f Documents docs
-cp Resources/index.html docs/index.html
