@@ -3,21 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A0ED9A26ED9122006FD290 /* iCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 28A0ED9926ED9122006FD290 /* iCombine */; };
 		28DE78C026D1361300A58707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE78BF26D1361300A58707 /* AppDelegate.swift */; };
 		28DE78C226D1361300A58707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE78C126D1361300A58707 /* SceneDelegate.swift */; };
 		28DE78C426D1361300A58707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE78C326D1361300A58707 /* ViewController.swift */; };
 		28DE78C726D1361300A58707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DE78C526D1361300A58707 /* Main.storyboard */; };
 		28DE78C926D1361400A58707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DE78C826D1361400A58707 /* Assets.xcassets */; };
 		28DE78CC26D1361400A58707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DE78CA26D1361400A58707 /* LaunchScreen.storyboard */; };
-		FAD5C8F21F84B43D5EBC4094 /* libPods-iCombineSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321CEDE96D4D9D7786F4C99 /* libPods-iCombineSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		23D09DA3736337E50B61C7E9 /* Pods-iCombineSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineSample.debug.xcconfig"; path = "Target Support Files/Pods-iCombineSample/Pods-iCombineSample.debug.xcconfig"; sourceTree = "<group>"; };
 		28DE78BC26D1361300A58707 /* iCombineSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCombineSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DE78BF26D1361300A58707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28DE78C126D1361300A58707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,10 +25,6 @@
 		28DE78C826D1361400A58707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28DE78CB26D1361400A58707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28DE78CD26D1361400A58707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E0BF4F50351B961A81827E6 /* Pods-CombineFoundationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFoundationSample.debug.xcconfig"; path = "Target Support Files/Pods-CombineFoundationSample/Pods-CombineFoundationSample.debug.xcconfig"; sourceTree = "<group>"; };
-		5321CEDE96D4D9D7786F4C99 /* libPods-iCombineSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iCombineSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9654655AE7C955EBB893D67 /* Pods-CombineFoundationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFoundationSample.release.xcconfig"; path = "Target Support Files/Pods-CombineFoundationSample/Pods-CombineFoundationSample.release.xcconfig"; sourceTree = "<group>"; };
-		E1938AA4DE5ACEFBFB564028 /* Pods-iCombineSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCombineSample.release.xcconfig"; path = "Target Support Files/Pods-iCombineSample/Pods-iCombineSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD5C8F21F84B43D5EBC4094 /* libPods-iCombineSample.a in Frameworks */,
+				28A0ED9A26ED9122006FD290 /* iCombine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,8 +44,6 @@
 			children = (
 				28DE78BE26D1361300A58707 /* iCombineSample */,
 				28DE78BD26D1361300A58707 /* Products */,
-				5BFD7F4994C21F1704851CF5 /* Pods */,
-				ABB324E140A9B15F330A0014 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,25 +69,6 @@
 			path = iCombineSample;
 			sourceTree = "<group>";
 		};
-		5BFD7F4994C21F1704851CF5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3E0BF4F50351B961A81827E6 /* Pods-CombineFoundationSample.debug.xcconfig */,
-				D9654655AE7C955EBB893D67 /* Pods-CombineFoundationSample.release.xcconfig */,
-				23D09DA3736337E50B61C7E9 /* Pods-iCombineSample.debug.xcconfig */,
-				E1938AA4DE5ACEFBFB564028 /* Pods-iCombineSample.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		ABB324E140A9B15F330A0014 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5321CEDE96D4D9D7786F4C99 /* libPods-iCombineSample.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,7 +76,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28DE78D026D1361400A58707 /* Build configuration list for PBXNativeTarget "iCombineSample" */;
 			buildPhases = (
-				953B330B2ABD9838B64C3455 /* [CP] Check Pods Manifest.lock */,
 				28DE78B826D1361300A58707 /* Sources */,
 				28DE78B926D1361300A58707 /* Frameworks */,
 				28DE78BA26D1361300A58707 /* Resources */,
@@ -112,6 +85,9 @@
 			dependencies = (
 			);
 			name = iCombineSample;
+			packageProductDependencies = (
+				28A0ED9926ED9122006FD290 /* iCombine */,
+			);
 			productName = CombineFoundationSample;
 			productReference = 28DE78BC26D1361300A58707 /* iCombineSample.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 28DE78B326D1361300A58707;
+			packageReferences = (
+				28A0ED9826ED9122006FD290 /* XCRemoteSwiftPackageReference "iCombine" */,
+			);
 			productRefGroup = 28DE78BD26D1361300A58707 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,31 +139,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		953B330B2ABD9838B64C3455 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iCombineSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28DE78B826D1361300A58707 /* Sources */ = {
@@ -337,7 +291,6 @@
 		};
 		28DE78D126D1361400A58707 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23D09DA3736337E50B61C7E9 /* Pods-iCombineSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,6 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.icombine.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -357,7 +311,6 @@
 		};
 		28DE78D226D1361400A58707 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1938AA4DE5ACEFBFB564028 /* Pods-iCombineSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,6 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.icombine.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -397,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28A0ED9826ED9122006FD290 /* XCRemoteSwiftPackageReference "iCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamaszhu/iCombine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28A0ED9926ED9122006FD290 /* iCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28A0ED9826ED9122006FD290 /* XCRemoteSwiftPackageReference "iCombine" */;
+			productName = iCombine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28DE78B426D1361300A58707 /* Project object */;
 }
