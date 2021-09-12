@@ -25,11 +25,11 @@ echo ""
 
 echo "Update Jazzy documentation"
 mkdir $TEMP_DIR
-for product in "${PRODUCTS[@]}"
+for PRODUCT in "${PRODUCTS[@]}"
 do
-  echo "Generating documents for $product ..."
-  sh $JAZZY_SCRIPT_PATH $product > /dev/null 2>&1
-  mv -f $DOC_DIR $TEMP_DIR/$NAME
+  echo "Generating documents for $PRODUCT ..."
+  sh $JAZZY_SCRIPT_PATH $PRODUCT > /dev/null 2>&1
+  mv -f $DOC_DIR $TEMP_DIR/$PRODUCT
 done
 mv -f $TEMP_DIR $DOC_DIR
 cp Resources/index.html $DOC_DIR/index.html
@@ -52,9 +52,9 @@ git push --tags
 echo ""
 
 echo "Release to Cocoapods"
-for product in "${PRODUCTS[@]}"
+for PRODUCT in "${PRODUCTS[@]}"
 do
-  POD_SPEC_PATH="$product.podspec"
+  POD_SPEC_PATH="$PRODUCT.podspec"
   pod trunk push $POD_SPEC_PATH
 done
 echo ""
