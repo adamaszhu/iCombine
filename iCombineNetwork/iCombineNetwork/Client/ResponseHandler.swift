@@ -6,6 +6,7 @@
 ///
 
 import iCombine
+import Foundation
 
 public extension URLSession.CombineDataTaskPublisher {
     

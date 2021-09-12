@@ -6,6 +6,7 @@
 ///
 
 import iCombine
+import Foundation
 
 /// Define a HTTPClient
 public protocol HTTPClientType {

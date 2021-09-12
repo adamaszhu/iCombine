@@ -3,6 +3,7 @@
 NEW_RELEASE=$1
 RELEASE_MESSAGE=$2
 JAZZY_SCRIPT_PATH="Scripts/generate-doc"
+PRODUCTS=("iCombine" "iCombineNetwork" "iCombineUtility")
 
 if [[ -z $NEW_RELEASE ]]; then
   echo "The new version number should be passed in as the first parameter"
@@ -14,16 +15,18 @@ if [[ -z $RELEASE_MESSAGE ]]; then
   exit 0
 fi
 
-NEW_BRANCH="release/$NEW_RELEASE"
-
 echo "Create the release branch"
+NEW_BRANCH="release/$NEW_RELEASE"
 git branch $NEW_BRANCH
 git checkout $NEW_BRANCH
 echo ""
 
 echo "Update Jazzy documentation"
-echo "Generating documents ..."
-sh $JAZZY_SCRIPT_PATH > /dev/null 2>&1
+for product in "${PRODUCTS[@]}"
+do
+  echo "Generating documents for $product ..."
+  sh $JAZZY_SCRIPT_PATH $product > /dev/null 2>&1
+done
 git add --all
 git commit -m "Update documentations"
 echo ""
@@ -33,7 +36,7 @@ bundle exec fastlane set_version version:$NEW_RELEASE
 git add --all
 git commit -m "Raise the version"
 echo ""
-
+#
 echo "Tag the release on master"
 git checkout master
 git merge --no-ff $NEW_BRANCH -m "$RELEASE_MESSAGE" > /dev/null 2>&1
@@ -43,7 +46,11 @@ git push --tags
 echo ""
 
 echo "Release to Cocoapods"
-pod trunk push $POD_SPEC_PATH
+for product in "${PRODUCTS[@]}"
+do
+  POD_SPEC_PATH = "$product/$product.podspec"
+  pod trunk push $POD_SPEC_PATH
+done
 echo ""
 
 echo "Clean up"

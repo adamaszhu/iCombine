@@ -27,7 +27,7 @@ public extension iCombine.Publisher {
 
 import Combine
 
-@available(iOS 13.0, *)
+@available(iOS 14.0, macOS 10.15, *)
 public extension Combine.Publisher {
     
     /// Map any error into a specific error.
