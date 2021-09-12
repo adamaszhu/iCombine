@@ -22,8 +22,12 @@ git checkout $NEW_BRANCH
 echo ""
 
 echo "Update Jazzy documentation"
-echo "Generating documents ..."
-sh $JAZZY_SCRIPT_PATH > /dev/null 2>&1
+echo "Generating iCombine documents ..."
+sh $JAZZY_SCRIPT_PATH "iCombine" > /dev/null 2>&1
+echo "Generating iCombineNetwork documents ..."
+sh $JAZZY_SCRIPT_PATH "iCombineNetwork" > /dev/null 2>&1
+echo "Generating iCombineUtility documents ..."
+sh $JAZZY_SCRIPT_PATH "iCombineUtility" > /dev/null 2>&1
 git add --all
 git commit -m "Update documentations"
 echo ""
