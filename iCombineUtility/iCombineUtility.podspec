@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.platform = :ios
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 s.name = "iCombineUtility"
 s.summary = "iCombineUtility provides additional support to Combine and iCombine."
 s.requires_arc = true
