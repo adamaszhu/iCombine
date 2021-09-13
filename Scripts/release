@@ -23,6 +23,12 @@ git branch $NEW_BRANCH
 git checkout $NEW_BRANCH
 echo ""
 
+echo "Raise the version"
+bundle exec fastlane set_version version:$NEW_RELEASE
+git add --all
+git commit -m "Raise the version"
+echo ""
+
 echo "Update Jazzy documentation"
 mkdir $TEMP_DIR
 for PRODUCT in "${PRODUCTS[@]}"
@@ -37,12 +43,6 @@ git add --all
 git commit -m "Update documentations"
 echo ""
 
-echo "Raise the version"
-bundle exec fastlane set_version version:$NEW_RELEASE
-git add --all
-git commit -m "Raise the version"
-echo ""
-#
 echo "Tag the release on master"
 git checkout master
 git merge --no-ff $NEW_BRANCH -m "$RELEASE_MESSAGE" > /dev/null 2>&1
