@@ -166,6 +166,9 @@
 		89A33EC226BC1F6700D72674 /* Fail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC126BC1F6700D72674 /* Fail.swift */; };
 		89A33EC426BC1F9100D72674 /* FailSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC326BC1F9100D72674 /* FailSpec.swift */; };
 		89A33EC726BC1FDC00D72674 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A33EC626BC1FDC00D72674 /* TestError.swift */; };
+		D2BF74302706D58000A6ED7E /* OpenCombineDispatch in Frameworks */ = {isa = PBXBuildFile; productRef = D2BF742F2706D58000A6ED7E /* OpenCombineDispatch */; };
+		D2BF74322706D58000A6ED7E /* OpenCombineFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = D2BF74312706D58000A6ED7E /* OpenCombineFoundation */; };
+		D2BF74342706D58000A6ED7E /* OpenCombine in Frameworks */ = {isa = PBXBuildFile; productRef = D2BF74332706D58000A6ED7E /* OpenCombine */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -335,6 +338,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BF74342706D58000A6ED7E /* OpenCombine in Frameworks */,
+				D2BF74302706D58000A6ED7E /* OpenCombineDispatch in Frameworks */,
+				D2BF74322706D58000A6ED7E /* OpenCombineFoundation in Frameworks */,
 				28DE795526D3C40A00A58707 /* RxCocoa in Frameworks */,
 				28DE795326D3C40A00A58707 /* RxSwift in Frameworks */,
 			);
@@ -961,6 +967,9 @@
 			packageProductDependencies = (
 				28DE795226D3C40A00A58707 /* RxSwift */,
 				28DE795426D3C40A00A58707 /* RxCocoa */,
+				D2BF742F2706D58000A6ED7E /* OpenCombineDispatch */,
+				D2BF74312706D58000A6ED7E /* OpenCombineFoundation */,
+				D2BF74332706D58000A6ED7E /* OpenCombine */,
 			);
 			productName = CombineFoundation;
 			productReference = 2850ECC826BAC17A005DCC4F /* iCombine.framework */;
@@ -1163,6 +1172,7 @@
 				28DE794726D3C29100A58707 /* XCRemoteSwiftPackageReference "Nimble" */,
 				28DE794C26D3C2C800A58707 /* XCRemoteSwiftPackageReference "quick" */,
 				28DE795126D3C40A00A58707 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D2BF742E2706D58000A6ED7E /* XCRemoteSwiftPackageReference "OpenCombine" */,
 			);
 			productRefGroup = 2850ECC926BAC17A005DCC4F /* Products */;
 			projectDirPath = "";
@@ -2118,6 +2128,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		D2BF742E2706D58000A6ED7E /* XCRemoteSwiftPackageReference "OpenCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OpenCombine/OpenCombine.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2190,6 +2208,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28DE794C26D3C2C800A58707 /* XCRemoteSwiftPackageReference "quick" */;
 			productName = Quick;
+		};
+		D2BF742F2706D58000A6ED7E /* OpenCombineDispatch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2BF742E2706D58000A6ED7E /* XCRemoteSwiftPackageReference "OpenCombine" */;
+			productName = OpenCombineDispatch;
+		};
+		D2BF74312706D58000A6ED7E /* OpenCombineFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2BF742E2706D58000A6ED7E /* XCRemoteSwiftPackageReference "OpenCombine" */;
+			productName = OpenCombineFoundation;
+		};
+		D2BF74332706D58000A6ED7E /* OpenCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2BF742E2706D58000A6ED7E /* XCRemoteSwiftPackageReference "OpenCombine" */;
+			productName = OpenCombine;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
