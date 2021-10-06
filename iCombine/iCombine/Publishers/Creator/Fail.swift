@@ -5,8 +5,7 @@
 //  Created by Leon Nguyen on 5/8/21.
 //
 
-import RxSwift
-import RxCocoa
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -27,7 +26,9 @@ public struct Fail<Output, Failure> : Publisher where Failure : Error {
             return
         }
         #endif
-        observable = Observable<Output>.error(error)
+        observable = OpenCombine.Fail<Output, Failure>(error: error)
+            .eraseToAnyPublisher()
+        return
     }
 
     /// Creates publisher with the given output type, that immediately terminates with the specified failure.
@@ -44,6 +45,8 @@ public struct Fail<Output, Failure> : Publisher where Failure : Error {
             return
         }
         #endif
-        observable = Observable<Output>.error(failure)
+        observable = OpenCombine.Fail<Output, Failure>(outputType: outputType, failure: failure)
+            .eraseToAnyPublisher()
+        return
     }
 }

@@ -5,8 +5,7 @@
 //  Created by Leon Nguyen on 8/8/21.
 //
 
-import RxCocoa
-import RxSwift
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -30,12 +29,10 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
                     return currentValueSubject.value
             }
             #endif
-            if let publishSubject = self.behaviourSubject as? BehaviorSubject<Output> {
-                let currentValue = try? publishSubject.value()
-                return currentValue ?? initialValue
-            } else {
-                fatalError("behaviourSubject of CurrentValueSubject has wrong type")
+            if let currentValueSubject = self.behaviourSubject as? OpenCombine.CurrentValueSubject<Output, Failure> {
+                    return currentValueSubject.value
             }
+            fatalError("behaviourSubject of CurrentValueSubject has wrong type")
         }
         set {
             #if canImport(Combine)
@@ -45,11 +42,11 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
                 return
             }
             #endif
-            if let publishSubject = self.behaviourSubject as? BehaviorSubject<Output> {
-                publishSubject.onNext(newValue)
-            } else {
-                fatalError("behaviourSubject of CurrentValueSubject has wrong type")
+            if let currentValueSubject = self.behaviourSubject as? OpenCombine.CurrentValueSubject<Output, Failure> {
+                    currentValueSubject.value = newValue
+                return
             }
+            fatalError("behaviourSubject of CurrentValueSubject has wrong type")
         }
     }
 
@@ -66,10 +63,11 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
             return
         }
         #endif
-        let newSubject = BehaviorSubject(value: value)
-        observable = newSubject.asObservable()
-        behaviourSubject = newSubject
+        let currentValueSubject = OpenCombine.CurrentValueSubject<Output, Failure>(value)
+        observable = currentValueSubject.eraseToAnyPublisher()
+        behaviourSubject = currentValueSubject
         initialValue = value
+        return
     }
 
     /// Provides this Subject an opportunity to establish demand for any new upstream subscriptions (say via, ```Publisher.subscribe<S: Subject>(_: Subject)`
@@ -85,11 +83,10 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
                 return currentValueSubject.send(input)
         }
         #endif
-        if let behaviourSubject = self.behaviourSubject as? BehaviorSubject<Output> {
-            behaviourSubject.onNext(input)
-        } else {
-            fatalError("behaviourSubject of CurrentValueSubject has wrong type")
+        if let currentValueSubject = self.behaviourSubject as? OpenCombine.CurrentValueSubject<Output, Failure> {
+                return currentValueSubject.send(input)
         }
+        fatalError("behaviourSubject of CurrentValueSubject has wrong type")
     }
 
     /// Sends a completion signal to the subscriber.
@@ -108,15 +105,15 @@ final public class CurrentValueSubject<Output, Failure> : Subject where Failure 
             return
         }
         #endif
-        if let behaviourSubject = self.behaviourSubject as? BehaviorSubject<Output> {
-            switch completion {
-            case .failure(let error):
-                behaviourSubject.onError(error)
-            case .finished:
-                behaviourSubject.onCompleted()
-            }
-        } else {
-            fatalError("behaviourSubject of CurrentValueSubject has wrong type")
+        if let currentValueSubject = self.behaviourSubject as? OpenCombine.CurrentValueSubject<Output, Failure> {
+                switch completion {
+                case .finished:
+                    currentValueSubject.send(completion: .finished)
+                case .failure(let error):
+                    currentValueSubject.send(completion: .failure(error))
+                }
+            return
         }
+        fatalError("behaviourSubject of CurrentValueSubject has wrong type")
     }
 }
