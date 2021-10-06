@@ -5,8 +5,7 @@
 //  Created by Leon Nguyen on 8/8/21.
 //
 
-import RxCocoa
-import RxSwift
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -34,7 +33,9 @@ extension Publishers {
                 return
             }
             #endif
-            observable = Observable.from(sequence)
+            observable = OpenCombine.Publishers.Sequence<Elements, Failure>(sequence: sequence)
+                .eraseToAnyPublisher()
+            return
         }
 
         fileprivate init(observable: Any) {
@@ -70,12 +71,12 @@ extension Publishers.Sequence {
             return Publishers.Sequence(observable: publisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output> {
-            let transformedObservable = observable.filter(isIncluded)
-            return Publishers.Sequence(observable: transformedObservable)
-        } else {
-            fatalError("self.observable of Sequence filter has wrong type")
+        if let publisher = observable as? OpenCombine.AnyPublisher<Output, Failure>{
+            let publisher = publisher.filter(isIncluded)
+                .eraseToAnyPublisher()
+            return Publishers.Sequence(observable: publisher)
         }
+        fatalError("self.observable of Sequence filter has wrong type")
     }
 
     // public func ignoreOutput() -> Empty<Publishers.Sequence<Elements, Failure>.Output, Failure>
@@ -89,12 +90,12 @@ extension Publishers.Sequence {
             return Publishers.Sequence(observable: publisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output> {
-            let transformedObservable = observable.map(transform)
-            return Publishers.Sequence(observable: transformedObservable)
-        } else {
-            fatalError("self.observable of Sequence map has wrong type")
+        if let publisher = observable as? OpenCombine.AnyPublisher<Output, Failure>{
+            let publisher = publisher.map(transform)
+                .eraseToAnyPublisher()
+            return Publishers.Sequence(observable: publisher)
         }
+        fatalError("self.observable of Sequence map has wrong type")
     }
 
     // public func prefix(_ maxLength: Int) -> Publishers.Sequence<PrefixSequence<Elements>, Failure>
@@ -124,15 +125,13 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
             return Publishers.Sequence(observable: publisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output>,
-            let sequence = elements as? Elements,
-            let publisherObservable = Publishers.Sequence<Elements, Failure>(sequence: sequence).observable
-                as? Observable<Output> {
-                    return Publishers.Sequence<Elements, Failure>(observable: Observable.concat(publisherObservable, observable))
+        if let publisher = observable as? OpenCombine.AnyPublisher<Output, Failure>{
 
-        } else {
-            fatalError("something of Sequence prepend has wrong type")
+            let publisher = publisher.prepend(elements)
+                .eraseToAnyPublisher()
+            return Publishers.Sequence(observable: publisher)
         }
+        fatalError("something of Sequence prepend has wrong type")
     }
 
     public func prepend<S>(_ elements: S) -> Publishers.Sequence<Elements, Failure> where S : Sequence, Elements.Element == S.Element {
@@ -144,13 +143,12 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
             return Publishers.Sequence(observable: publisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output>,
-            let publisherObservable = Publishers.Sequence<S, Failure>(sequence: elements).observable
-            as? Observable<Output> {
-                return Publishers.Sequence<Elements, Failure>(observable: Observable.concat(publisherObservable, observable))
-        } else {
-            fatalError("something of Sequence prepend has wrong type")
+        if let publisher = observable as? OpenCombine.AnyPublisher<Output, Failure> {
+            let publisher = publisher.prepend(elements)
+                .eraseToAnyPublisher()
+            return Publishers.Sequence(observable: publisher)
         }
+        fatalError("something of Sequence prepend has wrong type")
     }
 
     public func prepend(_ publisher: Publishers.Sequence<Elements, Failure>) -> Publishers.Sequence<Elements, Failure> {
@@ -163,12 +161,13 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
             return Publishers.Sequence(observable: appendedPublisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output>,
-            let publisherObservable = publisher.observable as? Observable<Output> {
-            return Publishers.Sequence<Elements, Failure>(observable: Observable.concat(publisherObservable, observable))
-        } else {
-            fatalError("something of Sequence prepend has wrong type")
+        if let internalPublisher = observable as? OpenCombine.AnyPublisher<Output, Failure>,
+            let toAppendPublisher = publisher.observable as? OpenCombine.AnyPublisher<Output, Failure> {
+            let appendedPublisher = internalPublisher.prepend(toAppendPublisher)
+                .eraseToAnyPublisher()
+            return Publishers.Sequence(observable: appendedPublisher)
         }
+        fatalError("something of Sequence prepend has wrong type")
     }
 
     public func append(_ elements: Publishers.Sequence<Elements, Failure>.Output...) -> Publishers.Sequence<Elements, Failure> {
@@ -181,15 +180,13 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
             return Publishers.Sequence(observable: publisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output>,
-            let sequence = elements as? Elements,
-            let publisherObservable = Publishers.Sequence<Elements, Failure>(sequence: sequence).observable
-                as? Observable<Output> {
-                    return Publishers.Sequence<Elements, Failure>(observable: Observable.concat(observable, publisherObservable))
+        if let publisher = observable as? OpenCombine.AnyPublisher<Output, Failure>{
 
-        } else {
-            fatalError("something of Sequence append has wrong type")
+            let publisher = publisher.append(elements)
+                .eraseToAnyPublisher()
+            return Publishers.Sequence(observable: publisher)
         }
+        fatalError("something of Sequence append has wrong type")
     }
 
     public func append<S>(_ elements: S) -> Publishers.Sequence<Elements, Failure> where S : Sequence, Elements.Element == S.Element {
@@ -201,13 +198,12 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
             return Publishers.Sequence(observable: publisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output>,
-            let publisherObservable = Publishers.Sequence<S, Failure>(sequence: elements).observable
-            as? Observable<Output> {
-                return Publishers.Sequence<Elements, Failure>(observable: Observable.concat(observable, publisherObservable))
-        } else {
-            fatalError("something of Sequence append has wrong type")
+        if let publisher = observable as? OpenCombine.AnyPublisher<Output, Failure> {
+            let publisher = publisher.append(elements)
+                .eraseToAnyPublisher()
+            return Publishers.Sequence(observable: publisher)
         }
+        fatalError("something of Sequence append has wrong type")
     }
 
     public func append(_ publisher: Publishers.Sequence<Elements, Failure>) -> Publishers.Sequence<Elements, Failure> {
@@ -220,12 +216,13 @@ extension Publishers.Sequence where Elements : RangeReplaceableCollection {
             return Publishers.Sequence(observable: appendedPublisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output>,
-            let publisherObservable = publisher.observable as? Observable<Output> {
-            return Publishers.Sequence<Elements, Failure>(observable: Observable.concat(observable, publisherObservable))
-        } else {
-            fatalError("something of Sequence append has wrong type")
+        if let internalPublisher = observable as? OpenCombine.AnyPublisher<Output, Failure>,
+            let toAppendPublisher = publisher.observable as? OpenCombine.AnyPublisher<Output, Failure> {
+            let appendedPublisher = internalPublisher.append(toAppendPublisher)
+                .eraseToAnyPublisher()
+            return Publishers.Sequence(observable: appendedPublisher)
         }
+        fatalError("something of Sequence append has wrong type")
     }
 }
 
