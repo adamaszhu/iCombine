@@ -5,8 +5,7 @@
 //  Created by Leon Nguyen on 5/8/21.
 //
 
-import RxCocoa
-import RxSwift
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -47,18 +46,19 @@ extension Subscribers {
                 return
             }
             #endif
-            self.observer = AnyObserver<Input> { event in
-                switch event {
-                case .completed:
+            
+            let observer = OpenCombine.Subscribers.Sink<Input, Failure>(receiveCompletion: { (completion) in
+                switch completion {
+                case .finished:
                     receiveCompletion(.finished)
-                case .error(let error):
-                    if let error = error as? Failure {
-                        receiveCompletion(.failure(error))
-                    }
-                case .next(let value):
-                    receiveValue(value)
+                case .failure(let error):
+                    receiveCompletion(.failure(error))
                 }
+            }) { (value) in
+                receiveValue(value)
             }
+            self.observer = OpenCombine.AnySubscriber(observer)
+            return
         }
 
         /// Tells the subscriber that it has successfully subscribed to the publisher and may request items.
@@ -82,8 +82,9 @@ extension Subscribers {
                 return
             }
             #endif
-            if let disposable = disposable as? Disposable {
-                disposable.dispose()
+            if let cancellable = disposable as? OpenCombine.Cancellable {
+                cancellable.cancel()
+                return
             }
         }
     }

@@ -5,8 +5,7 @@
 //  Created by Adamas Zhu on 5/8/21.
 //
 
-import RxCocoa
-import RxSwift
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -37,8 +36,10 @@ final public class AnyCancellable : Cancellable, Hashable {
             return
         }
         #endif
-        if let disposable = disposable as? Disposable {
-            disposable.dispose()
+        if #available(iOS 14, macOS 10.15, *),
+           let cancellable = disposable as? OpenCombine.Cancellable {
+            cancellable.cancel()
+            return
         }
     }
 

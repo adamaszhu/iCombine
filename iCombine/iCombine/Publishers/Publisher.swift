@@ -6,8 +6,7 @@
 //
 
 import Foundation
-import RxCocoa
-import RxSwift
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -58,11 +57,10 @@ public extension Publisher {
             return
         }
         #endif
-        if let observer = subscriber.observer as? AnyObserver<Output>,
-            let observable = observable as? Observable<Output> {
-            let disposable = observable.subscribe(observer)
-            var subscriber = subscriber as? Cancellable
-            subscriber?.disposable = disposable
+        if let publisher = observable as? OpenCombine.AnyPublisher<Output, Failure>,
+           let subscriber = subscriber.observer as? OpenCombine.AnySubscriber<Output, Failure> {
+            publisher.subscribe(subscriber)
+            return
         } else {
             fatalError("Failed to receive on Publisher")
         }

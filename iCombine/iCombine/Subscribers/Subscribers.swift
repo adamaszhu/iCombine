@@ -5,8 +5,7 @@
 //  Created by Adamas Zhu on 5/8/21.
 //
 
-import RxCocoa
-import RxSwift
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -37,6 +36,15 @@ extension Subscribers {
             }
         }
         #endif
+        
+        init(combineCompletion: OpenCombine.Subscribers.Completion<Failure>) {
+            switch combineCompletion {
+            case .finished:
+                self = .finished
+            case .failure(let error):
+                self = .failure(error)
+            }
+        }
 
         #if canImport(Combine)
         @available(iOS 14, macOS 10.15, *)
@@ -49,5 +57,14 @@ extension Subscribers {
             }
         }
         #endif
+        
+        var openCombineCompletion: OpenCombine.Subscribers.Completion<Failure> {
+            switch self {
+            case .finished:
+                return .finished
+            case .failure(let error):
+                return .failure(error)
+            }
+        }
     }
 }
