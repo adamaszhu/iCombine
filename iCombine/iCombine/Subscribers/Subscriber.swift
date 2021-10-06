@@ -5,8 +5,7 @@
 //  Created by Adamas Zhu on 5/8/21.
 //
 
-import RxCocoa
-import RxSwift
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -52,13 +51,9 @@ extension Subscriber {
             return
         }
         #endif
-        if let observer = observer as? AnyObserver<Input> {
-            switch completion {
-            case .finished:
-                observer.onCompleted()
-            case .failure(let error):
-                observer.onError(error)
-            }
+        if let subscriber = observer as? OpenCombine.AnySubscriber<Input, Failure> {
+            subscriber.receive(completion: completion.openCombineCompletion)
+            return
         }
     }
 }

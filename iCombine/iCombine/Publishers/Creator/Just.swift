@@ -5,8 +5,7 @@
 //  Created by Leon Nguyen on 5/8/21.
 //
 
-import RxCocoa
-import RxSwift
+import OpenCombine
 #if canImport(Combine)
 import Combine
 #endif
@@ -36,7 +35,9 @@ public struct Just<Output> : Publisher {
             return
         }
         #endif
-        observable = Observable.of(output)
+        observable = OpenCombine.Just<Output>(output)
+            .eraseToAnyPublisher()
+        return
     }
 
     fileprivate init(observable: Any) {
@@ -100,12 +101,11 @@ extension Just {
             return Just<T>(observable: publisher)
         }
         #endif
-        if let observable = self.observable as? Observable<Output> {
-            let transformedObservable = observable.map(transform)
-            return Just<T>(observable: transformedObservable)
-        } else {
-            fatalError("self.observable of Just has wrong type")
+        if let publisher = observable as? OpenCombine.AnyPublisher<Output, Failure>{
+            let publisher = publisher.map(transform).eraseToAnyPublisher()
+            return Just<T>(observable: publisher)
         }
+        fatalError("self.observable of Just has wrong type")
     }
 
     // public func tryMap<T>(_ transform: (Output) throws -> T) -> Result<T, Error>.Publisher

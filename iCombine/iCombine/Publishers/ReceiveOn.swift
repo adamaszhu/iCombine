@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import RxCocoa
-import RxSwift
+import OpenCombine
+import OpenCombineDispatch
 #if canImport(Combine)
 import Combine
 #endif
@@ -38,8 +38,11 @@ extension Publishers {
                 return
             }
             #endif
-            if let upstreamObservable = upstream.observable as? Observable<Upstream.Output> {
-                observable = upstreamObservable.observeOn(scheduler.schedulerType)
+            if let publisher = upstream.observable as? OpenCombine.AnyPublisher<Upstream.Output, Upstream.Failure>,
+               let scheduler = scheduler as? DispatchQueue.OCombine {
+                observable = OpenCombine.Publishers.ReceiveOn(upstream: publisher, scheduler: scheduler, options: nil)
+                                .eraseToAnyPublisher()
+                return
             } else {
                 fatalError("failed to init ReceiveOn")
             }
